@@ -1,0 +1,23 @@
+:root {
+    --background-light: #ffffff;
+    --text-light: #000000;
+    --background-dark: #121212;
+    --text-dark: #ffffff;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+button {
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(135deg, #f0f4f8, #e0e7ff);
+    /* Fundo suave */
+    font-family: 'Arial', sans-serif;
+    color: #212121;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.card {
+    border-radius: 15px;
+    /* Aumentar o raio da borda */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra mais suave */
+}
+
+.card-header {
+    background-color: #00796b;
+    /* Cor de fundo do cabeçalho */
+    color: white;
+    border-radius: 15px 15px 0 0;
+    /* Aumentar o raio da borda */
+    padding: 1rem;
+    /* Adicionar padding */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e0f2f1;
+    /* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease;
+    /* Transição suave */
+}
+
+.btn-primary {
+    background-color: #00796b;
+    /* Cor do botão primário */
+    border-color: #00796b;
+    padding: 12px 20px;
+    /* Adicionar padding */
+    border-radius: 8px;
+    /* Raio da borda */
+    transition: all 0.3s ease;
+    /* Transição suave */
+}
+
+.btn-primary:hover {
+    background-color: #004d40;
+    /* Cor ao passar o mouse */
+    border-color: #004d40;
+    /* Cor da borda ao passar o mouse */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra ao passar o mouse */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    padding: 12px 20px;
+    /* Adicionar padding */
+    border-radius: 8px;
+    /* Raio da borda */
+    transition: all 0.3s ease;
+    /* Transição suave */
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra ao passar o mouse */
+}

@@ -1,0 +1,334 @@
+:root {
+    /* Light theme variables */
+    --background-light: #ffffff;
+    --text-light: #333333;
+    --text-secondary-light: #666666;
+    --link-light: #0d6efd;
+    --link-hover-light: #0a58ca;
+    --primary-light: #007bff;
+    --secondary-light: #6c757d;
+    --success-light: #28a745;
+    --danger-light: #dc3545;
+    --warning-light: #ffc107;
+    --info-light: #17a2b8;
+    --card-bg-light: #ffffff;
+    --card-border-light: #dee2e6;
+    --header-bg-light: #f8f9fa;
+    --input-bg-light: #ffffff;
+    --input-border-light: #ced4da;
+    --input-text-light: #495057;
+    --button-bg-light: #f8f9fa;
+    --button-text-light: #212529;
+    --stats-card-bg-light: #ffffff;
+    --quick-action-bg-light: #f8f9fa;
+    --theme-toggle-bg-light: rgba(0, 0, 0, 0.05);
+    --theme-toggle-hover-light: rgba(0, 0, 0, 0.1);
+    --theme-icon-light: #f39c12;
+
+    /* Dark theme variables */
+    --background-dark: #121212;
+    --text-dark: #f5f5f5;
+    --text-secondary-dark: #b0b0b0;
+    --link-dark: #8ab4f8;
+    --link-hover-dark: #a8c7fa;
+    --primary-dark: #1a73e8;
+    --secondary-dark: #5f6368;
+    --success-dark: #34a853;
+    --danger-dark: #ea4335;
+    --warning-dark: #fbbc05;
+    --info-dark: #17a2b8;
+    --card-bg-dark: #1e1e1e;
+    --card-border-dark: #2d2d2d;
+    --header-bg-dark: #1e1e1e;
+    --input-bg-dark: #2d2d2d;
+    --input-border-dark: #3d3d3d;
+    --input-text-dark: #e0e0e0;
+    --button-bg-dark: #2d2d2d;
+    --button-text-dark: #ffffff;
+    --stats-card-bg-dark: #2d2d2d;
+    --quick-action-bg-dark: #2d2d2d;
+    --theme-toggle-bg-dark: rgba(255, 255, 255, 0.05);
+    --theme-toggle-hover-dark: rgba(255, 255, 255, 0.1);
+    --theme-icon-dark: #ffcc00;
+
+    /* Transitions */
+    --transition-duration: 0.4s;
+    --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base styles with smooth transitions */
+body {
+    background-color: var(--background-light) !important;
+    color: var(--text-light);
+    transition: background-color var(--transition-duration) var(--transition-timing),
+        color var(--transition-duration) var(--transition-timing);
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Text elements */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+small {
+    color: var(--text-light);
+    transition: color var(--transition-duration) var(--transition-timing);
+}
+
+.secondary-text {
+    color: var(--text-secondary-light);
+}
+
+/* Links */
+a {
+    color: var(--link-light);
+    text-decoration: none;
+    transition: color var(--transition-duration) var(--transition-timing);
+}
+
+a:hover {
+    color: var(--link-hover-light);
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--button-bg-light);
+    color: var(--button-text-light);
+    border-color: var(--input-border-light);
+    transition: background-color var(--transition-duration) var(--transition-timing),
+        color var(--transition-duration) var(--transition-timing),
+        border-color var(--transition-duration) var(--transition-timing);
+}
+
+.btn-primary {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-light);
+    border-color: var(--secondary-light);
+    color: white;
+}
+
+/* Forms and inputs */
+input,
+textarea,
+select {
+    background-color: var(--input-bg-light);
+    border-color: var(--input-border-light);
+    color: var(--input-text-light);
+    transition: background-color var(--transition-duration) var(--transition-timing),
+        border-color var(--transition-duration) var(--transition-timing),
+        color var(--transition-duration) var(--transition-timing);
+}
+
+.form-control:focus {
+    background-color: var(--input-bg-light);
+    border-color: var(--primary-light);
+    color: var(--input-text-light);
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg-light);
+    border-color: var(--card-border-light);
+    transition: background-color var(--transition-duration) var(--transition-timing),
+        border-color var(--transition-duration) var(--transition-timing);
+}
+
+.card-header {
+    background-color: var(--header-bg-light);
+    border-bottom-color: var(--card-border-light);
+}
+
+/* Header */
+.dashboard-header {
+    background-color: var(--header-bg-light);
+    transition: background-color var(--transition-duration) var(--transition-timing);
+}
+
+/* List group */
+.list-group-item {
+    background-color: var(--card-bg-light);
+    border-color: var(--card-border-light);
+    color: var(--text-light);
+    transition: background-color var(--transition-duration) var(--transition-timing),
+        border-color var(--transition-duration) var(--transition-timing),
+        color var(--transition-duration) var(--transition-timing);
+}
+
+/* Stats card */
+.stats-card {
+    background-color: var(--stats-card-bg-light);
+    transition: background-color var(--transition-duration) var(--transition-timing);
+}
+
+/* Quick action */
+.quick-action-btn {
+    background-color: var(--quick-action-bg-light);
+    color: var(--button-text-light);
+    transition: background-color var(--transition-duration) var(--transition-timing),
+        color var(--transition-duration) var(--transition-timing);
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+body.dark p,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark span,
+body.dark small {
+    color: var(--text-dark);
+}
+
+body.dark .secondary-text {
+    color: var(--text-secondary-dark);
+}
+
+body.dark a {
+    color: var(--link-dark);
+}
+
+body.dark a:hover {
+    color: var(--link-hover-dark);
+}
+
+body.dark .btn {
+    background-color: var(--button-bg-dark);
+    color: var(--button-text-dark);
+    border-color: var(--input-border-dark);
+}
+
+body.dark .btn-primary {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+body.dark .btn-secondary {
+    background-color: var(--secondary-dark);
+    border-color: var(--secondary-dark);
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+    background-color: var(--input-bg-dark);
+    border-color: var(--input-border-dark);
+    color: var(--input-text-dark);
+}
+
+body.dark .form-control:focus {
+    background-color: var(--input-bg-dark);
+    border-color: var(--primary-dark);
+    color: var(--input-text-dark);
+}
+
+body.dark .card {
+    background-color: var(--card-bg-dark);
+    border-color: var(--card-border-dark);
+}
+
+body.dark .card-header {
+    background-color: var(--header-bg-dark);
+    border-bottom-color: var(--card-border-dark);
+}
+
+body.dark .dashboard-header {
+    background-color: var(--header-bg-dark);
+}
+
+body.dark .list-group-item {
+    background-color: var(--card-bg-dark);
+    border-color: var(--card-border-dark);
+    color: var(--text-dark);
+}
+
+body.dark .stats-card {
+    background-color: var(--stats-card-bg-dark);
+}
+
+body.dark .quick-action-btn {
+    background-color: var(--quick-action-bg-dark);
+    color: var(--button-text-dark);
+}
+
+/* Modern theme toggle button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--theme-toggle-bg-light);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-duration) var(--transition-timing);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 44px;
+    height: 44px;
+}
+
+.theme-toggle:hover {
+    background: var(--theme-toggle-hover-light);
+    transform: scale(1.1);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+body.dark .theme-toggle {
+    background: var(--theme-toggle-bg-dark);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .theme-toggle:hover {
+    background: var(--theme-toggle-hover-dark);
+}
+
+.theme-toggle i {
+    font-size: 1.25rem;
+    color: var(--theme-icon-light);
+    transition: transform var(--transition-duration) var(--transition-timing),
+        color var(--transition-duration) var(--transition-timing);
+}
+
+body.dark .theme-toggle i {
+    color: var(--theme-icon-dark);
+}
+
+/* Animation for theme switch */
+@keyframes rotateIn {
+    from {
+        transform: rotate(-30deg) scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.theme-toggle .fa-sun {
+    animation: rotateIn var(--transition-duration) var(--transition-timing);
+}

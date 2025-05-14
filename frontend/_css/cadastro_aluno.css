@@ -1,0 +1,165 @@
+body {
+    background: linear-gradient(135deg, #f0f4f8, #e0e7ff);
+    /* Fundo suave */
+    font-family: 'Arial', sans-serif;
+    color: #212121;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.form-control {
+    border-radius: 15px;
+    /* Aumentar o raio da borda */
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease;
+    /* Adicionar transição para a borda */
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(0, 121, 107, 0.5);
+    /* Cor da sombra ao focar */
+    border-color: #00796b;
+    /* Cor da borda ao focar */
+}
+
+.alert {
+    margin-top: 15px;
+    transition: opacity 0.5s ease-in-out;
+    background-color: #c8e6c9;
+    /* Cor de fundo da alerta */
+    color: #388e3c;
+    /* Cor do texto da alerta */
+    border-radius: 8px;
+    /* Raio da borda */
+    padding: 10px;
+    /* Adicionar padding */
+}
+
+.card {
+    border-radius: 15px;
+    /* Aumentar o raio da borda */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra mais suave */
+}
+
+.card-header {
+    background-color: #00796b;
+    /* Cor de fundo do cabeçalho */
+    color: white;
+    border-radius: 15px 15px 0 0;
+    /* Aumentar o raio da borda */
+    padding: 1rem;
+    /* Adicionar padding */
+}
+
+.btn-primary {
+    background-color: #00796b;
+    /* Cor do botão primário */
+    border-color: #00796b;
+    padding: 12px 20px;
+    /* Adicionar padding */
+    border-radius: 8px;
+    /* Raio da borda */
+    transition: all 0.3s ease;
+    /* Transição suave */
+}
+
+.btn-primary:hover {
+    background-color: #004d40;
+    /* Cor ao passar o mouse */
+    border-color: #004d40;
+    /* Cor da borda ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito de escala ao passar o mouse */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra ao passar o mouse */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    padding: 12px 20px;
+    /* Adicionar padding */
+    border-radius: 8px;
+    /* Raio da borda */
+    transition: all 0.3s ease;
+    /* Transição suave */
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+    transform: scale(1.05);
+    /* Efeito de escala ao passar o mouse */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra ao passar o mouse */
+}
+
+HEAD .table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.875rem;
+}
+
+.form-control,
+.btn {
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.btn:hover {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Efeitos de hover */
+.list-group-item {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #00796b;
+}
+
+.list-group-item:hover {
+    background-color: #00796b;
+    color: white;
+    transform: scale(1.02);
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.list-group-item a:hover {
+    color: white;
+}
+
+.icon {
+    margin-right: 12px;
+    color: #00796b;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.list-group-item:hover .icon {
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+    /* Garantir que o display seja flex */
+    justify-content: space-between;
+    align-items: center;
+}
