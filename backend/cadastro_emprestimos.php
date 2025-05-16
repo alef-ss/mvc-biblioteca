@@ -13,6 +13,10 @@ $livros_sql = "SELECT id, titulo FROM livros";
 $alunos_result = $conn->query($alunos_sql);
 $livros_result = $conn->query($livros_sql);
 
+// Inicializa as variáveis de mensagem
+$success_message = null;
+$error_message = null;
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $aluno_id = $_POST['aluno_id'];
     $livro_id = $_POST['livro_id'];
@@ -38,16 +42,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt_update->bind_param("i", $livro_id);
             $stmt_update->execute();
 
-            echo "<div class='alert alert-success'>Empréstimo registrado com sucesso!</div>";
+            $success_message = "Empréstimo registrado com sucesso!";
+            $stmt_update->close();
+            $stmt_emprestimo->close();
         } else {
-            echo "<div class='alert alert-danger'>Erro ao registrar empréstimo!</div>";
+            $error_message = "Erro ao registrar empréstimo!";
+            $stmt_emprestimo->close();
         }
     } else {
-        echo "<div class='alert alert-danger'>Este livro não está disponível no momento!</div>";
+        $error_message = "Este livro não está disponível no momento!";
     }
 
     $stmt->close();
-    $stmt_emprestimo->close();
+    
     $conn->close();
 }
 ?>
