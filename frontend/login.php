@@ -120,7 +120,7 @@ include('../backend/login.php')
                 </div>
                 <button type="submit" class="btn btn-custom"><i class="fas fa-sign-in-alt"></i> Entrar</button>
             </form>
-            <p class="text-center mt-4">Ainda não tem uma conta? <a href="cadastro_professor_principal.php" class="hover-effect">Cadastre-se!</a></p>
+            <p class="text-center mt-4"><a href="redefinir_senha.php" class="hover-effect">Esqueceu a senha?</a></p>
         </div>
     </div>
 

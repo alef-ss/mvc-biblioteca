@@ -138,7 +138,7 @@ INSERT INTO `professores` (`id`, `nome`, `email`, `cpf`, `senha`, `data_cadastro
 (1, 'Fernando', 'franciolliProfessor@gmail.com', '991199922', '756d66730dc2220bfb275cc759311c91', '2025-04-24 09:04:24', NULL, 1, 0),
 (2, 'Marques', 'marquesteste1@gmail.com', '12345678901', '61a5470a80e29d48f6a48a18a6e3d6ee', '2025-04-24 09:04:24', NULL, 1, 0),
 (3, 'marcos', 'marcosm@gmail.com', '724.940.940-97', '$2y$10$VXto/X13XvtQjNMAAJIv3u3ewpxFJrrz4NJ8JTo4sH2T9yw/SlwZi', '2025-04-24 09:04:24', '2025-04-24 09:04:52', 1, 0),
-(4, 'alefteste1', 'alefteste1@gmail.com', '723.166.090-82', '$2y$10$aFqWlbgNXdygZipCYGJfye/ecsiwrRO0qbcjZPvGv.8B.5P7uxghS', '2025-04-26 18:36:20', NULL, 1, 0);
+(4, 'alefteste1', 'alefteste1@gmail.com', '723.166.090-82', '$2a$12$cqe386mo.L3svyaEGkEI1OTq3a8py1lKbHuOXQ/6qFyuFKPNZYSqG', '2025-04-26 18:36:20', NULL, 1, 0);
 
 --
 -- Índices para tabelas despejadas
