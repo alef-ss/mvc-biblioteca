@@ -26,37 +26,41 @@ $result->data_seek(0); // Resetar novamente para o loop principal
     <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
     <style>
         :root {
-            --primary-color: #00796b;
-            --primary-hover: #00695c;
+            --primary-color: #4361ee;
+            --primary-hover: #3a56d4;
             --secondary-color: #f0f4f8;
             --text-color: #212121;
             --card-bg: #ffffff;
-            --body-bg: linear-gradient(135deg, #f0f4f8, #e0e7ff);
+            --body-bg: linear-gradient(135deg, #f8f9fa, #e9ecef);
             --shadow-color: rgba(0, 0, 0, 0.1);
-            --icon-color: #00796b;
-            --danger-color: #dc3545;
-            --danger-hover: #c82333;
-            --header-bg: #00796b;
+            --icon-color: #4361ee;
+            --danger-color: #ef233c;
+            --danger-hover: #d90429;
+            --header-bg: linear-gradient(135deg, #4361ee, #3a0ca3);
             --stats-card-bg: #ffffff;
-            --quick-action-bg: #e3f2fd;
-            --notification-badge: #ff5722;
+            --quick-action-bg: #edf2fb;
+            --notification-badge: #f72585;
+            --success-color: #4cc9f0;
+            --warning-color: #f8961e;
         }
 
         [data-theme="dark"] {
-            --primary-color: #4db6ac;
-            --primary-hover: #26a69a;
+            --primary-color: #4cc9f0;
+            --primary-hover: #4895ef;
             --secondary-color: #121212;
             --text-color: #e0e0e0;
             --card-bg: #1e1e1e;
-            --body-bg: linear-gradient(135deg, #121212, #0d0d1a);
+            --body-bg: linear-gradient(135deg, #0f0f0f, #1a1a2e);
             --shadow-color: rgba(0, 0, 0, 0.3);
-            --icon-color: #4db6ac;
-            --danger-color: #f44336;
-            --danger-hover: #d32f2f;
-            --header-bg: #004d40;
-            --stats-card-bg: #1e1e1e;
-            --quick-action-bg: #263238;
-            --notification-badge: #ff7043;
+            --icon-color: #4cc9f0;
+            --danger-color: #f72585;
+            --danger-hover: #b5179e;
+            --header-bg: linear-gradient(135deg, #1a1a2e, #16213e);
+            --stats-card-bg: #252525;
+            --quick-action-bg: #2b2d42;
+            --notification-badge: #f72585;
+            --success-color: #4cc9f0;
+            --warning-color: #f8961e;
         }
 
         body {

@@ -3,107 +3,164 @@ include('../backend/cadastro_emprestimos.php')
 ?>
 
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Empréstimo | Sistema Biblioteca</title>
+    <title>Cadastro de Empréstimos - Sistema de Gestão de Biblioteca</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #4e73df;
-            --secondary-color: #f8f9fc;
-            --accent-color: #2e59d9;
-            --text-color: #5a5c69;
-            --success-color: #1cc88a;
-            --danger-color: #e74a3b;
-            --warning-color: #f6c23e;
+            --primary-color: #4361ee;
+            --primary-hover: #3a56d4;
+            --secondary-color: #f0f4f8;
+            --text-color: #212121;
+            --card-bg: #ffffff;
+            --body-bg: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --icon-color: #4361ee;
+            --danger-color: #ef233c;
+            --danger-hover: #d90429;
+            --header-bg: linear-gradient(135deg, #4361ee, #3a0ca3);
+            --stats-card-bg: #ffffff;
+            --quick-action-bg: #edf2fb;
+            --notification-badge: #f72585;
+            --success-color: #4cc9f0;
+            --warning-color: #f8961e;
         }
-        
+
+        [data-theme="dark"] {
+            --primary-color: #4cc9f0;
+            --primary-hover: #4895ef;
+            --secondary-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --body-bg: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --icon-color: #4cc9f0;
+            --danger-color: #f72585;
+            --danger-hover: #b5179e;
+            --header-bg: linear-gradient(135deg, #1a1a2e, #16213e);
+            --stats-card-bg: #252525;
+            --quick-action-bg: #2b2d42;
+            --notification-badge: #f72585;
+            --success-color: #4cc9f0;
+            --warning-color: #f8961e;
+        }
+
         body {
+            background: var(--body-bg);
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
             color: var(--text-color);
+            transition: all 0.5s ease;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
         }
-        
-        .navbar-brand {
-            font-weight: 600;
-            font-size: 1.5rem;
-            color: var(--primary-color);
+
+        .dashboard-header {
+            background: var(--header-bg);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s ease;
         }
-        
+
         .card {
+            border-radius: 16px;
+            box-shadow: 0 10px 30px var(--shadow-color);
+            transition: all 0.4s ease;
+            background-color: var(--card-bg);
             border: none;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
             overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background: white;
         }
-        
+
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 15px 35px var(--shadow-color);
         }
-        
+
         .card-header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            background: var(--primary-color);
             color: white;
-            padding: 1.5rem;
             border-bottom: none;
+            padding: 1.5rem;
         }
-        
-        .card-header h4 {
+
+        .card-header h2 {
             margin: 0;
             font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
-        
-        .form-label {
-            font-weight: 500;
+
+        .form-control {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
             color: var(--text-color);
-            margin-bottom: 0.5rem;
-        }
-        
-        .form-control, .form-select {
+            padding: 0.8rem 1rem;
             border-radius: 8px;
-            padding: 0.75rem 1rem;
-            border: 1px solid #d1d3e2;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
         }
-        
-        .form-control:focus, .form-select:focus {
+
+        .form-control:focus {
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+            box-shadow: 0 0 0 0.2rem rgba(67, 97, 238, 0.25);
         }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-            border: none;
+
+        .form-label {
+            color: var(--text-color);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
             border-radius: 8px;
-            padding: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(78, 115, 223, 0.3);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
-        
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+            color: white;
+        }
+
         .btn-primary:hover {
+            background-color: var(--primary-hover);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(78, 115, 223, 0.4);
         }
-        
-        .btn-primary:active {
-            transform: translateY(0);
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            border: none;
+            color: var(--text-color);
         }
-        
-        .floating-btn {
+
+        .btn-secondary:hover {
+            background-color: var(--primary-hover);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .theme-toggle {
             position: fixed;
             bottom: 30px;
             right: 30px;
+            z-index: 1000;
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -112,272 +169,132 @@ include('../backend/cadastro_emprestimos.php')
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s;
-            z-index: 1000;
-            text-decoration: none;
-        }
-        
-        .floating-btn:hover {
-            transform: scale(1.1) translateY(-5px);
-            color: white;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-        }
-        
-        .alert {
-            border-radius: 8px;
-            padding: 1rem;
-            font-weight: 500;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .alert-success {
-            background: linear-gradient(135deg, var(--success-color) 0%, #17a673 100%);
-            color: white;
+            cursor: pointer;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border: none;
+            outline: none;
         }
-        
-        .alert-danger {
-            background: linear-gradient(135deg, var(--danger-color) 0%, #c03427 100%);
-            color: white;
-            border: none;
+
+        .theme-toggle:hover {
+            transform: scale(1.1) rotate(15deg);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
         }
-        
-        .book-icon {
-            color: var(--primary-color);
+
+        .theme-toggle i {
             font-size: 1.5rem;
-            margin-right: 10px;
+            transition: all 0.5s ease;
         }
-        
-        .student-icon {
-            color: var(--accent-color);
-            font-size: 1.5rem;
-            margin-right: 10px;
-        }
-        
-        .date-icon {
-            color: var(--warning-color);
-            font-size: 1.5rem;
-            margin-right: 10px;
-        }
-        
-        .form-group {
-            position: relative;
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group i {
-            position: absolute;
-            top: 50%;
-            left: 15px;
-            transform: translateY(-50%);
-        }
-        
-        .form-group .form-control, 
-        .form-group .form-select {
-            padding-left: 45px;
-        }
-        
-        .animated-input:focus {
-            animation: inputFocus 0.5s ease;
-        }
-        
-        @keyframes inputFocus {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.02); }
-            100% { transform: scale(1); }
-        }
-        
-        .pulse {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(78, 115, 223, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(78, 115, 223, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(78, 115, 223, 0); }
-        }
-        
-        .confetti {
-            position: fixed;
-            width: 10px;
-            height: 10px;
-            background-color: var(--primary-color);
-            opacity: 0;
-            z-index: 999;
-            animation: confetti 3s ease-out;
-        }
-        
-        @keyframes confetti {
-            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+
+        @media (max-width: 768px) {
+            .card-header h2 {
+                font-size: 1.2rem;
+            }
+
+            .theme-toggle {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-5">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-book-open me-2"></i>Biblioteca Digital
-            </a>
-            <div class="d-flex align-items-center">
-                <span class="me-3 d-none d-sm-block">Olá, Professor!</span>
-                <a href="dashboard.php" class="btn btn-outline-primary">
-                    <i class="fas fa-tachometer-alt me-1"></i> Dashboard
-                </a>
-            </div>
-        </div>
-    </nav>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
 
-    <div class="container mb-5 animate__animated animate__fadeIn">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <?php if(isset($success_message)): ?>
-                    <div class="alert alert-success animate__animated animate__bounceIn mb-4">
-                        <i class="fas fa-check-circle me-2"></i> <?php echo $success_message; ?>
-                    </div>
-                    <script>
-                        // Adiciona confetti quando o empréstimo é bem-sucedido
-                        document.addEventListener('DOMContentLoaded', function() {
-                            for(let i = 0; i < 50; i++) {
-                                createConfetti();
-                            }
-                        });
-                        
-                        function createConfetti() {
-                            const confetti = document.createElement('div');
-                            confetti.className = 'confetti';
-                            confetti.style.left = Math.random() * 100 + 'vw';
-                            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-                            confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
-                            document.body.appendChild(confetti);
-                            
-                            setTimeout(() => {
-                                confetti.remove();
-                            }, 3000);
-                        }
-                    </script>
-                <?php endif; ?>
-                
-                <?php if(isset($error_message)): ?>
-                    <div class="alert alert-danger animate__animated animate__shakeX mb-4">
-                        <i class="fas fa-exclamation-circle me-2"></i> <?php echo $error_message; ?>
-                    </div>
-                <?php endif; ?>
-                
-                <div class="card">
-                    <div class="card-header">
-                        <h4><i class="fas fa-hand-holding me-2"></i> Novo Empréstimo</h4>
-                    </div>
-                    <div class="card-body p-4">
-                        <form method="POST" action="" id="emprestimoForm">
-                            <div class="form-group">
-                                <i class="fas fa-user-graduate student-icon"></i>
-                                <label for="aluno_id" class="form-label">Aluno</label>
-                                <select class="form-select animated-input" name="aluno_id" required id="alunoSelect">
-                                    <option value="">Selecione o aluno</option>
-                                    <?php while ($aluno = $alunos_result->fetch_assoc()) { ?>
-                                        <option value="<?= $aluno['id'] ?>"><?= $aluno['nome'] ?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <i class="fas fa-book book-icon"></i>
-                                <label for="livro_id" class="form-label">Livro</label>
-                                <select class="form-select animated-input" name="livro_id" required id="livroSelect">
-                                    <option value="">Selecione o livro</option>
-                                    <?php while ($livro = $livros_result->fetch_assoc()) { ?>
-                                        <option value="<?= $livro['id'] ?>"><?= $livro['titulo'] ?></option>
-                                    <?php } ?>
-                                </select>
-                                <small class="text-muted d-block mt-1">A disponibilidade será verificada ao enviar</small>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <i class="far fa-calendar-alt date-icon"></i>
-                                        <label for="data_emprestimo" class="form-label">Data de Empréstimo</label>
-                                        <input type="date" class="form-control animated-input" name="data_emprestimo" required id="dataEmprestimo">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <i class="far fa-calendar-check date-icon"></i>
-                                        <label for="data_devolucao" class="form-label">Data de Devolução</label>
-                                        <input type="date" class="form-control animated-input" name="data_devolucao" required id="dataDevolucao">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="d-grid mt-4">
-                                <button type="submit" class="btn btn-primary btn-lg pulse" id="submitBtn">
-                                    <i class="fas fa-save me-2"></i> Registrar Empréstimo
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    <div class="dashboard-header text-center">
+        <div class="container">
+            <h1 class="mb-0">
+                <i class="fas fa-book-reader"></i> Cadastro de Empréstimos
+            </h1>
         </div>
     </div>
 
-    <a href="dashboard.php" class="floating-btn animate__animated animate__bounceInUp">
-        <i class="fas fa-home"></i>
-    </a>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>
+                    <i class="fas fa-plus-circle"></i> Novo Empréstimo
+                </h2>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="../backend/cadastro_emprestimos.php">
+                    <div class="mb-3">
+                        <label for="aluno" class="form-label">
+                            <i class="fas fa-user-graduate"></i> Aluno
+                        </label>
+                        <select class="form-control" name="aluno" required>
+                            <option value="">Selecione o Aluno</option>
+                            <?php foreach ($alunos as $aluno): ?>
+                                <option value="<?php echo $aluno['id']; ?>"><?php echo $aluno['nome']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="livro" class="form-label">
+                            <i class="fas fa-book"></i> Livro
+                        </label>
+                        <select class="form-control" name="livro" required>
+                            <option value="">Selecione o Livro</option>
+                            <?php foreach ($livros as $livro): ?>
+                                <option value="<?php echo $livro['id']; ?>"><?php echo $livro['titulo']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="data_emprestimo" class="form-label">
+                            <i class="fas fa-calendar-plus"></i> Data do Empréstimo
+                        </label>
+                        <input type="date" class="form-control" name="data_emprestimo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="data_devolucao" class="form-label">
+                            <i class="fas fa-calendar-check"></i> Data de Devolução Prevista
+                        </label>
+                        <input type="date" class="form-control" name="data_devolucao" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-save"></i> Cadastrar Empréstimo
+                    </button>
+                </form>
+            </div>
+        </div>
+        <a href="dashboard.php" class="btn btn-secondary w-100">
+            <i class="fas fa-arrow-left"></i> Voltar para o Painel
+        </a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            // Animação ao focar nos campos
-            $('.animated-input').focus(function() {
-                $(this).addClass('animate__animated animate__pulse');
-            }).blur(function() {
-                $(this).removeClass('animate__animated animate__pulse');
-            });
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const html = document.documentElement;
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 
+                          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        // Apply saved theme
+        html.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
             
-            // Validação das datas
-            $('#emprestimoForm').submit(function(e) {
-                const emprestimo = new Date($('#dataEmprestimo').val());
-                const devolucao = new Date($('#dataDevolucao').val());
-                
-                if (devolucao <= emprestimo) {
-                    alert('A data de devolução deve ser posterior à data de empréstimo!');
-                    e.preventDefault();
-                    $('#dataDevolucao').addClass('animate__animated animate__shakeX');
-                    setTimeout(() => {
-                        $('#dataDevolucao').removeClass('animate__animated animate__shakeX');
-                    }, 1000);
-                }
-            });
-            
-            // Efeito ao passar o mouse no botão de submit
-            $('#submitBtn').hover(
-                function() {
-                    $(this).addClass('animate__animated animate__pulse');
-                },
-                function() {
-                    $(this).removeClass('animate__animated animate__pulse');
-                }
-            );
-            
-            // Definir data de empréstimo como hoje por padrão
-            const today = new Date().toISOString().split('T')[0];
-            $('#dataEmprestimo').val(today);
-            
-            // Calcular data de devolução padrão (7 dias após o empréstimo)
-            $('#dataEmprestimo').change(function() {
-                const emprestimoDate = new Date($(this).val());
-                if (!isNaN(emprestimoDate.getTime())) {
-                    const devolucaoDate = new Date(emprestimoDate);
-                    devolucaoDate.setDate(devolucaoDate.getDate() + 7);
-                    $('#dataDevolucao').val(devolucaoDate.toISOString().split('T')[0]);
-                }
-            });
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
         });
+
+        function updateThemeIcon(theme) {
+            themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
     </script>
 </body>
 </html>

@@ -8,12 +8,12 @@ ini_set('display_errors', 1);
 
 // Função para registrar e exibir logs
 function debug_log($message) {
-    error_log($message); // Registra no log do servidor
-    $_SESSION['debug_log'][] = $message; // Armazena para exibir na tela
+    error_log($message);
+    $_SESSION['debug_log'][] = $message;
 }
 
 // Processamento do formulário se houver envio via POST
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
     // Limpa logs anteriores
     unset($_SESSION['debug_log']);
     
@@ -34,12 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         return filter_var($email, FILTER_VALIDATE_EMAIL);
     }
 
-    $nome = isset($_POST['nome']) ? trim($_POST['nome']) : '';
     $cpf = isset($_POST['cpf']) ? preg_replace('/[^0-9]/', '', $_POST['cpf']) : '';
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
 
     debug_log("Dados recebidos do formulário:");
-    debug_log("Nome: " . ($nome ?: '[vazio]'));
     debug_log("CPF (após limpeza): $cpf");
     debug_log("Email: $email");
 
@@ -53,85 +51,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         try {
             debug_log("Iniciando verificação no banco de dados...");
             
-            // Verifica se a conexão está ativa
             if (!$conn || $conn->connect_error) {
                 debug_log("Erro na conexão com o banco: " . ($conn->connect_error ?? 'Conexão não estabelecida'));
                 $erros[] = "Erro no sistema. Por favor, tente novamente.";
             } else {
                 debug_log("Conexão com o banco estabelecida com sucesso");
                 
-                // Verifica se a tabela existe
-                $tabela_existe = $conn->query("SELECT 1 FROM professores LIMIT 1");
-                if (!$tabela_existe) {
-                    debug_log("Tabela 'professores' não encontrada. Erro: " . $conn->error);
-                    $erros[] = "Erro no sistema. Tabela não encontrada.";
+                // Consulta principal
+                $sql = "SELECT id FROM professores WHERE cpf = ? AND email = ? AND ativo = 1";
+                debug_log("Preparando consulta: $sql");
+                
+                $stmt = $conn->prepare($sql);
+                if (!$stmt) {
+                    debug_log("Erro ao preparar consulta: " . $conn->error);
+                    $erros[] = "Erro no sistema. Por favor, tente novamente.";
                 } else {
-                    debug_log("Tabela 'professores' encontrada");
+                    debug_log("Consulta preparada com sucesso");
                     
-                    // Verifica o formato do CPF no banco
-                    $sql_check_cpf = "SELECT cpf FROM professores LIMIT 1";
-                    $result_check = $conn->query($sql_check_cpf);
-                    if ($result_check && $row = $result_check->fetch_assoc()) {
-                        debug_log("Exemplo de CPF no banco: " . $row['cpf']);
-                        debug_log("Comparando com CPF fornecido: $cpf");
-                    }
+                    $stmt->bind_param("ss", $cpf, $email);
+                    $executado = $stmt->execute();
                     
-                    // Consulta principal
-                    $sql = "SELECT id FROM professores WHERE cpf = ? AND email = ?";
-                    debug_log("Preparando consulta: $sql");
-                    
-                    $stmt = $conn->prepare($sql);
-                    if (!$stmt) {
-                        debug_log("Erro ao preparar consulta: " . $conn->error);
+                    if (!$executado) {
+                        debug_log("Erro ao executar consulta: " . $stmt->error);
                         $erros[] = "Erro no sistema. Por favor, tente novamente.";
                     } else {
-                        debug_log("Consulta preparada com sucesso");
+                        $result = $stmt->get_result();
+                        debug_log("Número de registros encontrados: " . $result->num_rows);
                         
-                        $stmt->bind_param("ss", $cpf, $email);
-                        $executado = $stmt->execute();
-                        
-                        if (!$executado) {
-                            debug_log("Erro ao executar consulta: " . $stmt->error);
-                            $erros[] = "Erro no sistema. Por favor, tente novamente.";
-                        } else {
-                            $result = $stmt->get_result();
-                            debug_log("Número de registros encontrados: " . $result->num_rows);
-                            
-                            if ($result->num_rows === 0) {
-                                debug_log("Nenhum registro encontrado para CPF e email fornecidos juntos");
-                            
-                                // Verifica separadamente se CPF existe
-                                $sql_cpf = "SELECT COUNT(*) as total FROM professores WHERE cpf = ?";
-                                $stmt_cpf = $conn->prepare($sql_cpf);
-                                $stmt_cpf->bind_param("s", $cpf);
-                                $stmt_cpf->execute();
-                                $result_cpf = $stmt_cpf->get_result();
-                                $row_cpf = $result_cpf->fetch_assoc();
-                                $cpf_exists = $row_cpf['total'] > 0;
-                                debug_log("Registros com este CPF: " . $row_cpf['total']);
-                            
-                                // Verifica separadamente se email existe
-                                $sql_email = "SELECT COUNT(*) as total FROM professores WHERE email = ?";
-                                $stmt_email = $conn->prepare($sql_email);
-                                $stmt_email->bind_param("s", $email);
-                                $stmt_email->execute();
-                                $result_email = $stmt_email->get_result();
-                                $row_email = $result_email->fetch_assoc();
-                                $email_exists = $row_email['total'] > 0;
-                                debug_log("Registros com este email: " . $row_email['total']);
-                            
-                                // Mensagens de erro mais precisas
-                                if ($cpf_exists && !$email_exists) {
-                                    $erros[] = "O CPF informado existe, mas o e-mail não corresponde.";
-                                } elseif (!$cpf_exists && $email_exists) {
-                                    $erros[] = "O e-mail informado existe, mas o CPF não corresponde.";
-                                } elseif (!$cpf_exists && !$email_exists) {
-                                    $erros[] = "CPF e e-mail não encontrados em nosso sistema.";
-                                } else {
-                                    $erros[] = "CPF e e-mail não correspondem entre si.";
-                                }
-                            }
-                            
+                        if ($result->num_rows === 0) {
+                            debug_log("Nenhum registro encontrado para CPF e email fornecidos");
+                            $erros[] = "CPF e/ou e-mail não encontrados ou não correspondem.";
                         }
                     }
                 }
@@ -143,7 +92,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (empty($erros)) {
-        // If verification successful, set session flag and user id for password reset
         $row = $result->fetch_assoc();
         $_SESSION['dados_validos'] = true;
         $_SESSION['user_id'] = $row['id'];
@@ -183,9 +131,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             if (!$conn || $conn->connect_error) {
                 $erros[] = "Erro no sistema. Por favor, tente novamente.";
             } else {
-                // Atualiza a senha no banco (hash da senha)
+                // Atualiza a senha no banco usando password_hash
                 $senha_hash = password_hash($nova_senha, PASSWORD_DEFAULT);
-                $sql_update = "UPDATE professores SET senha = ? WHERE id = ?";
+                $sql_update = "UPDATE professores SET senha = ? WHERE id = ? AND ativo = 1";
                 $stmt_update = $conn->prepare($sql_update);
                 if (!$stmt_update) {
                     $erros[] = "Erro no sistema. Por favor, tente novamente.";

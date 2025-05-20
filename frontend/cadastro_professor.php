@@ -3,730 +3,516 @@ include('../backend/cadastro_professor.php')
 ?>
 
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Professor</title>
+    <title>Cadastro de Professor - Sistema de Gestão de Biblioteca</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --primary-hover: #3a56d4;
+            --secondary-color: #f0f4f8;
+            --text-color: #212121;
+            --card-bg: #ffffff;
+            --body-bg: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --icon-color: #4361ee;
+            --danger-color: #ef233c;
+            --danger-hover: #d90429;
+            --header-bg: linear-gradient(135deg, #4361ee, #3a0ca3);
+            --stats-card-bg: #ffffff;
+            --quick-action-bg: #edf2fb;
+            --notification-badge: #f72585;
+            --success-color: #4cc9f0;
+            --warning-color: #f8961e;
+        }
+
+        [data-theme="dark"] {
+            --primary-color: #4cc9f0;
+            --primary-hover: #4895ef;
+            --secondary-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --body-bg: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --icon-color: #4cc9f0;
+            --danger-color: #f72585;
+            --danger-hover: #b5179e;
+            --header-bg: linear-gradient(135deg, #1a1a2e, #16213e);
+            --stats-card-bg: #252525;
+            --quick-action-bg: #2b2d42;
+            --notification-badge: #f72585;
+            --success-color: #4cc9f0;
+            --warning-color: #f8961e;
+        }
+
+        body {
+            background: var(--body-bg);
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            transition: all 0.5s ease;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .dashboard-header {
+            background: var(--header-bg);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dashboard-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+        }
+
+        .dashboard-header h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .card {
+            border-radius: 16px;
+            box-shadow: 0 10px 30px var(--shadow-color);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background-color: var(--card-bg);
+            border: none;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            transform: translateY(0);
+            animation: cardEntrance 0.6s ease-out both;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px var(--shadow-color);
+        }
+
+        .card-header {
+            border-radius: 16px 16px 0 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 1.5rem;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+        }
+
+        .card-header h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            color: white;
+        }
+
+        .card-body {
+            padding: 2rem;
+            background-color: var(--card-bg);
+            transition: all 0.5s ease;
+        }
+
+        .form-control {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(67, 97, 238, 0.25);
+        }
+
+        .form-label {
+            color: var(--text-color);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-danger {
+            background-color: var(--danger-color);
+            border: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: var(--danger-hover);
+            transform: translateY(-2px);
+        }
+
+        .list-group-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .list-group-item:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: none;
+            outline: none;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1) rotate(15deg);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .theme-toggle i {
+            font-size: 1.5rem;
+            transition: all 0.5s ease;
+        }
+
+        .alert {
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .alert-success {
+            background-color: rgba(76, 201, 240, 0.1);
+            color: var(--success-color);
+        }
+
+        .alert-danger {
+            background-color: rgba(239, 35, 60, 0.1);
+            color: var(--danger-color);
+        }
+
+        #voltaDashboardId {
+            margin-top: 1rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        #voltaDashboardId:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { 
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes cardEntrance {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .theme-toggle {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .card-body {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .dashboard-header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .btn {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
 </head>
-<style>
-:root {
-  /* Light Theme (default) */
-  --primary-color: #4a6fa5;
-  --primary-hover: #3a5a8a;
-  --primary-light: #e1e8f5;
-  --secondary-color: #f8f9fa;
-  --text-color: #2d3748;
-  --text-light: #718096;
-  --background-color: #f5f7fa;
-  --card-bg: #ffffff;
-  --border-color: #e2e8f0;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --alert-bg: #ffffff;
-  --success-color: #38a169;
-  --warning-color: #dd6b20;
-  --error-color: #e53e3e;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  
-  /* Gradientes */
-  --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
-  --card-gradient: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
-  
-  /* Sombras */
-  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --button-shadow: 0 2px 4px var(--shadow-color);
-}
-
-[data-theme="dark"] {
-  /* Dark Theme */
-  --primary-color: #5b8cff;
-  --primary-hover: #4a7dff;
-  --primary-light: #2d3748;
-  --secondary-color: #1a202c;
-  --text-color: #e2e8f0;
-  --text-light: #a0aec0;
-  --background-color: #121212;
-  --card-bg: #1e1e1e;
-  --border-color: #2d3748;
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  --alert-bg: #2d3748;
-  
-  /* Gradientes escuros */
-  --bg-gradient: linear-gradient(135deg, #121212 0%, #1a202c 100%);
-  --card-gradient: linear-gradient(to bottom, #1e1e1e 0%, #2d3748 100%);
-}
-
-/* Estilos Base */
-body {
-  background: var(--bg-gradient);
-  color: var(--text-color);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  line-height: 1.6;
-  transition: var(--transition);
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-/* Tipografia */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text-color);
-  margin-top: 0;
-  font-weight: 600;
-}
-
-p {
-  color: var(--text-light);
-  margin-bottom: 1rem;
-}
-
-/* Container Principal */
-.container {
-  max-width: 1200px;
-  padding: 2rem 1rem;
-}
-
-/* Cards */
-.card {
-  background: var(--card-gradient);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  box-shadow: var(--card-shadow);
-  transition: var(--transition);
-  margin-bottom: 2rem;
-  overflow: hidden;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-.card-header {
-  background-color: var(--primary-color);
-  color: white;
-  border-bottom: 1px solid var(--border-color);
-  padding: 1.25rem 1.5rem;
-  font-weight: 600;
-}
-
-.card-body {
-  padding: 1.5rem;
-}
-
-/* Formulário */
-.form-label {
-  font-weight: 500;
-  color: var(--text-color);
-  margin-bottom: 0.5rem;
-}
-
-.form-control {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  color: var(--text-color);
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  transition: var(--transition);
-}
-
-.form-control:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.2);
-  outline: none;
-}
-
-/* Botões */
-.btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: var(--transition);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.btn-primary:hover {
-  background-color: var(--primary-hover);
-  border-color: var(--primary-hover);
-  transform: translateY(-2px);
-}
-
-.btn-danger {
-  background-color: var(--error-color);
-  border-color: var(--error-color);
-}
-
-.btn-danger:hover {
-  background-color: #c53030;
-  border-color: #c53030;
-  transform: translateY(-2px);
-}
-
-/* Lista de Professores */
-.list-group-item {
-  background-color: var(--card-bg);
-  border-color: var(--border-color);
-  color: var(--text-color);
-  padding: 1rem 1.5rem;
-  transition: var(--transition);
-}
-
-.list-group-item:hover {
-  background-color: var(--primary-light);
-}
-
-/* Botão Voltar */
-#voltaDashboardId {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.8rem 2rem;
-  border-radius: 10px;
-  border: none;
-  transition: var(--transition);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  text-decoration: none;
-  margin-top: 1rem;
-}
-
-#voltaDashboardId:hover {
-  background-color: var(--primary-hover);
-  transform: translateY(-2px);
-}
-
-/* Toggle de Tema */
-.theme-toggle {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 1000;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 20px var(--shadow-color);
-  transition: var(--transition);
-  border: none;
-  outline: none;
-}
-
-.theme-toggle:hover {
-  transform: scale(1.1) rotate(15deg);
-  background-color: var(--primary-hover);
-}
-
-.theme-toggle i {
-  font-size: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-/* Animação de Tema */
-.theme-animation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-gradient);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.theme-animation.active {
-  opacity: 1;
-}
-
-.sun-moon-container {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  perspective: 1000px;
-}
-
-.sun-moon {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-}
-
-.sun, .moon {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-
-.moon {
-  transform: rotateY(180deg);
-}
-
-/* Estrelas */
-.stars {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: -1;
-  transition: opacity 0.5s ease;
-  opacity: 0;
-}
-
-.star {
-  position: absolute;
-  background-color: white;
-  border-radius: 50%;
-  animation: twinkle var(--duration, 5s) infinite ease-in-out;
-}
-
-@keyframes twinkle {
-  0%, 100% { opacity: 0.2; }
-  50% { opacity: 1; }
-}
-
-/* Responsividade */
-@media (max-width: 992px) {
-  .container {
-    padding: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    margin-bottom: 1.5rem;
-  }
-  
-  .card-header, .card-body {
-    padding: 1rem;
-  }
-  
-  .btn {
-    padding: 0.65rem 1.25rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    padding: 1rem;
-  }
-  
-  .card-header h4 {
-    font-size: 1.25rem;
-  }
-  
-  .form-control {
-    padding: 0.65rem 0.9rem;
-  }
-  
-  .theme-toggle {
-    width: 50px;
-    height: 50px;
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  .theme-toggle i {
-    font-size: 1.25rem;
-  }
-}
-
-/* Animações */
-.animate__animated {
-  --animate-duration: 0.5s;
-}
-
-/* Efeito de foco para inputs */
-.input-group {
-  position: relative;
-  margin-bottom: 1.5rem;
-}
-
-.input-group label {
-  position: absolute;
-  top: -10px;
-  left: 10px;
-  background: var(--card-bg);
-  padding: 0 5px;
-  font-size: 0.85rem;
-  color: var(--primary-color);
-}
-
-/* Ícones nos inputs */
-.input-icon {
-  position: relative;
-}
-
-.input-icon i {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  color: var(--text-light);
-}
-
-.input-icon input {
-  padding-left: 40px;
-}
-
-/* Mensagens de feedback */
-.alert {
-  padding: 0.75rem 1.25rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.alert-success {
-  background-color: rgba(56, 161, 105, 0.1);
-  border-left: 4px solid var(--success-color);
-  color: var(--success-color);
-}
-
-.alert-danger {
-  background-color: rgba(229, 62, 62, 0.1);
-  border-left: 4px solid var(--error-color);
-  color: var(--error-color);
-}
-
-/* Tooltip personalizado */
-.tooltip-custom {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.tooltip-custom .tooltip-text {
-  visibility: hidden;
-  width: 200px;
-  background-color: var(--card-bg);
-  color: var(--text-color);
-  text-align: center;
-  border-radius: 6px;
-  padding: 0.5rem;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--border-color);
-}
-
-.tooltip-custom:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
 
-<!-- Theme Animation Overlay -->
-<div class="theme-animation" id="themeAnimation">
-    <div class="sun-moon-container">
-        <div class="sun-moon" id="sunMoon">
-            <div class="sun animate__animated animate__fadeIn"><i class="fas fa-sun"></i></div>
-            <div class="moon animate__animated animate__fadeIn"><i class="fas fa-moon"></i></div>
+    <div class="dashboard-header text-center">
+        <div class="container">
+            <h1 class="mb-2">
+                <i class="fas fa-chalkboard-teacher"></i> Cadastro de Professor
+            </h1>
         </div>
     </div>
-</div>
 
-<!-- Stars for Dark Theme -->
-<div class="stars" id="stars"></div>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h4>
+                    <i class="fas fa-user-plus"></i> Novo Professor
+                </h4>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="">
+                    <div class="mb-4">
+                        <label for="nome" class="form-label">
+                            <i class="fas fa-user"></i> Nome Completo
+                        </label>
+                        <input type="text" class="form-control" name="nome" id="nome" required 
+                               placeholder="Digite o nome completo">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="email" class="form-label">
+                            <i class="fas fa-envelope"></i> Email
+                        </label>
+                        <input type="email" class="form-control" name="email" id="email" required 
+                               placeholder="exemplo@escola.com">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="cpf" class="form-label">
+                            <i class="fas fa-id-card"></i> CPF
+                        </label>
+                        <input type="text" class="form-control" name="cpf" id="cpf" required 
+                               placeholder="000.000.000-00">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="senha" class="form-label">
+                            <i class="fas fa-lock"></i> Senha
+                        </label>
+                        <input type="password" class="form-control" name="senha" id="senha" required 
+                               placeholder="Digite a senha">
+                        <div class="form-text text-muted">
+                            <i class="fas fa-info-circle"></i> A senha deve ter no mínimo 8 caracteres
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-save"></i> Cadastrar Professor
+                    </button>
+                </form>
 
-<!-- Theme Toggle Button -->
-<button class="theme-toggle" id="themeToggle">
-    <i class="fas fa-moon" id="themeIcon"></i>
-</button>
+                <div class="mt-5">
+                    <h5 class="mb-3">
+                        <i class="fas fa-list"></i> Professores Cadastrados
+                    </h5>
+                    
+                    <?php if(isset($_GET['success'])): ?>
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle"></i>
+                            <?php echo htmlspecialchars($_GET['success']); ?>
+                        </div>
+                    <?php endif; ?>
+                    
+                    <?php if(isset($_GET['error'])): ?>
+                        <div class="alert alert-danger">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <?php echo htmlspecialchars($_GET['error']); ?>
+                        </div>
+                    <?php endif; ?>
+                    
+                    <div class="list-group">
+                        <?php
+                        require '../includes/conn.php';
 
-<div class="container mt-3 mt-md-5">
-    <div class="card animate__animated animate__fadeInUp">
-        <div class="card-header">
-            <h4><i class="fas fa-chalkboard-teacher me-2"></i>Cadastro de Professor</h4>
-        </div>
-        <div class="card-body">
-            <form method="POST" action="">
-                <div class="mb-4 input-icon">
-                    <label for="nome" class="form-label">Nome Completo</label>
-                    <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite o nome completo" required>
-                </div>
-                
-                <div class="mb-4 input-icon">
-                    <label for="email" class="form-label">Email</label>
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="exemplo@escola.com" required>
-                </div>
-                
-                <div class="mb-4 input-icon">
-                    <label for="cpf" class="form-label">CPF</label>
-                    <i class="fas fa-id-card"></i>
-                    <input type="text" class="form-control" name="cpf" id="cpf" placeholder="000.000.000-00" required>
-                </div>
-                
-                <div class="mb-4 input-icon">
-                    <label for="senha" class="form-label">Senha</label>
-                    <i class="fas fa-lock"></i>
-                    <input type="password" class="form-control" name="senha" id="senha" placeholder="Crie uma senha segura" required>
-                    <small class="text-muted d-block mt-1">Mínimo de 8 caracteres</small>
-                </div>
-                
-                <button type="submit" class="btn btn-primary w-100">
-                    <i class="fas fa-user-plus me-2"></i>Cadastrar Professor
-                </button>
-            </form>
+                        $sql = "SELECT id, nome, email FROM professores ORDER BY nome ASC";
+                        $result = $conn->query($sql);
 
-            <div class="mt-5">
-                <h5 class="d-flex align-items-center">
-                    <i class="fas fa-list-ul me-2"></i>Professores Cadastrados
-                </h5>
-                
-                <?php if(isset($_GET['success'])): ?>
-                <div class="alert alert-success">
-                    <i class="fas fa-check-circle me-2"></i>
-                    <?php echo htmlspecialchars($_GET['success']); ?>
-                </div>
-                <?php endif; ?>
-                
-                <?php if(isset($_GET['error'])): ?>
-                <div class="alert alert-danger">
-                    <i class="fas fa-exclamation-circle me-2"></i>
-                    <?php echo htmlspecialchars($_GET['error']); ?>
-                </div>
-                <?php endif; ?>
-                
-                <div class="list-group mt-3">
-                    <?php
-                    require '../includes/conn.php';
-
-                    $sql = "SELECT id, nome, email FROM professores ORDER BY nome ASC";
-                    $result = $conn->query($sql);
-
-                    if ($result->num_rows > 0) {
-                        while($row = $result->fetch_assoc()) {
-                            echo '<div class="list-group-item animate__animated animate__fadeIn">';
-                            echo '<div class="d-flex justify-content-between align-items-center">';
-                            echo '<div>';
-                            echo '<strong>' . htmlspecialchars($row['nome']) . '</strong>';
-                            echo '<div class="text-muted small">' . htmlspecialchars($row['email']) . '</div>';
-                            echo '</div>';
-                            echo '<form method="POST" class="d-inline-block" onsubmit="return confirm(\'Tem certeza que deseja deletar este professor?\')">';
-                            echo '<input type="hidden" name="professor_id" value="' . $row['id'] . '">';
-                            echo '<button type="submit" name="delete" class="btn btn-danger btn-sm">';
-                            echo '<i class="fas fa-trash-alt me-1"></i>Deletar';
-                            echo '</button>';
-                            echo '</form>';
-                            echo '</div>';
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()) {
+                                echo '<div class="list-group-item">';
+                                echo '<div class="d-flex justify-content-between align-items-center">';
+                                echo '<div>';
+                                echo '<strong>' . htmlspecialchars($row['nome']) . '</strong>';
+                                echo '<div class="text-muted small">' . htmlspecialchars($row['email']) . '</div>';
+                                echo '</div>';
+                                echo '<form method="POST" class="d-inline-block" onsubmit="return confirm(\'Tem certeza que deseja deletar este professor?\')">';
+                                echo '<input type="hidden" name="professor_id" value="' . $row['id'] . '">';
+                                echo '<button type="submit" name="delete" class="btn btn-danger btn-sm">';
+                                echo '<i class="fas fa-trash-alt"></i> Deletar';
+                                echo '</button>';
+                                echo '</form>';
+                                echo '</div>';
+                                echo '</div>';
+                            }
+                        } else {
+                            echo '<div class="list-group-item text-center text-muted">';
+                            echo '<i class="fas fa-user-slash fa-2x mb-2"></i>';
+                            echo '<p class="mb-0">Nenhum professor cadastrado</p>';
                             echo '</div>';
                         }
-                    } else {
-                        echo '<div class="list-group-item text-center text-muted py-4">';
-                        echo '<i class="fas fa-user-slash fa-2x mb-2"></i>';
-                        echo '<p class="mb-0">Nenhum professor cadastrado</p>';
-                        echo '</div>';
-                    }
 
-                    $conn->close();
-                    ?>
+                        $conn->close();
+                        ?>
+                    </div>
                 </div>
-                
-                <a href="dashboard.php" class="btn btn-primary w-100 mt-4" id="voltaDashboardId">
-                    <i class="fas fa-arrow-left me-2"></i>Voltar para o Painel
-                </a>
             </div>
         </div>
-    </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // =============================================
-    // GERENCIAMENTO DE TEMA
-    // =============================================
-    
-    const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = document.getElementById('themeIcon');
-    const html = document.documentElement;
-    const themeAnimation = document.getElementById('themeAnimation');
-    const sunMoon = document.getElementById('sunMoon');
-    const starsContainer = document.getElementById('stars');
-    
-    // Verificar tema preferido
-    const getPreferredTheme = () => {
-        const storedTheme = localStorage.getItem('theme');
-        if (storedTheme) return storedTheme;
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    };
-    
-    // Aplicar tema
-    const setTheme = (theme) => {
-        html.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-        updateThemeIcon(theme);
-        updateStarsVisibility(theme);
-    };
-    
-    // Atualizar ícone do tema
-    const updateThemeIcon = (theme) => {
-        themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-        themeIcon.style.transform = theme === 'dark' ? 'rotate(360deg)' : 'rotate(0deg)';
-    };
-    
-    // Mostrar/ocultar estrelas
-    const updateStarsVisibility = (theme) => {
-        starsContainer.style.opacity = theme === 'dark' ? '1' : '0';
-    };
-    
-    // Animação de transição de tema
-    const showThemeAnimation = (newTheme) => {
-        themeAnimation.classList.add('active');
-        sunMoon.style.transform = newTheme === 'dark' ? 'rotateY(180deg)' : 'rotateY(0deg)';
-        
-        setTimeout(() => {
-            themeAnimation.classList.remove('active');
-        }, 1000);
-    };
-    
-    // Criar estrelas
-    const createStars = () => {
-        const starCount = 150;
-        const fragment = document.createDocumentFragment();
-        
-        for (let i = 0; i < starCount; i++) {
-            const star = document.createElement('div');
-            star.className = 'star';
-            
-            // Posição e tamanho aleatórios
-            const size = Math.random() * 3;
-            const duration = Math.random() * 5 + 3;
-            
-            star.style.cssText = `
-                width: ${size}px;
-                height: ${size}px;
-                left: ${Math.random() * 100}%;
-                top: ${Math.random() * 100}%;
-                animation-duration: ${duration}s;
-                animation-delay: ${Math.random() * 2}s;
-                opacity: ${Math.random() * 0.7 + 0.3};
-            `;
-            
-            fragment.appendChild(star);
-        }
-        
-        starsContainer.appendChild(fragment);
-    };
-    
-    // Inicializar tema
-    const initTheme = () => {
-        const preferredTheme = getPreferredTheme();
-        setTheme(preferredTheme);
-        createStars();
-        
+        <a href="dashboard.php" class="btn btn-primary w-100" id="voltaDashboardId">
+            <i class="fas fa-arrow-left"></i> Voltar para o Painel
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const html = document.documentElement;
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 
+                          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        // Apply saved theme
+        html.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
         themeToggle.addEventListener('click', () => {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
             
-            showThemeAnimation(newTheme);
-            setTimeout(() => setTheme(newTheme), 500);
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
         });
-    };
-    
-    initTheme();
-    
-    // =============================================
-    // MELHORIAS DE USABILIDADE
-    // =============================================
-    
-    // Máscara para CPF
-    const cpfInput = document.getElementById('cpf');
-    if (cpfInput) {
+
+        function updateThemeIcon(theme) {
+            themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+
+        // CPF Mask
+        const cpfInput = document.getElementById('cpf');
         cpfInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
             
-            if (value.length > 3) {
-                value = value.replace(/^(\d{3})/, '$1.');
-            }
-            if (value.length > 7) {
-                value = value.replace(/^(\d{3})\.(\d{3})/, '$1.$2.');
-            }
-            if (value.length > 11) {
-                value = value.replace(/^(\d{3})\.(\d{3})\.(\d{3})/, '$1.$2.$3-');
-            }
+            if (value.length > 3) value = value.replace(/^(\d{3})/, '$1.');
+            if (value.length > 7) value = value.replace(/^(\d{3})\.(\d{3})/, '$1.$2.');
+            if (value.length > 11) value = value.replace(/^(\d{3})\.(\d{3})\.(\d{3})/, '$1.$2.$3-');
             
             e.target.value = value.substring(0, 14);
         });
-    }
-    
-    // Validação de senha
-    const senhaInput = document.getElementById('senha');
-    if (senhaInput) {
+
+        // Password Validation
+        const senhaInput = document.getElementById('senha');
         senhaInput.addEventListener('input', function() {
-            if (this.value.length < 8 && this.value.length > 0) {
+            if (this.value.length < 8) {
                 this.setCustomValidity('A senha deve ter pelo menos 8 caracteres');
             } else {
                 this.setCustomValidity('');
             }
         });
-    }
-    
-    // Efeito hover nos cards
-    const cards = document.querySelectorAll('.card, .list-group-item');
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.classList.add('animate__animated', 'animate__pulse');
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            card.classList.remove('animate__animated', 'animate__pulse');
-        });
-    });
-    
-    // Feedback visual ao enviar formulário
-    const forms = document.querySelectorAll('form');
-    forms.forEach(form => {
-        form.addEventListener('submit', function() {
+
+        // Form Submission
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(e) {
             const submitButton = this.querySelector('button[type="submit"]');
-            if (submitButton) {
-                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Processando...';
-                submitButton.disabled = true;
-            }
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processando...';
+            submitButton.disabled = true;
         });
-    });
-});
-</script>
+    </script>
 </body>
 </html>
