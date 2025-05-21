@@ -31,13 +31,14 @@ include('../backend/login.php')
             --notification-badge: #f72585;
             --success-color: #4cc9f0;
             --warning-color: #f8961e;
+            --placeholder-color: #a0a0a0;
         }
 
         [data-theme="dark"] {
             --primary-color: #4cc9f0;
             --primary-hover: #4895ef;
             --secondary-color: #121212;
-            --text-color: #e0e0e0;
+            --text-color: #fcf7f7;
             --card-bg: #1e1e1e;
             --body-bg: linear-gradient(135deg, #0f0f0f, #1a1a2e);
             --shadow-color: rgba(0, 0, 0, 0.3);
@@ -50,6 +51,7 @@ include('../backend/login.php')
             --notification-badge: #f72585;
             --success-color: #4cc9f0;
             --warning-color: #f8961e;
+            --placeholder-color: #777777;
         }
 
         body {
@@ -164,11 +166,13 @@ include('../backend/login.php')
             padding: 0.8rem 1rem;
             border-radius: 8px;
             transition: all 0.3s ease;
+            border: 1px solid;
         }
 
         .form-control:focus {
             border-color: var(--primary-color);
             box-shadow: 0 0 0 0.2rem rgba(67, 97, 238, 0.25);
+            border: 1px solid white;
         }
 
         .form-label {
@@ -178,6 +182,11 @@ include('../backend/login.php')
             display: flex;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: var(--placeholder-color);
         }
 
         .btn {

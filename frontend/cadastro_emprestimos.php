@@ -107,6 +107,7 @@ include('../backend/cadastro_emprestimos.php')
             padding: 0.8rem 1rem;
             border-radius: 8px;
             transition: all 0.3s ease;
+            border: 1px solid;
         }
 
         .form-control:focus {

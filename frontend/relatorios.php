@@ -16,60 +16,47 @@ include('../backend/relatorios.php');
     <link rel="stylesheet" href="_css/relatorios.css">
     <style>
         :root {
-    --primary-color: #4e73df;
-    --secondary-color: #1cc88a;
-    --accent-color: #f6c23e;
-    --dark-color: #5a5c69;
-    --light-color: #f8f9fc;
-    /* Theme variables */
-    --primary-color: #00796b;
-    --primary-hover: #00695c;
-    --secondary-color: #f0f4f8;
-    --text-color: #212121;
-    --text-muted: #6c757d;
-    --card-bg: #ffffff;
-    --body-bg: linear-gradient(135deg, #f0f4f8, #e0e7ff);
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --icon-color: #00796b;
-    --danger-color: #dc3545;
-    --danger-hover: #c82333;
-    --header-bg: #00796b;
-    --stats-card-bg: #ffffff;
-    --quick-action-bg: #e3f2fd;
-    --notification-badge: #ff5722;
-    /* Element specific */
-    --table-bg: #ffffff;
-    --table-border: #e3e6f0;
-    --table-text: #212121;
-    --input-bg: #ffffff;
-    --input-border: #d1d3e2;
-    --input-text: #212121;
+    --primary-color: #4361ee; /* Azul primário */
+    --primary-hover: #3a56d4; /* Azul escuro para hover */
+    --secondary-color: #f0f4f8; /* Cor de fundo suave */
+    --text-color: #212121; /* Cor do texto */
+    --text-muted: #6c757d; /* Cor para texto desativado */
+    --card-bg: #ffffff; /* Cor de fundo dos cards */
+    --body-bg: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Fundo suave */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Cor de sombra leve */
+    --icon-color: #4361ee; /* Cor dos ícones */
+    --danger-color: #ef233c; /* Cor para erros */
+    --danger-hover: #d90429; /* Cor de hover para erros */
+    --header-bg: linear-gradient(135deg, #4361ee, #3a0ca3); /* Cabeçalho com gradiente de azul */
+    --stats-card-bg: #ffffff; /* Fundo de cards de estatísticas */
+    --quick-action-bg: #edf2fb; /* Cor de fundo de ações rápidas */
+    --notification-badge: #f72585; /* Cor de badge de notificação */
+    --success-color: #4cc9f0; /* Cor para sucesso */
+    --warning-color: #f8961e; /* Cor de alerta */
+    --placeholder-color: #a0a0a0; /* Cor dos placeholders */
 }
 
 [data-theme="dark"] {
-    --primary-color: #4db6ac;
-    --primary-hover: #26a69a;
-    --secondary-color: #121212;
-    --text-color: #f0f0f0;
-    --text-muted: #a0a0a0;
-    --card-bg: #1e1e1e;
-    --body-bg: linear-gradient(135deg, #121212, #0d0d1a);
-    --shadow-color: rgba(0, 0, 0, 0.3);
-    --icon-color: #4db6ac;
-    --danger-color: #f44336;
-    --danger-hover: #d32f2f;
-    --header-bg: #004d40;
-    --stats-card-bg: #1e1e1e;
-    --quick-action-bg: #263238;
-    --notification-badge: #ff7043;
-    /* Element specific - dark */
-    --table-bg: #252525;
-    --table-border: #444;
-    --table-text: #f0f0f0;
-    --input-bg: #252525;
-    --input-border: #444;
-    --input-text: #f0f0f0;
+    --primary-color: #4cc9f0; /* Azul mais claro para o tema escuro */
+    --primary-hover: #4895ef; /* Azul escuro para hover no tema escuro */
+    --secondary-color: #121212; /* Cor de fundo escura */
+    --text-color: #fcf7f7; /* Texto claro para o tema escuro */
+    --text-muted: #a0a0a0; /* Texto desativado claro */
+    --card-bg: #1e1e1e; /* Cor de fundo dos cards no tema escuro */
+    --body-bg: linear-gradient(135deg, #0f0f0f, #1a1a2e); /* Fundo escuro com gradiente */
+    --shadow-color: rgba(0, 0, 0, 0.3); /* Sombra mais forte para o tema escuro */
+    --icon-color: #4cc9f0; /* Ícones com a cor azul mais clara */
+    --danger-color: #f72585; /* Cor de erro em tema escuro */
+    --danger-hover: #b5179e; /* Hover de erro em tema escuro */
+    --header-bg: linear-gradient(135deg, #1a1a2e, #16213e); /* Cabeçalho escuro com gradiente */
+    --stats-card-bg: #252525; /* Fundo de cards de estatísticas no tema escuro */
+    --quick-action-bg: #2b2d42; /* Ações rápidas com fundo escuro */
+    --notification-badge: #f72585; /* Badge de notificação em tema escuro */
+    --success-color: #4cc9f0; /* Cor de sucesso no tema escuro */
+    --warning-color: #f8961e; /* Cor de alerta no tema escuro */
+    --placeholder-color: #777777; /* Cor de placeholder no tema escuro */
 }
+
 
 /* Apply theme to all elements */
 body {
