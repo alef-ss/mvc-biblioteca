@@ -755,6 +755,11 @@ include('../backend/dashboard.php');
                                     <i class="fas fa-history icon"></i> HISTÓRICO
                                 </a>
                             </li>
+                            <li class="list-group-item" style="animation-delay: 1.0s">
+                                <a href="suporte.php">
+                                    <i class="fas fa-hands-helping icon"></i> SUPORTE
+                                </a>
+                            </li>
                             <li class="list-group-item" style="animation-delay: 1.1s">
                                 <a href="../backend/logout.php" class="btn btn-danger">
                                     <i class="fas fa-sign-out-alt icon"></i> SAIR
