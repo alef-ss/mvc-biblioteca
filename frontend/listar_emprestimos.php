@@ -1,11 +1,12 @@
 <?php
 include('../backend/lista_emprestimos.php');
-echo "Sessão: " . $_SESSION['professor_id'] ."\n";
+echo "Sessão: " . $_SESSION['professor_id'] . "\n";
 var_dump($professor_id);
 ?>
 
 <!DOCTYPE html>
 <html lang="pt" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -199,6 +200,7 @@ var_dump($professor_id);
         }
     </style>
 </head>
+
 <body>
     <!-- Theme Toggle Button -->
     <button class="theme-toggle" id="themeToggle">
@@ -239,12 +241,19 @@ var_dump($professor_id);
                                 <td><?= $row['data_emprestimo']; ?></td>
                                 <td><?= $row['data_devolucao']; ?></td>
                                 <td>
-                                    <a href="?devolver_id=<?= $row['id']; ?>" class="btn btn-danger btn-sm">
-                                        <i class="fas fa-undo-alt"></i> Devolver
-                                    </a>
+                                    <?php if ($row['devolvido'] === 'Sim') { ?>
+                                        <button class="btn btn-success btn-sm" disabled>
+                                            <i class="fas fa-check"></i> Devolvido
+                                        </button>
+                                    <?php } else { ?>
+                                        <a href="?devolver_id=<?= $row['id']; ?>" class="btn btn-danger btn-sm">
+                                            <i class="fas fa-undo-alt"></i> Devolver
+                                        </a>
+                                    <?php } ?>
                                 </td>
                             </tr>
                         <?php } ?>
+
                     </tbody>
                 </table>
                 <a href="dashboard.php" class="btn btn-primary w-100 mt-3">
@@ -262,8 +271,8 @@ var_dump($professor_id);
         const html = document.documentElement;
 
         // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme') || 
-                          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const savedTheme = localStorage.getItem('theme') ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
         // Apply saved theme
         html.setAttribute('data-theme', savedTheme);
@@ -272,7 +281,7 @@ var_dump($professor_id);
         themeToggle.addEventListener('click', () => {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
+
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
             updateThemeIcon(newTheme);
@@ -283,4 +292,5 @@ var_dump($professor_id);
         }
     </script>
 </body>
+
 </html>
