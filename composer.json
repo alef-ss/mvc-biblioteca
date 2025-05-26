@@ -1,0 +1,25 @@
+{
+    "name": "biblioteca/sistema-biblioteca",
+    "description": "Sistema de gerenciamento de biblioteca escolar",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "phpoffice/phpspreadsheet": "^1.29",
+        "dompdf/dompdf": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Biblioteca\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Seu Nome",
+            "email": "seu.email@exemplo.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+} 

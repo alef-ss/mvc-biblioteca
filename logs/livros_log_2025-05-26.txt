@@ -1,0 +1,241 @@
+2025-05-26 12:41:08 - Processando livro - Detalhes: Array
+(
+    [id] => I-fUDAAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => I-fUDAAAQBAJ
+            [etag] => cmc6LerLMNc
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/I-fUDAAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Dom Casmurro
+                    [authors] => Array
+                        (
+                            [0] => Machado de Assis
+                            [1] => Edições Câmara
+                        )
+
+                    [publisher] => Edições Câmara
+                    [publishedDate] => 2016-08-12
+                    [description] => <p>Romance publicado pela primeira vez em 1899, <i>Dom Casmurro</i>, novo título da série Prazer de Ler da Edições Câmara, apresenta um olhar crítico sobre a sociedade brasileira do século XIX e  integra a trilogia realista de Machado de Assis ao lado de <i>Memórias Póstumas de Brás Cubas</i> e <i>Quincas Borba</i>.</p><p></p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8540205416
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788540205413
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 194
+                    [printedPageCount] => 194
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Fiction / Romance / General
+                        )
+
+                    [averageRating] => 5
+                    [ratingsCount] => 1
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 2.6.8.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE727Pw80VaxkDiiHPRCaEIAkI2QCD4j8t2_ZiofcvafvkLPBU8U74ys2-h_naHt1U4XYtJPbjCkGhT8BYzRT8QGfzvDBpCCDLX7tZ5MjWlBH811LZqjcQeZ0HxJysjjGLiddcR8-&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72k5CmcnbQoEyH_LE529hsT_MENOpqJtmnaLEy_ut2OUeUNryvIsmaTPcMFRXl7EoLKcRBGTRPstJ3-RyEc_Qg52gWVs2QZvqY4HecpKRvG_EkGm4SblI6MCPsBIrK5gwvwFN74&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE73SHiG6XWhhrZyiT71C7EpXETi_QxfyCGuO026y9kmRsO077arh6n4eqlQrCKiBLkTRD5_gCR8YBCytFgHESZ8CeA6VQurVT4SaO5-5qMUQ_lJMRNvdDSb9JeRjEnENgtowfnsM&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70ZNrfWlk8U7B9yqgPa3Hq8BjwKLiUwvZglJvP-6WnqSYOQcYZ0WdRPabDhE15VLmQ7UrpbRxe2niqyaXPSgl_RAnMx_GYmPRwcDiLB6yCvnLoQwH4o9lQNuPpbweW2oyHRKzyU&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71AdB8Sik3dEN1hg42Xo4dW9UaXqO-WelfINfdkVWWZjxNzrS1vp2dqKFH-J6G3ItPUyjmsqCgAHec6heGjawwp2nDwvaNLxxCp7kCAYCQjiMzWN0KRQSsM9HvvnQNm0cXxlTpA&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70RWhUrOU8dlO76Br23-1zXKny5jorxXHMDy_0Uci6ScOQqMp8MsaKkuh4dVyMNjfZYV554xPrW2b_3PRQPwa1ztTlbop4ZEusjUH2B2Wr7jYMB0NvNTpWX31QItrKQSTup7t6B&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=I-fUDAAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=I-fUDAAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=I-fUDAAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 11
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 0
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 0
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=I-fUDAAAQBAJ&rdid=book-I-fUDAAAQBAJ&rdot=1&source=gbs_api
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => ALL_PAGES
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Dom_Casmurro-sample-epub.acsm?id=I-fUDAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Dom_Casmurro-sample-pdf.acsm?id=I-fUDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=I-fUDAAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-26 12:41:09 - Processando livro - Detalhes: Array
+(
+    [id] => faQxSgAACAAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => faQxSgAACAAJ
+            [etag] => vVi7qfAOLj0
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/faQxSgAACAAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Dom Casmurro
+                    [subtitle] => Complete Portuguese Text
+                    [authors] => Array
+                        (
+                            [0] => Machado de Assis
+                        )
+
+                    [publisher] => Editora Martin Claret
+                    [publishedDate] => 2010-05-27
+                    [description] => Dom Casmurro é o romance mais famoso de Machado de Assis, o mestre da literatura brasileira no século XIX. Este livro é uma versão completa desse romance fantástico, que conta as desventuras de Bentinho e Capitu.//Dom Casmurro is the most well known novel by Machado de Assis, the master of Brazilian literature in the 19th century. This is the complete Portuguese text of the fantastic novel, telling the misadventures of Bentinho and Capitu.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 1452892369
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9781452892368
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 
+                        )
+
+                    [pageCount] => 232
+                    [printedPageCount] => 232
+                    [dimensions] => Array
+                        (
+                            [height] => 22.90 cm
+                            [width] => 15.20 cm
+                            [thickness] => 1.30 cm
+                        )
+
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Fiction / Classics
+                            [1] => Fiction / Historical / General
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => preview-1.0.0
+                    [language] => pt
+                    [previewLink] => http://books.google.com.br/books?id=faQxSgAACAAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=faQxSgAACAAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=faQxSgAACAAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => NO_PAGES
+                    [embeddable] => 
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=faQxSgAACAAJ&hl=&source=gbs_api
+                    [accessViewStatus] => NONE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
