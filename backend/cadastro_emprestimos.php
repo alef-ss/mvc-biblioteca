@@ -1,5 +1,6 @@
 <?php
 session_start();
+$professor_id = $_SESSION['professor_id'] ?? null;
 
 if (!isset($_SESSION['professor_id'])) {
     header("Location: ../frontend/login.php");
@@ -85,10 +86,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             try {
                 // Registra o empréstimo
-                $sql = "INSERT INTO emprestimos (aluno_id, livro_id, data_emprestimo, data_devolucao, devolvido) 
-                        VALUES (?, ?, ?, ?, 0)";
+                $sql = "INSERT INTO emprestimos (aluno_id, livro_id, data_emprestimo, data_devolucao, devolvido, professor_id) 
+                        VALUES (?, ?, ?, ?, 0, ?)";
                 $stmt_emprestimo = $conn->prepare($sql);
-                $stmt_emprestimo->bind_param("iiss", $aluno_id, $livro_id, $data_emprestimo, $data_devolucao);
+                $stmt_emprestimo->bind_param("iiisi", $aluno_id, $livro_id, $data_emprestimo, $data_devolucao, $professor_id);
                 
                 if ($stmt_emprestimo->execute()) {
                     // Atualiza o estoque do livro
