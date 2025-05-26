@@ -706,7 +706,7 @@ include('../backend/dashboard.php');
             <div class="col-lg-4">
                 <div class="card" style="animation-delay: 0.1s">
                     <div class="card-header">
-                        <h2><i class="fas fa-user"></i> Bem-vindo, <?php echo $_SESSION['nome']; ?>!</h2>
+                        <h2><i class="fas fa-user"></i> Bem-vindo, <?php echo $_SESSION['professor_nome']; ?>!</h2>
                     </div>
                     <div class="card-body">
                         <ul class="list-group">
