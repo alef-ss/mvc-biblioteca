@@ -1,5 +1,7 @@
 <?php
-include('../backend/lista_emprestimos.php')
+include('../backend/lista_emprestimos.php');
+echo "Sessão: " . $_SESSION['professor_id'] ."\n";
+var_dump($professor_id);
 ?>
 
 <!DOCTYPE html>
