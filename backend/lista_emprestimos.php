@@ -13,6 +13,7 @@ $professor_id = $_SESSION['professor_id'];
 if (isset($_GET['devolver_id'])) {
     $emprestimo_id = $_GET['devolver_id'];
 
+    // Buscar o livro_id para atualizar a quantidade depois
     $sql = "SELECT livro_id FROM emprestimos WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $emprestimo_id);
@@ -21,14 +22,18 @@ if (isset($_GET['devolver_id'])) {
     $stmt->fetch();
     $stmt->close();
 
-    $sql = "DELETE FROM emprestimos WHERE id = ?";
+    // Atualizar o empréstimo para marcar como devolvido
+    $sql = "UPDATE emprestimos SET devolvido = 'Sim', data_devolucao = CURDATE() WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $emprestimo_id);
+
     if ($stmt->execute()) {
+        // Atualiza a quantidade do livro, pois foi devolvido
         $sql = "UPDATE livros SET quantidade = quantidade + 1 WHERE id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("i", $livro_id);
         $stmt->execute();
+
         echo "<div class='alert alert-success'>Livro devolvido com sucesso!</div>";
     } else {
         echo "<div class='alert alert-danger'>Erro ao devolver livro.</div>";
@@ -36,8 +41,9 @@ if (isset($_GET['devolver_id'])) {
     $stmt->close();
 }
 
+
 // Buscar empréstimos do professor
-$sql = "SELECT e.id, l.titulo, a.nome, e.data_emprestimo, e.data_devolucao 
+$sql = "SELECT e.id, l.titulo, a.nome, e.data_emprestimo, e.data_devolucao, e.devolvido
         FROM emprestimos e 
         JOIN livros l ON e.livro_id = l.id
         JOIN alunos a ON e.aluno_id = a.id
