@@ -1,0 +1,2 @@
+ALTER TABLE livros
+ADD COLUMN preview_link VARCHAR(700) DEFAULT NULL;

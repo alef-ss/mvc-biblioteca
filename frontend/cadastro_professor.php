@@ -147,7 +147,7 @@ include('../backend/cadastro_professor.php')
 
         .form-control {
             background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--primary-color);
             color: var(--text-color);
             padding: 0.8rem 1rem;
             border-radius: 8px;
@@ -158,6 +158,9 @@ include('../backend/cadastro_professor.php')
         .form-control:focus {
             border-color: var(--primary-color);
             box-shadow: 0 0 0 0.2rem rgba(67, 97, 238, 0.25);
+        }
+        .form-control::placeholder {
+            color: var(--primary-color);
         }
 
         .form-label {
@@ -385,7 +388,7 @@ include('../backend/cadastro_professor.php')
                         </label>
                         <input type="password" class="form-control" name="senha" id="senha" required 
                                placeholder="Digite a senha">
-                        <div class="form-text text-muted">
+                        <div class="form-text" style="color: var(--primary-color);">
                             <i class="fas fa-info-circle"></i> A senha deve ter no mínimo 8 caracteres
                         </div>
                     </div>
@@ -396,7 +399,7 @@ include('../backend/cadastro_professor.php')
                 </form>
 
                 <div class="mt-5">
-                    <h5 class="mb-3">
+                    <h5 class="mb-3" style="color: var(--text-color);">
                         <i class="fas fa-list"></i> Professores Cadastrados
                     </h5>
                     
@@ -427,7 +430,7 @@ include('../backend/cadastro_professor.php')
                                 echo '<div class="d-flex justify-content-between align-items-center">';
                                 echo '<div>';
                                 echo '<strong>' . htmlspecialchars($row['nome']) . '</strong>';
-                                echo '<div class="text-muted small">' . htmlspecialchars($row['email']) . '</div>';
+                                echo '<div class="small"  style="color: var(--text-color);">' . htmlspecialchars($row['email']) . '</div>';
                                 echo '</div>';
                                 echo '<form method="POST" class="d-inline-block" onsubmit="return confirm(\'Tem certeza que deseja deletar este professor?\')">';
                                 echo '<input type="hidden" name="professor_id" value="' . $row['id'] . '">';

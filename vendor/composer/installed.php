@@ -1,19 +1,19 @@
 <?php return array(
     'root' => array(
-        'name' => 'biblioteca/sistema-biblioteca',
+        'name' => 'biblioteca/mvc-biblioteca',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b02025582c86456225eab2e02e1c2ceb5f2e8e72',
+        'reference' => '56d70655e02c7f17aeeec089d485e79e266a2f5e',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'biblioteca/sistema-biblioteca' => array(
+        'biblioteca/mvc-biblioteca' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'b02025582c86456225eab2e02e1c2ceb5f2e8e72',
+            'reference' => '56d70655e02c7f17aeeec089d485e79e266a2f5e',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

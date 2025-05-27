@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26/05/2025 às 13:55
+-- Tempo de geração: 27/05/2025 às 16:34
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `test`
+-- Banco de dados: `mvc_biblioteca`
 --
 
 -- --------------------------------------------------------
@@ -101,7 +101,7 @@ CREATE TABLE `configuracoes` (
 --
 
 INSERT INTO `configuracoes` (`id`, `dias_emprestimo`, `max_livros_aluno`, `max_renovacoes`, `multa_dia_atraso`, `backup_automatico`, `email_notificacao`, `tema_padrao`, `data_atualizacao`) VALUES
-(1, 7, 10, 5, 0.00, 1, 'alefsouzasobrinho51@gmail.com', 'light', '2025-05-26 11:28:25');
+(1, 7, 10, 5, 0.00, 1, 'alefsouzasobrinho51@gmail.com', 'light', '2025-05-27 13:55:13');
 
 -- --------------------------------------------------------
 
@@ -124,18 +124,16 @@ CREATE TABLE `emprestimos` (
 --
 
 INSERT INTO `emprestimos` (`id`, `aluno_id`, `livro_id`, `data_emprestimo`, `data_devolucao`, `devolvido`, `professor_id`) VALUES
-(1, 1, 2, '2025-01-15', '2025-02-15', '0', 1),
-(2, 3, 1, '2025-02-20', '2025-03-20', '0', 2),
-(3, 1, 2, '2025-03-06', '2025-04-06', '0', NULL),
-(4, 1, 3, '2025-04-24', '2025-05-09', '', 3),
-(5, 5, 5, '2025-03-15', '2025-04-15', '0', 3),
-(6, 5, 19, '2025-05-16', '2025-05-14', '0', NULL),
-(7, 2, 17, '2025-05-16', '2025-05-06', '0', NULL),
-(8, 8, 16, '2025-05-16', '2025-05-28', '0', NULL),
-(9, 2, 5, '2025-05-23', '2025-05-30', '0', NULL),
-(10, 6, 13, '2025-05-29', '2025-06-05', '0', NULL),
-(11, 9, 15, '2025-05-27', '2025-06-03', '0', NULL),
-(12, 1, 4, '2025-05-26', '2025-06-02', '0', NULL);
+(15, 3, 16, '0000-00-00', '2025-05-27', 'Sim', 4),
+(16, 1, 16, '0000-00-00', '2025-05-27', 'Nao', 4),
+(17, 8, 15, '0000-00-00', '2025-05-27', 'Sim', 4),
+(18, 9, 15, '0000-00-00', '2025-05-27', '1', 4),
+(19, 9, 13, '0000-00-00', '2025-05-27', '0', 4),
+(20, 4, 13, '0000-00-00', '2025-05-27', '0', 4),
+(21, 7, 5, '0000-00-00', '2025-05-27', '0', 4),
+(22, 6, 19, '0000-00-00', '2025-05-27', '0', 4),
+(23, 4, 19, '0000-00-00', '2025-06-03', '0', 4),
+(24, 7, 19, '0000-00-00', '2025-06-03', '0', 4);
 
 -- --------------------------------------------------------
 
@@ -163,12 +161,12 @@ CREATE TABLE `livros` (
 INSERT INTO `livros` (`id`, `titulo`, `autor`, `isbn`, `capa_url`, `descricao`, `categoria`, `ano_publicacao`, `genero`, `quantidade`) VALUES
 (3, 'Os Heróis da Fé De acordo com Hebreus 11', 'Domenico Barbera', '1507196539', NULL, 'SE assumimos a missão de escrever a respeito do décimo primeiro capítulo da carta aos Hebreus, não fizemos com o objetivo de fornecer ao leitor outro comentário, embora certas coisas vos escrevemos, além de não estar em comentários públicos, poderiam ser consideradas como tal, especialmente pelo conteúdo diferente que possui; mas apenas para enfatizar o valor da fé e sua eficácia, especialmente no exercício da vida cotidiana. Embora a respeito da fé, muitos livros foram escritos ao longo dos anos, acreditamos que é apropriado realizar uma pesquisa bastante completa sobre os homens e mulheres listados no capítulo 11 da Epístola aos Hebreus com o único propósito de descobrir os vários momentos e várias situações que caracterizaram a vida dessas pessoas. Sem dúvida, a maneira pela qual lidamos com este trabalho, embora nos envolveu muito, especialmente em termos do texto bíblico, acreditamos que vale a pena fazê-lo, pelo inevitável benefício que trará, a fim de compreender e avaliar os personagens tratados , especialmente no que diz respeito à sua fé.<br>', NULL, '', '', 0),
 (4, 'Jesus', 'Charles Swindoll', '857325906X', NULL, 'Filho de Deus, o Salvador: o maior herói. Passados mais de 2.000 anos, a figura de Jesus continua em evidência. Se não bastassem os bilhões de seguidores enfileirados nos variados ramos do cristianismo que reconhecem sua santidade, pesquisadores nos diversos campos das ciências sociais continuam a discutir o verdadeiro papel de Jesus. Enquanto alguns exaltam sua liderança popular, há os que simplesmente o consideram uma farsa. Após desfilar alguns dos principais personagens da galeria de heróis bíblicos, Charles Swindoll encerra a série Heróis da fé com o ser mais importante da história. Distante de controvérsias, Swindoll ressalta a figura do Salvador da humanidade e sua história singular. Um carpinteiro, vindo das regiões mais desvalorizadas e esquecidas da Palestina, revela o amor de Deus e sua paixão pelos mais pobres, cidadãos de segunda classe alçados à condição de cidadãos do Reino de Deus. Acompanhe Charles Swindoll na inspiradora trajetória de Jesus de Nazaré e compreenda por que sua vida e seus ensinamentos são determinantes para quem deseja conhecer a Deus.', NULL, '', '', 0),
-(5, 'One Piece - vol. 16', 'Eiichiro Oda', '6555121912', 'http://books.google.com/books/publisher/content?id=SmbjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73cXT_lf7dG2iIRaU_pH5t99MxgZo8ES65IfvqtJsq5THhRl7pF8SHCtsYUzDSzQCrZ6Aln3HbnPnJtc9Kpbk0DvIYSM4xF7K53byZhx0gWDSbjv26PjOgMpYsRBcoTKwCIrx5h&source=gbs_api', 'No Reino de Drum, Luffy e Sanji enfrentam uma perigosa escalada ao Castelo de Drum para levar Nami a uma famosa médica e seu peculiar assistente. Mas Wapol, o antigo rei do local, pretende retomar o poder e passar por cima de quem estiver em seu caminho!', 'Comics & Graphic Novels / Manga / General', '2019', 'Comics & Graphic Novels / Manga / General', 0),
-(13, 'One Piece - vol. 8', 'Eiichiro Oda', '8542621301', 'http://books.google.com/books/publisher/content?id=sxCeDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE716ViXRVR9Qs5fmts_1VDrA-4qAhh3CGvSx5kpdIkzdNE_O3wwXD8g5CX7Izc2JgSMOwHi2GBJPBemmMoBLHLPuugyC2yaGypESMnLrcQ_hKFbfPhAlOC6s3RYOSIldEEA3Giac&source=gbs_api', 'O gás tóxico do MH5 tem como principal vítima Gin, único a sofrer todo o ataque sem uma máscara. Luffy parte para cima de Don Krieg com tudo, que volta a disparar dardos contra ele. Sem se importar, o garoto enfim se aproxima de Don Krieg, que usa um manto de espinhos para se proteger. Mesmo assim, Luffy não se importa e desfere um poderoso soco no oponente, atingindo os espinhos no processo. Zeff manda Sanji prestar atenção na luta de Luffy e perceber sua determinação.', 'Comics & Graphic Novels / Manga / General', '2019', 'Comics & Graphic Novels / Manga / General', 0),
-(15, 'One Piece - vol. 9', 'Eiichiro Oda', '854262131X', 'http://books.google.com/books/publisher/content?id=E_idDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71HECbk52anMmXB7aVWhUBOH1vceK0bhTHRDfefdFPMpQHWwbfJGVXB6RhKW5rZT_MlfL--5ubjm7uAiKHBeSkQhQ6sahgshhZGka1NoRaA3LMfKE1y_LGWsuUAkb2fcAQfNyBa&source=gbs_api', 'Luffy e sua tripulação devem enfrentar Arlong e seus piratas homens-peixe, especializados em usar táticas de intimidação para extorquir inocentes moradores da vila. E algo bombástico sobre o passado de Nami vem à tona!', 'Comics & Graphic Novels / Manga / General', '2019', 'Comics & Graphic Novels / Manga / General', 0),
-(16, 'Dom Casmurro', 'Machado de Assis, Edições Câmara', '8540205416', 'http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71rqzsY-wOOgyBlXGUkuRKUzKphOCdnu2oLUsjXYg5QvLYUXrgPH8BSdmWKT6zRwLn5kP12krhI7LUm-2eAF_3SCvDCAH8Yxp12cs9m6Zc5A4gE0Hc62yRsfQJS-ITbl98hO5s6&source=gbs_api', '<p>Romance publicado pela primeira vez em 1899, <i>Dom Casmurro</i>, novo título da série Prazer de Ler da Edições Câmara, apresenta um olhar crítico sobre a sociedade brasileira do século XIX e  integra a trilogia realista de Machado de Assis ao lado de <i>Memórias Póstumas de Brás Cubas</i> e <i>Quincas Borba</i>.</p><p></p>', 'Fiction / Romance / General', '2016', 'Fiction / Romance / General', 7),
-(19, 'O Otelo brasileiro de Machado de Assis', 'Helen Caldwell', '8574800937', 'http://books.google.com/books/content?id=Q6kETzYptRMC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73coqBVKsPvi34o-B07drI77tYTxPNLR2egKVNUGTTm5MHvM2cwrh__dAWwrUJcy4khpK-XxCWm3T8FzAb8lrh-ALooAI-N09jkpAs7chNus4OiyZHWo8jSaRqia7-klhCsYOsG&source=gbs_api', 'Por muito tempo, prevaleceu nas leituras críticas de Dom Casmurro o tom malicioso sobre a personalidade de Capitu. Helena Caldwell analisa a obra-prima de Machado de Assis afastando-se dessas interpretações machistas e revelando o nexo que o escritor estabelece com Otelo, de Shakespeare. Publicado em 1960, este clássico dos estudos machadianos só foi traduzido para o português mais de quarenta anos depois, chegando agora ao leitor interessado num dos maiores artistas que o Brasil já teve.', 'Literary Criticism / Books & Reading', '2002', 'Literary Criticism / Books & Reading', 0),
-(26, 'Dom Casmurro', 'Machado de Assis', '1452892369', 'sem_capa.png', 'Dom Casmurro é o romance mais famoso de Machado de Assis, o mestre da literatura brasileira no século XIX. Este livro é uma versão completa desse romance fantástico, que conta as desventuras de Bentinho e Capitu.//Dom Casmurro is the most well known novel by Machado de Assis, the master of Brazilian literature in the 19th century. This is the complete Portuguese text of the fantastic novel, telling the misadventures of Bentinho and Capitu.', 'Fiction / Classics', '2010', 'Fiction / Classics', 1);
+(5, 'One Piece - vol. 16', 'Eiichiro Oda', '6555121912', 'http://books.google.com/books/publisher/content?id=SmbjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73cXT_lf7dG2iIRaU_pH5t99MxgZo8ES65IfvqtJsq5THhRl7pF8SHCtsYUzDSzQCrZ6Aln3HbnPnJtc9Kpbk0DvIYSM4xF7K53byZhx0gWDSbjv26PjOgMpYsRBcoTKwCIrx5h&source=gbs_api', 'No Reino de Drum, Luffy e Sanji enfrentam uma perigosa escalada ao Castelo de Drum para levar Nami a uma famosa médica e seu peculiar assistente. Mas Wapol, o antigo rei do local, pretende retomar o poder e passar por cima de quem estiver em seu caminho!', 'Comics & Graphic Novels / Manga / General', '2019', 'Comics & Graphic Novels / Manga / General', 2),
+(13, 'One Piece - vol. 8', 'Eiichiro Oda', '8542621301', 'http://books.google.com/books/publisher/content?id=sxCeDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE716ViXRVR9Qs5fmts_1VDrA-4qAhh3CGvSx5kpdIkzdNE_O3wwXD8g5CX7Izc2JgSMOwHi2GBJPBemmMoBLHLPuugyC2yaGypESMnLrcQ_hKFbfPhAlOC6s3RYOSIldEEA3Giac&source=gbs_api', 'O gás tóxico do MH5 tem como principal vítima Gin, único a sofrer todo o ataque sem uma máscara. Luffy parte para cima de Don Krieg com tudo, que volta a disparar dardos contra ele. Sem se importar, o garoto enfim se aproxima de Don Krieg, que usa um manto de espinhos para se proteger. Mesmo assim, Luffy não se importa e desfere um poderoso soco no oponente, atingindo os espinhos no processo. Zeff manda Sanji prestar atenção na luta de Luffy e perceber sua determinação.', 'Comics & Graphic Novels / Manga / General', '2019', 'Comics & Graphic Novels / Manga / General', 2),
+(15, 'One Piece - vol. 9', 'Eiichiro Oda', '854262131X', 'http://books.google.com/books/publisher/content?id=E_idDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71HECbk52anMmXB7aVWhUBOH1vceK0bhTHRDfefdFPMpQHWwbfJGVXB6RhKW5rZT_MlfL--5ubjm7uAiKHBeSkQhQ6sahgshhZGka1NoRaA3LMfKE1y_LGWsuUAkb2fcAQfNyBa&source=gbs_api', 'Luffy e sua tripulação devem enfrentar Arlong e seus piratas homens-peixe, especializados em usar táticas de intimidação para extorquir inocentes moradores da vila. E algo bombástico sobre o passado de Nami vem à tona!', 'Comics & Graphic Novels / Manga / General', '2019', 'Comics & Graphic Novels / Manga / General', 3),
+(16, 'Dom Casmurro', 'Machado de Assis, Edições Câmara', '8540205416', 'http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71rqzsY-wOOgyBlXGUkuRKUzKphOCdnu2oLUsjXYg5QvLYUXrgPH8BSdmWKT6zRwLn5kP12krhI7LUm-2eAF_3SCvDCAH8Yxp12cs9m6Zc5A4gE0Hc62yRsfQJS-ITbl98hO5s6&source=gbs_api', '<p>Romance publicado pela primeira vez em 1899, <i>Dom Casmurro</i>, novo título da série Prazer de Ler da Edições Câmara, apresenta um olhar crítico sobre a sociedade brasileira do século XIX e  integra a trilogia realista de Machado de Assis ao lado de <i>Memórias Póstumas de Brás Cubas</i> e <i>Quincas Borba</i>.</p><p></p>', 'Fiction / Romance / General', '2016', 'Fiction / Romance / General', 10),
+(19, 'O Otelo brasileiro de Machado de Assis', 'Helen Caldwell', '8574800937', 'http://books.google.com/books/content?id=Q6kETzYptRMC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73coqBVKsPvi34o-B07drI77tYTxPNLR2egKVNUGTTm5MHvM2cwrh__dAWwrUJcy4khpK-XxCWm3T8FzAb8lrh-ALooAI-N09jkpAs7chNus4OiyZHWo8jSaRqia7-klhCsYOsG&source=gbs_api', 'Por muito tempo, prevaleceu nas leituras críticas de Dom Casmurro o tom malicioso sobre a personalidade de Capitu. Helena Caldwell analisa a obra-prima de Machado de Assis afastando-se dessas interpretações machistas e revelando o nexo que o escritor estabelece com Otelo, de Shakespeare. Publicado em 1960, este clássico dos estudos machadianos só foi traduzido para o português mais de quarenta anos depois, chegando agora ao leitor interessado num dos maiores artistas que o Brasil já teve.', 'Literary Criticism / Books & Reading', '2002', 'Literary Criticism / Books & Reading', 4),
+(26, 'Dom Casmurro', 'Machado de Assis', '1452892369', 'sem_capa.png', 'Dom Casmurro é o romance mais famoso de Machado de Assis, o mestre da literatura brasileira no século XIX. Este livro é uma versão completa desse romance fantástico, que conta as desventuras de Bentinho e Capitu.//Dom Casmurro is the most well known novel by Machado de Assis, the master of Brazilian literature in the 19th century. This is the complete Portuguese text of the fantastic novel, telling the misadventures of Bentinho and Capitu.', 'Fiction / Classics', '2010', 'Fiction / Classics', 6);
 
 -- --------------------------------------------------------
 
@@ -193,8 +191,8 @@ CREATE TABLE `professores` (
 --
 
 INSERT INTO `professores` (`id`, `nome`, `email`, `cpf`, `senha`, `data_cadastro`, `ultimo_login`, `ativo`, `admin`) VALUES
-(4, 'alefteste1', 'alefteste1@gmail.com', '72316609082', '$2y$10$oRFIkdbW5Nsjvb4RxW5Niu8d9tkPXtTvTngc7viEf.V8KSrb7sX/.', '2025-04-26 18:36:20', '2025-05-26 08:53:03', 0, 0),
-(5, 'Alef Admin', 'alefsouzasobrinho51@gmail.com', '70319891089', '$2a$10$LbMCM.FD51ejQ79mBy8aV.RII9ZSxWiU25IeKL2ZWe6lGoFdWDCpq', '2025-05-26 07:43:41', '2025-05-26 08:52:48', 1, 1);
+(4, 'alefteste1', 'alefteste1@gmail.com', '72316609082', '$2y$10$oRFIkdbW5Nsjvb4RxW5Niu8d9tkPXtTvTngc7viEf.V8KSrb7sX/.', '2025-04-26 18:36:20', '2025-05-27 11:18:28', 1, 0),
+(5, 'Alef Admin', 'alefsouzasobrinho51@gmail.com', '70319891089', '$2a$10$LbMCM.FD51ejQ79mBy8aV.RII9ZSxWiU25IeKL2ZWe6lGoFdWDCpq', '2025-05-26 07:43:41', '2025-05-27 10:19:44', 1, 1);
 
 --
 -- Índices para tabelas despejadas
@@ -283,7 +281,7 @@ ALTER TABLE `configuracoes`
 -- AUTO_INCREMENT de tabela `emprestimos`
 --
 ALTER TABLE `emprestimos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT de tabela `livros`

@@ -234,26 +234,31 @@ var_dump($professor_id);
                         </tr>
                     </thead>
                     <tbody>
-                        <?php while ($row = $result->fetch_assoc()) { ?>
+                        <?php if ($result->num_rows > 0): ?>
+                            <?php while ($row = $result->fetch_assoc()) { ?>
+                                <tr>
+                                    <td><?= htmlspecialchars($row['titulo']); ?></td>
+                                    <td><?= htmlspecialchars($row['nome']); ?></td>
+                                    <td><?= htmlspecialchars($row['data_emprestimo']); ?></td>
+                                    <td><?= htmlspecialchars($row['data_devolucao']); ?></td>
+                                    <td>
+                                        <?php if ($row['devolvido'] === 'Sim') { ?>
+                                            <button class="btn btn-success btn-sm" disabled>
+                                                <i class="fas fa-check"></i> Devolvido
+                                            </button>
+                                        <?php } else { ?>
+                                            <a href="?devolver_id=<?= (int)$row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Confirma devolução do livro?');">
+                                                <i class="fas fa-undo-alt"></i> Devolver
+                                            </a>
+                                        <?php } ?>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        <?php else: ?>
                             <tr>
-                                <td><?= $row['titulo']; ?></td>
-                                <td><?= $row['nome']; ?></td>
-                                <td><?= $row['data_emprestimo']; ?></td>
-                                <td><?= $row['data_devolucao']; ?></td>
-                                <td>
-                                    <?php if ($row['devolvido'] === 'Sim') { ?>
-                                        <button class="btn btn-success btn-sm" disabled>
-                                            <i class="fas fa-check"></i> Devolvido
-                                        </button>
-                                    <?php } else { ?>
-                                        <a href="?devolver_id=<?= $row['id']; ?>" class="btn btn-danger btn-sm">
-                                            <i class="fas fa-undo-alt"></i> Devolver
-                                        </a>
-                                    <?php } ?>
-                                </td>
+                                <td colspan="5" class="text-center">Nenhum empréstimo encontrado.</td>
                             </tr>
-                        <?php } ?>
-
+                        <?php endif; ?>
                     </tbody>
                 </table>
                 <a href="dashboard.php" class="btn btn-primary w-100 mt-3">

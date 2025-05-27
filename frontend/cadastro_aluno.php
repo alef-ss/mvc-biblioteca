@@ -159,6 +159,9 @@ include('../backend/cadastro_aluno.php')
             border-color: var(--primary-color);
             box-shadow: 0 0 0 0.2rem rgba(67, 97, 238, 0.25);
         }
+        .form-control::placeholder {
+            color: var(--primary-color);
+        }
 
         .form-label {
             color: var(--text-color);
@@ -385,7 +388,7 @@ include('../backend/cadastro_aluno.php')
                         </label>
                         <input type="password" class="form-control" name="senha" id="senha" required 
                                placeholder="Digite a senha">
-                        <div class="form-text text-muted">
+                        <div class="form-text"  style="color: var(--text-color);">
                             <i class="fas fa-info-circle"></i> A senha deve ter no mínimo 6 caracteres
                         </div>
                     </div>
