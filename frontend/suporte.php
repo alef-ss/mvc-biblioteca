@@ -1,17 +1,13 @@
-<?php
-include('../backend/cadastro_aluno.php')
-?>
-
 <!DOCTYPE html>
 <html lang="pt" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Aluno - Sistema de Gestão de Biblioteca</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suporte - Sistema de Gestão de Biblioteca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <style>
         :root {
             --primary-color: #4361ee;
@@ -101,6 +97,10 @@ include('../backend/cadastro_aluno.php')
             overflow: hidden;
             transform: translateY(0);
             animation: cardEntrance 0.6s ease-out both;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
         }
 
         .card:hover {
@@ -147,12 +147,11 @@ include('../backend/cadastro_aluno.php')
 
         .form-control {
             background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--primary-color);
             color: var(--text-color);
             padding: 0.8rem 1rem;
             border-radius: 8px;
             transition: all 0.3s ease;
-            border: 1px solid;
         }
 
         .form-control:focus {
@@ -193,18 +192,39 @@ include('../backend/cadastro_aluno.php')
             transform: translateY(-2px);
         }
 
-        .btn-secondary {
-            background-color: var(--secondary-color);
+        .btn-danger {
+            background-color: var(--danger-color);
             border: none;
-            color: var(--text-color);
+            color: white;
         }
 
-        .btn-secondary:hover {
-            background-color: var(--border-color);
+        .btn-danger:hover {
+            background-color: var(--danger-hover);
             transform: translateY(-2px);
         }
 
-        /* Theme Toggle */
+        @keyframes fadeInDown {
+            from { 
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes cardEntrance {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
         .theme-toggle {
             position: fixed;
             bottom: 30px;
@@ -234,103 +254,6 @@ include('../backend/cadastro_aluno.php')
             font-size: 1.5rem;
             transition: all 0.5s ease;
         }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes fadeInDown {
-            from { 
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to { 
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes cardEntrance {
-            from {
-                opacity: 0;
-                transform: translateY(30px) scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .dashboard-header h1 {
-                font-size: 1.8rem;
-            }
-            
-            .theme-toggle {
-                bottom: 20px;
-                right: 20px;
-                width: 50px;
-                height: 50px;
-            }
-            
-            .card-body {
-                padding: 1.5rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .dashboard-header h1 {
-                font-size: 1.5rem;
-            }
-            
-            .btn {
-                width: 100%;
-                margin-bottom: 0.5rem;
-            }
-        }
-
-        .alert {
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .alert-success {
-            background-color: rgba(76, 201, 240, 0.1);
-            color: var(--success-color);
-        }
-
-        .alert-danger {
-            background-color: rgba(239, 35, 60, 0.1);
-            color: var(--danger-color);
-        }
-
-        .d-flex {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-        }
-
-        #voltaDashboardId {
-            margin-top: 1rem;
-            background: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        #voltaDashboardId:hover {
-            background: var(--primary-hover);
-            transform: translateY(-2px);
-        }
     </style>
 </head>
 <body>
@@ -342,7 +265,7 @@ include('../backend/cadastro_aluno.php')
     <div class="dashboard-header text-center">
         <div class="container">
             <h1 class="mb-2">
-                <i class="fas fa-user-graduate"></i> Cadastro de Aluno
+                <i class="fas fa-headset"></i> Suporte
             </h1>
         </div>
     </div>
@@ -350,62 +273,46 @@ include('../backend/cadastro_aluno.php')
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <div class="d-flex">
-                    <h4>
-                        <i class="fas fa-user-plus"></i> Novo Aluno
-                    </h4>
-                    <a href="lista_alunos.php" class="btn btn-secondary">
-                        <i class="fas fa-list"></i> Ver Lista de Alunos
-                    </a>
-                </div>
+                <h4>
+                    <i class="fas fa-envelope"></i> Formulário de Suporte
+                </h4>
             </div>
             <div class="card-body">
-                <form method="POST" action="">
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">
+                <form action="https://formsubmit.co/alef.ss@proton.me" method="POST">
+                    <input type="hidden" name="_captcha" value="false" />
+                    <div class="mb-4">
+                        <label for="name" class="form-label">
                             <i class="fas fa-user"></i> Nome Completo
                         </label>
-                        <input type="text" class="form-control" name="nome" id="nome" required 
-                               placeholder="Digite o nome completo">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome completo" required />
                     </div>
-                    <div class="mb-3">
-                        <label for="serie" class="form-label">
-                            <i class="fas fa-graduation-cap"></i> Série
-                        </label>
-                        <input type="text" class="form-control" name="serie" id="serie" required 
-                               placeholder="Digite a série">
-                    </div>
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <label for="email" class="form-label">
                             <i class="fas fa-envelope"></i> Email
                         </label>
-                        <input type="email" class="form-control" name="email" id="email" required 
-                               placeholder="Digite o email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com" required />
                     </div>
-                    <div class="mb-3">
-                        <label for="senha" class="form-label">
-                            <i class="fas fa-lock"></i> Senha
+                    <div class="mb-4">
+                        <label for="subject" class="form-label">
+                            <i class="fas fa-tag"></i> Assunto
                         </label>
-                        <input type="password" class="form-control" name="senha" id="senha" required 
-                               placeholder="Digite a senha">
-                        <div class="form-text"  style="color: var(--text-color);">
-                            <i class="fas fa-info-circle"></i> A senha deve ter no mínimo 6 caracteres
-                        </div>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto da mensagem" required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="form-label">
+                            <i class="fas fa-comment"></i> Mensagem
+                        </label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">
-                        <i class="fas fa-save"></i> Cadastrar Aluno
+                        <i class="fas fa-paper-plane"></i> Enviar
                     </button>
                 </form>
             </div>
         </div>
-
-        <a href="dashboard.php" class="btn btn-primary w-100" id="voltaDashboardId">
-            <i class="fas fa-arrow-left"></i> Voltar para o Painel
-        </a>
     </div>
     <div id="footer"></div>
-    <link rel="stylesheet" href="_css/footer.css">
-
+    <link rel="stylesheet" href="./frontend/_css/footer.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         fetch('../includes/footer.html')
@@ -438,24 +345,7 @@ include('../backend/cadastro_aluno.php')
         function updateThemeIcon(theme) {
             themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
         }
-
-        // Form validation and feedback
-        const form = document.querySelector('form');
-        const senhaInput = document.getElementById('senha');
-
-        senhaInput.addEventListener('input', function() {
-            if (this.value.length < 6) {
-                this.setCustomValidity('A senha deve ter no mínimo 6 caracteres');
-            } else {
-                this.setCustomValidity('');
-            }
-        });
-
-        form.addEventListener('submit', function(e) {
-            const submitButton = this.querySelector('button[type="submit"]');
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processando...';
-            submitButton.disabled = true;
-        });
     </script>
+    <link rel="stylesheet" href="_css/footer.css">
 </body>
 </html>

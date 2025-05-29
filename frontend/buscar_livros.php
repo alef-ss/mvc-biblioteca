@@ -546,9 +546,15 @@ include('../backend/buscar_livros.php')
             </div>
         </div>
     </div>
-
+    <div id="footer"></div>
+    <link rel="stylesheet" href="_css/footer.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        fetch('../includes/footer.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('footer').innerHTML = data;
+        });
         // Theme Toggle Functionality
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');

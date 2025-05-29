@@ -534,8 +534,15 @@ table td {
             <i class="fas fa-arrow-left"></i> Voltar para o Painel
         </a>
     </div>
+    <div id="footer"></div>
+    <link rel="stylesheet" href="_css/footer.css">
 
     <script>
+        fetch('../includes/footer.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('footer').innerHTML = data;
+        });
         // Função para gerar cores dinâmicas para o gráfico
         function generateColors(count) {
             const baseColors = [

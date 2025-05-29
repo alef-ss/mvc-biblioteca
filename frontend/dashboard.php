@@ -755,6 +755,11 @@ include('../backend/dashboard.php');
                                     <i class="fas fa-history icon"></i> HISTÓRICO
                                 </a>
                             </li>
+                            <li class="list-group-item" style="animation-delay: 1.0s">
+                                <a href="suporte.php">
+                                    <i class="fas fa-tools icon"></i> SUPORTE
+                                </a>
+                            </li>
                             <li class="list-group-item" style="animation-delay: 1.1s">
                                 <a href="../backend/logout.php" class="btn btn-danger">
                                     <i class="fas fa-sign-out-alt icon"></i> SAIR
@@ -818,10 +823,17 @@ include('../backend/dashboard.php');
             </div>
         </div>
     </div>
+    <div class="" id="footer"></div>
+    <link rel="stylesheet" href="_css/footer.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <script>
+        fetch('../includes/footer.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('footer').innerHTML = data;
+        });
         // Theme Toggle Functionality
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
