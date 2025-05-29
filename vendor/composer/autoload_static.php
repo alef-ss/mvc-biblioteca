@@ -32,6 +32,7 @@ class ComposerStaticInit978a81772bcd5d0ce2aa27fd8b057d34
         ),
         'M' => 
         array (
+            'MyCLabs\\Enum\\' => 13,
             'Matrix\\' => 7,
             'Masterminds\\' => 12,
         ),
@@ -47,7 +48,6 @@ class ComposerStaticInit978a81772bcd5d0ce2aa27fd8b057d34
         ),
         'C' => 
         array (
-            'Composer\\Pcre\\' => 14,
             'Complex\\' => 8,
         ),
         'B' => 
@@ -90,6 +90,10 @@ class ComposerStaticInit978a81772bcd5d0ce2aa27fd8b057d34
         array (
             0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
         ),
+        'MyCLabs\\Enum\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/myclabs/php-enum/src',
+        ),
         'Matrix\\' => 
         array (
             0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
@@ -113,10 +117,6 @@ class ComposerStaticInit978a81772bcd5d0ce2aa27fd8b057d34
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
-        ),
-        'Composer\\Pcre\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/composer/pcre/src',
         ),
         'Complex\\' => 
         array (
@@ -762,6 +762,7 @@ class ComposerStaticInit978a81772bcd5d0ce2aa27fd8b057d34
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Stringable' => __DIR__ . '/..' . '/myclabs/php-enum/stubs/Stringable.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
         'TheSeer\\Tokenizer\\NamespaceUriException' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUriException.php',

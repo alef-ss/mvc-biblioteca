@@ -33,13 +33,13 @@ function gerarDadosEmprestimos($conn, $data_inicial, $data_final, $status) {
 
     switch ($status) {
         case 'pendente':
-            $where[] = "e.devolvido = 0 AND e.data_devolucao >= CURRENT_DATE()";
+            $where[] = "e.devolvido = 'Nao' AND e.data_devolucao >= CURRENT_DATE()";
             break;
         case 'devolvido':
-            $where[] = "e.devolvido = 1";
+            $where[] = "e.devolvido = 'Sim'";
             break;
         case 'atrasado':
-            $where[] = "e.devolvido = 0 AND e.data_devolucao < CURRENT_DATE()";
+            $where[] = "e.devolvido = 'Nao' AND e.data_devolucao < CURRENT_DATE()";
             break;
     }
 
@@ -117,7 +117,7 @@ function exportarExcel($dados, $tipo) {
             
             $row = 2;
             while ($item = $dados->fetch_assoc()) {
-                $status = $item['devolvido'] ? 'Devolvido' : 
+                $status = ($item['devolvido'] === 'Sim' || $item['devolvido'] === '1') ? 'Devolvido' : 
                     (strtotime($item['data_devolucao']) < time() ? 'Atrasado' : 'Pendente');
                 
                 $sheet->setCellValue('A'.$row, date('d/m/Y', strtotime($item['data_emprestimo'])));
@@ -197,11 +197,17 @@ function exportarExcel($dados, $tipo) {
 
     // Criar arquivo Excel
     $writer = new Xlsx($spreadsheet);
+    if (headers_sent($file, $line)) {
+        die("ERRO: Headers já enviados em $file na linha $line");
+    }
     
     // Headers para download
     header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-    header('Content-Disposition: attachment;filename="relatorio_' . $tipo . '_' . date('Y-m-d') . '.xlsx"');
+    header('Content-Disposition: attachment; filename="relatorio_' . $tipo . '_' . date('Y-m-d') . '.xlsx"');
     header('Cache-Control: max-age=0');
+
+    ob_clean();
+    flush();
     
     $writer->save('php://output');
     exit;
