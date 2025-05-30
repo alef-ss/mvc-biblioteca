@@ -14,6 +14,7 @@ $sql = "
         COUNT(emprestimos.id) AS total_emprestimos
     FROM emprestimos
     JOIN livros ON emprestimos.livro_id = livros.id
+    WHERE emprestimos.devolvido = '0'
     GROUP BY emprestimos.livro_id
     ORDER BY total_emprestimos DESC
 ";
