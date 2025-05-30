@@ -280,7 +280,7 @@ include('../backend/cadastro_emprestimos.php');
                                     <label for="data_emprestimo" class="form-label">
                                         <i class="far fa-calendar-alt me-2"></i>Data de Empréstimo
                                     </label>
-                                    <input type="date" class="form-control" name="data_emprestimo" required id="dataEmprestimo">
+                                    <input type="date" class="form-control" name="data_emprestimo" required id="dataEmprestimo" value="<?= date('Y-m-d') ?>">
                                 </div>
 
                                 <div class="col-md-6 mb-3">
