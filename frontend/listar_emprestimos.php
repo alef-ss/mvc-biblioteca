@@ -64,6 +64,10 @@ var_dump($professor_id);
             padding: 0;
         }
 
+        .primary-color {
+            background-color: var(--primary-color);
+        }
+
         .dashboard-header {
             background: var(--header-bg);
             color: white;
@@ -202,11 +206,29 @@ var_dump($professor_id);
 </head>
 
 <body>
+    <!-- Modal de Confirmação -->
+    <div class="modal fade" id="modalConfirmar" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header primary-color text-white">
+                    <h5 class="modal-title" id="modalLabel">Confirmar devolução</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza que deseja marcar este empréstimo como devolvido?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <a id="btnConfirmarDevolucao" href="#" class="btn primary-color">Confirmar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Theme Toggle Button -->
     <button class="theme-toggle" id="themeToggle">
         <i class="fas fa-moon" id="themeIcon"></i>
     </button>
-
     <div class="dashboard-header text-center">
         <div class="container">
             <h1 class="mb-0">
@@ -223,7 +245,57 @@ var_dump($professor_id);
                 </h4>
             </div>
             <div class="card-body">
-                <table class="table table-hover">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-filter me-2"></i>Filtros</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="filtroForm" method="GET">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="filtro_aluno" class="form-label">Nome do Aluno</label>
+                                    <input type="text" class="form-control" name="filtro_aluno" id="filtro_aluno"
+                                        placeholder="Digite o nome do aluno">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="filtro_serie" class="form-label">Série</label>
+                                    <select class="form-select" name="filtro_serie" id="filtro_serie">
+                                        <option value="">Todas as séries</option>
+                                        <?php while ($serie = $series_result->fetch_assoc()) { ?>
+                                            <option value="<?= $serie['serie'] ?>">
+                                                <?= $serie['serie'] ?>
+                                            </option>
+                                        <?php } ?>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="filtro_livro" class="form-label">Título ou ISBN do Livro</label>
+                                    <input type="text" class="form-control" name="filtro_livro" id="filtro_livro"
+                                        placeholder="Digite o título ou ISBN">
+                                </div>
+
+                                <!-- Filtrar por empréstimos devolvidos ou não -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="filtro_emprestimo" class="form-label">Status do empréstimo</label>
+                                    <select class="form-control" id="filtro_emprestimo" name="filtro_emprestimo">
+                                        <option value="">Todos</option>
+                                        <option value="Sim">Devolvidos</option>
+                                        <option value="0">Não devolvidos</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary me-2">
+                                        <i class="fas fa-search me-1"></i>Aplicar Filtros
+                                    </button>
+                                    <button type="button" class="btn btn-danger" id="limparFiltros">
+                                        <i class="fas fa-times me-2"></i>Limpar Filtros
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <table class="table table-hover" id="tabelaEmprestimos">
                     <thead>
                         <tr>
                             <th>Livro</th>
@@ -247,9 +319,10 @@ var_dump($professor_id);
                                                 <i class="fas fa-check"></i> Devolvido
                                             </button>
                                         <?php } else { ?>
-                                            <a href="?devolver_id=<?= (int)$row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Confirma devolução do livro?');">
+                                            <button class="btn btn-danger btn-sm btn-confirmar-devolucao" data-id="<?= (int)$row['id']; ?>" data-bs-toggle="modal" data-bs-target="#modalConfirmar">
                                                 <i class="fas fa-undo-alt"></i> Devolver
-                                            </a>
+                                            </button>
+
                                         <?php } ?>
                                     </td>
                                 </tr>
@@ -272,37 +345,46 @@ var_dump($professor_id);
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        fetch('../includes/footer.html')
-        .then(res => res.text())
-        .then(data => {
-        document.getElementById('footer').innerHTML = data;
-        });
-        // Theme Toggle Functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const html = document.documentElement;
+        document.getElementById('filtroForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // impede recarregamento da página
 
-        // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme') ||
-            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            const formData = new FormData(this);
+            const params = new URLSearchParams(formData).toString();
 
-        // Apply saved theme
-        html.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
+            fetch('../backend/tabela_emprestimos.php?' + params)
+                .then(res => res.text())
+                .then(data => {
+                    document.querySelector('#tabelaEmprestimos tbody').innerHTML = data;
+                });
         });
 
-        function updateThemeIcon(theme) {
-            themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-        }
+        // Gatilho para o botão "Aplicar Filtros"
+        document.querySelector('button[type="submit"]').addEventListener('click', function() {
+            document.getElementById('filtroForm').requestSubmit();
+        });
+
+        // Botão "Limpar Filtros"
+        document.getElementById('limparFiltros').addEventListener('click', function() {
+            document.getElementById('filtro_aluno').value = '';
+            document.getElementById('filtro_serie').value = '';
+            document.getElementById('filtro_livro').value = '';
+            document.getElementById('filtroForm').requestSubmit();
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnConfirmar = document.getElementById('btnConfirmarDevolucao');
+
+            document.addEventListener('click', function(event) {
+                const button = event.target.closest('.btn-confirmar-devolucao');
+                if (button) {
+                    const id = button.getAttribute('data-id');
+                    btnConfirmar.href = '?devolver_id=' + id;
+                }
+            });
+        });
     </script>
+
 </body>
 
 </html>
