@@ -1,6 +1,6 @@
-# Sistema de Biblioteca
+# Sistema Gestão de Biblioteca
 
-Sistema de gerenciamento de biblioteca escolar com controle de empréstimos, alunos, professores e livros.
+Sistema de gerenciamento de biblioteca escolar com controle de empréstimos, alunos, professores, livros e relatórios.
 
 ## Requisitos
 
@@ -50,6 +50,7 @@ chmod 777 uploads
 
 ## Configuração
 
+
 1. Acesse o sistema com as credenciais padrão:
    - Email: admin@biblioteca.com
    - Senha: admin123
@@ -72,7 +73,6 @@ chmod 777 uploads
 - Relatórios em PDF e Excel
 - Backup automático
 - Tema claro/escuro
-- Notificações por email
 - Estatísticas e gráficos
 
 ## Segurança
@@ -86,16 +86,6 @@ chmod 777 uploads
 
 ## Estrutura de Diretórios
 
-```
-sistema-biblioteca/
-├── backend/           # APIs e processamento
-├── frontend/         # Interface do usuário
-├── includes/         # Arquivos de configuração
-├── uploads/          # Arquivos enviados
-├── backups/          # Backups do sistema
-├── database/         # Scripts SQL
-└── vendor/          # Dependências
-```
 
 ## Dependências
 
@@ -114,7 +104,3 @@ sistema-biblioteca/
 3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`)
 4. Push para a branch (`git push origin feature/nova-feature`)
 5. Crie um Pull Request
-
-## Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes. 
