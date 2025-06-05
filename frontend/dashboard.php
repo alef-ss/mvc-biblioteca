@@ -757,11 +757,7 @@ include('../backend/dashboard.php');
                             </li>
                             <li class="list-group-item" style="animation-delay: 1.0s">
                                 <a href="suporte.php">
-<<<<<<< HEAD
-                                    <i class="fas fa-hands-helping icon"></i> SUPORTE
-=======
                                     <i class="fas fa-tools icon"></i> SUPORTE
->>>>>>> upstream/main
                                 </a>
                             </li>
                             <li class="list-group-item" style="animation-delay: 1.1s">
