@@ -4,6 +4,7 @@ include('../backend/buscar_livros.php')
 
 <!DOCTYPE html>
 <html lang="pt" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,7 +81,7 @@ include('../backend/buscar_livros.php')
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
         }
 
         .dashboard-header h1 {
@@ -125,7 +126,7 @@ include('../backend/buscar_livros.php')
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
         }
 
         .card-header h2 {
@@ -158,6 +159,10 @@ include('../backend/buscar_livros.php')
         .form-control:focus {
             border-color: var(--primary-color);
             box-shadow: 0 0 0 0.2rem rgba(67, 97, 238, 0.25);
+        }
+
+        .form-control::placeholder {
+            color: var(--primary-color);
         }
 
         .form-label {
@@ -237,7 +242,8 @@ include('../backend/buscar_livros.php')
             margin-bottom: 0.5rem;
         }
 
-        .livro-autor, .livro-isbn {
+        .livro-autor,
+        .livro-isbn {
             color: var(--text-light);
             margin-bottom: 0.5rem;
             display: flex;
@@ -338,16 +344,22 @@ include('../backend/buscar_livros.php')
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes fadeInDown {
-            from { 
+            from {
                 opacity: 0;
                 transform: translateY(-20px);
             }
-            to { 
+
+            to {
                 opacity: 1;
                 transform: translateY(0);
             }
@@ -358,6 +370,7 @@ include('../backend/buscar_livros.php')
                 opacity: 0;
                 transform: translateY(30px) scale(0.95);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0) scale(1);
@@ -368,14 +381,14 @@ include('../backend/buscar_livros.php')
             .dashboard-header h1 {
                 font-size: 1.8rem;
             }
-            
+
             .theme-toggle {
                 bottom: 20px;
                 right: 20px;
                 width: 50px;
                 height: 50px;
             }
-            
+
             .card-body {
                 padding: 1.5rem;
             }
@@ -395,7 +408,7 @@ include('../backend/buscar_livros.php')
             .dashboard-header h1 {
                 font-size: 1.5rem;
             }
-            
+
             .btn {
                 width: 100%;
                 margin-bottom: 0.5rem;
@@ -403,6 +416,7 @@ include('../backend/buscar_livros.php')
         }
     </style>
 </head>
+
 <body>
     <!-- Theme Toggle Button -->
     <button class="theme-toggle" id="themeToggle">
@@ -467,7 +481,7 @@ include('../backend/buscar_livros.php')
                             $isbn = isset($livro['volumeInfo']['industryIdentifiers'][0]['identifier']) ? $livro['volumeInfo']['industryIdentifiers'][0]['identifier'] : 'ISBN Desconhecido';
                             $capa_url = $livro['volumeInfo']['imageLinks']['thumbnail'] ?? 'img/sem_capa.png';
                             ?>
-                            <div class="livro-card">
+                            <div class="livro-card" style="color: var(--text-color);">
                                 <img src="<?php echo $capa_url; ?>" alt="Capa do livro <?php echo htmlspecialchars($titulo); ?>"
                                     class="livro-capa">
                                 <div class="livro-info">
@@ -475,6 +489,11 @@ include('../backend/buscar_livros.php')
                                     <p class="livro-autor">
                                         <i class="fas fa-user-edit"></i> <?php echo htmlspecialchars($autores); ?>
                                     </p>
+                                    <?php if (!empty($livro['volumeInfo']['previewLink'])): ?>
+                                        <a href="<?= htmlspecialchars($livro['volumeInfo']['previewLink']) ?>" target="_blank" class="btn btn-sm btn-primary" style="background-color: var(--primary-color);">Visualizar Livro</a>
+                                    <?php else: ?>
+                                        <span class="text-muted">Sem visualização</span>
+                                    <?php endif; ?>
                                     <p class="livro-isbn">
                                         <i class="fas fa-barcode"></i> ISBN: <?php echo htmlspecialchars($isbn); ?>
                                     </p>
@@ -527,17 +546,23 @@ include('../backend/buscar_livros.php')
             </div>
         </div>
     </div>
-
+    <div id="footer"></div>
+    <link rel="stylesheet" href="_css/footer.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        fetch('../includes/footer.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('footer').innerHTML = data;
+        });
         // Theme Toggle Functionality
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
         const html = document.documentElement;
 
         // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme') || 
-                          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const savedTheme = localStorage.getItem('theme') ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
         // Apply saved theme
         html.setAttribute('data-theme', savedTheme);
@@ -546,7 +571,7 @@ include('../backend/buscar_livros.php')
         themeToggle.addEventListener('click', () => {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
+
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
             updateThemeIcon(newTheme);
@@ -587,4 +612,5 @@ include('../backend/buscar_livros.php')
         }
     </script>
 </body>
+
 </html>

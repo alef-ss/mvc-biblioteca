@@ -706,7 +706,7 @@ include('../backend/dashboard.php');
             <div class="col-lg-4">
                 <div class="card" style="animation-delay: 0.1s">
                     <div class="card-header">
-                        <h2><i class="fas fa-user"></i> Bem-vindo, <?php echo $_SESSION['nome']; ?>!</h2>
+                        <h2><i class="fas fa-user"></i> Bem-vindo, <?php echo $_SESSION['professor_nome']; ?>!</h2>
                     </div>
                     <div class="card-body">
                         <ul class="list-group">
@@ -757,7 +757,11 @@ include('../backend/dashboard.php');
                             </li>
                             <li class="list-group-item" style="animation-delay: 1.0s">
                                 <a href="suporte.php">
+<<<<<<< HEAD
                                     <i class="fas fa-hands-helping icon"></i> SUPORTE
+=======
+                                    <i class="fas fa-tools icon"></i> SUPORTE
+>>>>>>> upstream/main
                                 </a>
                             </li>
                             <li class="list-group-item" style="animation-delay: 1.1s">
@@ -823,10 +827,17 @@ include('../backend/dashboard.php');
             </div>
         </div>
     </div>
+    <div class="" id="footer"></div>
+    <link rel="stylesheet" href="_css/footer.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <script>
+        fetch('../includes/footer.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('footer').innerHTML = data;
+        });
         // Theme Toggle Functionality
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');

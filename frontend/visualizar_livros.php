@@ -1,5 +1,6 @@
 <?php
-include('../backend/visualizar_livros.php')
+include('../backend/visualizar_livros.php');
+// include('../backend/buscar_livros.php');
 ?>
 
 <?php
@@ -9,8 +10,8 @@ $capas = [];
 while ($row = $result->fetch_assoc()) {
     $capas[] = $row['capa_url'] ?: 'default-cover.jpg';
 }
-echo "<!-- Total de livros: ".$result->num_rows." -->";
-echo "<!-- Capas únicas encontradas: ".count(array_unique($capas))." -->";
+echo "<!-- Total de livros: " . $result->num_rows . " -->";
+echo "<!-- Capas únicas encontradas: " . count(array_unique($capas)) . " -->";
 $result->data_seek(0); // Resetar novamente para o loop principal
 ?>
 
@@ -588,17 +589,21 @@ $result->data_seek(0); // Resetar novamente para o loop principal
                                         </p>
 
                                         <div class="book-actions">
-                                            <button class="btn btn-info btn-action"
-                                                onclick="toggleDetails('<?php echo md5($capa); ?>', event)">
-                                                <i class="fas fa-info-circle"></i> Ver Edições (<?php echo $total_edicoes; ?>)
-                                            </button>
-                                            <a href="editar_livro.php?id=<?php echo $row['id']; ?>" class="btn btn-warning btn-action">
+                                            <?php if (!empty($row['preview_link'])): ?>
+                                                <a href="<?= htmlspecialchars($row['preview_link']) ?>" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" style="background-color: var(--primary-color);">Visualizar Livro</a>
+                                            <?php else: ?>
+                                                <span class="text-muted">Sem visualização</span>
+                                            <?php endif; ?>
+
+                                            <a href="editar_livro.php?id=<?= $row['id']; ?>" class="btn btn-warning btn-action">
                                                 <i class="fas fa-edit"></i> Editar
                                             </a>
-                                            <button onclick="confirmarExclusao(<?php echo $row['id']; ?>, event)" class="btn btn-danger">
+                                            <button onclick="confirmarExclusao(<?= $row['id']; ?>, event)" class="btn btn-danger">
                                                 Excluir Livro
                                             </button>
                                         </div>
+
+
 
                                         <div class="book-details" id="details-<?php echo md5($capa); ?>" style="display:none;">
                                             <?php while ($edicao = $result_edicoes->fetch_assoc()): ?>
@@ -700,10 +705,18 @@ $result->data_seek(0); // Resetar novamente para o loop principal
                     </div>
                 </div>
             </div>
-
+            
+<div id="footer"></div>
+<link rel="stylesheet" href="_css/footer.css">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
+        fetch('../includes/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+
                 function toggleDetails(capaHash, event) {
                     event.preventDefault();
                     event.stopPropagation();
