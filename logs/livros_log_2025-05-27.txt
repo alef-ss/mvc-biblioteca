@@ -1,0 +1,3152 @@
+2025-05-27 16:37:29 - Processando livro - Detalhes: Array
+(
+    [id] => VXpWCgAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => VXpWCgAAQBAJ
+            [etag] => +x2Bxt2VY3g
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/VXpWCgAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Automatize tarefas maçantes com Python
+                    [subtitle] => Programação prática para verdadeiros iniciantes
+                    [authors] => Array
+                        (
+                            [0] => Al Sweigart
+                        )
+
+                    [publisher] => Novatec Editora
+                    [publishedDate] => 2015-08-11
+                    [description] => APRENDA PYTHON. FAÇA O QUE TEM DE SER FEITO. <br><br>Se você já passou horas renomeando arquivos ou atualizando centenas de células de planilhas, sabe quão maçantes podem ser esses tipos de tarefa. Que tal se você pudesse fazer o seu computador executá-las para você? <br><br>Em Automatize tarefas maçantes com Python, você aprenderá a usar o Python para criar programas que farão em minutos o que exigiria horas para ser feito manualmente – sem que seja necessário ter qualquer experiência anterior com programação. Após ter dominado o básico sobre programação, você criará programas Python que realizarão proezas úteis e impressionantes de automação sem nenhum esforço: <br><br>•        Pesquisar texto em um arquivo ou em vários arquivos. <br><br>•        Criar, atualizar, mover e renomear arquivos e pastas. <br><br>•        Pesquisar na Web e fazer download de conteúdos online. <br><br>•        Atualizar e formatar dados em planilhas Excel de qualquer tamanho. <br><br>•        Separar, combinar, adicionar marcas-d'água e criptografar PDFs. <br><br>•        Enviar emails para lembretes e notificações textuais. <br><br>•        Preencher formulários online. <br><br>Instruções passo a passo descreverão cada programa e projetos práticos no final de cada capítulo desafiarão você a aperfeiçoar esses programas e a usar suas habilidades recém-adquiridas para automatizar tarefas semelhantes. <br><br>Não gaste seu tempo executando tarefas que um macaquinho bem treinado poderia fazer. Mesmo que não tenha jamais escrito uma linha de código, você poderá fazer o seu computador realizar o trabalho pesado. Saiba como em Automatize tarefas maçantes com Python.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8575224468
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788575224465
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 1
+                        )
+
+                    [pageCount] => 568
+                    [printedPageCount] => 61
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / Programming Languages / Python
+                            [1] => Computers / Programming / General
+                        )
+
+                    [averageRating] => 5
+                    [ratingsCount] => 1
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.2.1.0.preview.1
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE7078X63qyz0jajca1EBBzsZF5TTY0VPv9s5IB6QAUYmijdySmTVBYnoLl4bG0qcj__KsTfPtDG3w4yTRWv4lfqzO7Au6F73BNaKxNDf4z9Fmv7W4sR_p_PWSH71Rrm8RunI1ao-&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73zndUCeT2eUgLQshqJPTKtuqlv-oDfio-Smp_xwTkZ8gymxpw2nOtWPKsFfAcnbCj-NrjRp4KNPWcBxoYdFSrFj8kX4Fyez0yuUb7hkTUTi1oA_RFp8HjNmHjIeorY5kInwxoo&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE715W6aJDsFpjI4foxNN32TLcpozluc4V5fPKddjySsndpypDAt-OcHlAsgSFnyLEz3ZYXpEgFnT5lUtExuEr54LOC_gHz3VpPfJhejQdDnG43Knfl6p1PeAJp7NiR-k_BH4pTZo&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73MPjbricBa5FPXNpOkC00u7JZ_VLE929Qa-4eUFtzs5KAJVnUQefw7Ffu6WxiHP82GUX-iiClUSdzGIoefkVKQkl0KdrBmXYUKgN4DMYb7MRGGZbD1KmCM_wWIIyaTeuIvJ4Vh&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE73LfvCU3JWShNc7gTxmZe8Ta9sHuW0FM1zHKlcwFSiZohA30RHjeVRtDZcUqOh95LDgrGbbB-av_7xwL2OMWyqBRI7wpo2IQEgvJk3kBggD6z0QFSQfSbvwJT9yfkJj_-fTFbTS&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE72EX8w2t8IoqsPRgj1CJouQxwVyncw9gYdxNNjdDd2WAJks98gBKaFnK16QxVq6N96ov8xPj2dVWfthPgin4DF9FkGu_Xxxl-aMOoqbd-iqGcQBSw7BHTJglz8FUNGgQ0XXIYWS&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=VXpWCgAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=VXpWCgAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=VXpWCgAAQBAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Automatize_tarefas_ma%C3%A7antes_com_Python-sample-pdf.acsm?id=VXpWCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=VXpWCgAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 16:37:30 - Processando livro - Detalhes: Array
+(
+    [id] => XqbfCgAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => XqbfCgAAQBAJ
+            [etag] => ySDRVoQIeA4
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/XqbfCgAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Python fluente
+                    [subtitle] => Programação clara, concisa e eficaz
+                    [authors] => Array
+                        (
+                            [0] => Luciano Ramalho
+                        )
+
+                    [publisher] => Novatec Editora
+                    [publishedDate] => 2015-11-05
+                    [description] => A simplicidade de Python permite que você se torne produtivo rapidamente, porém isso muitas vezes significa que você não estará usando tudo que ela tem a oferecer. Com este guia prático, você aprenderá a escrever um código Python eficiente e idiomático aproveitando seus melhores recursos – alguns deles, pouco conhecidos. O autor Luciano Ramalho apresenta os recursos essenciais da linguagem e bibliotecas de Python mostrando como você pode tornar o seu código mais conciso, mais rápido e mais legível ao mesmo tempo. <br><br>Muitos programadores experientes tentam dobrar o Python para que ele se enquadre em padrões aprendidos com outras linguagens e jamais descobrem os recursos do Python que estão além de sua experiência. Com este livro, esses programadores Python aprenderão a ser totalmente proficientes em Python 3. <br><br>Este livro inclui: <br><br>•        O modelo de dados do Python: entenda como os métodos especiais são o segredo para o comportamento consistente dos objetos. <br><br>•        Estruturas de dados: tire total proveito dos tipos embutidos e entenda a dualidade entre texto e bytes na era do Unicode. <br><br>•        Funções como objetos: veja as funções Python como objetos de primeira classe e entenda como isso afeta alguns padrões de projeto populares. <br><br>•        Técnicas de orientação a objetos: crie classes após dominar referências, mutabilidade, interfaces, sobrecarga de operadores e herança múltipla. <br><br>•        Controle de fluxo: tire proveito de gerenciadores de contexto, geradores, corrotinas e concorrência com os pacotes concurrent.futures e asyncio. <br><br>•        Metaprogramação: entenda como funcionam propriedades, descritores de atributos, decoradores de classe e metaclasses.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 857522462X
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788575224625
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 1
+                        )
+
+                    [pageCount] => 800
+                    [printedPageCount] => 55
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / Programming Languages / Python
+                            [1] => Computers / Programming / General
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.1.1.0.preview.1
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE70rg1-McBfDHB9WErwobGsYBZ-yEacWdBMx3ioO8x4Zs6O8cC-TprJwxoeCFaJxlpYERSr3MiUQBh7B4AuMxufiIYqdNvoA9Yov_8juDX55mcRXdme4SosAJVWeVNA8m1KX9m7M&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE708jWmn3w2ZXMEoGkAc8JCRMXfnJI4f8fd34smYb2AVC7lwfYc2XUZcXFV7NYJsiA-j8Gw7sU0BWrg3VSREEmC-Xwad6_aw4zyxVsp-aYqtBX5BTdZwcv5Ak0CDC194lY11Y8Zy&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71WNpgZLUWQqD45LevuriFeZGkTR5ivJDn0c9oUCzWzZKfcpLtXof59R9qbkJcaSn43wT7fGVw6q54SyxtrWfrHIvJGh_9gJl8GySwryHaP7V2GhKmQDoH-Dc6hrRZanMQ4lUwc&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70L8pKcBM7q0435jG9F_KcSI9Jk8K2UntUTNVntG5WFl--GJSIZWOloYlvuv6Y2-xMCYyj4epSSFdXyTrYdN3JwRK9noaPDi2H3Cw0CndCgGLXOuRGa03EqpoJ3LNZ4PHifxO0a&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71cVFPhmSeXOCOpBKQ6_nLO3XapY0H2EZviaKqA4SMJnscYOdU5zZ91EdYSPA6PMAEsmJpCiqlmGh2Tpc67mEd5iaLmAqscc9gr4-RakX1rab6N1EJaAU1knEKjVsKqRssGtEAz&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE702qShttvfezKYwF4Kxrr4oOdRvbFUZe02CLhiFIp0Jg8OL8ZejoP0iPLJNfhaIuAHGCdAp1GYSHN3nvQcuiCyqAEaPVK_Llln1AKL_LRtEoy-6O1RypGYbCANG34yhFAAQ9opX&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=XqbfCgAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=XqbfCgAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=XqbfCgAAQBAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Python_fluente-sample-pdf.acsm?id=XqbfCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=XqbfCgAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 16:37:31 - Processando livro - Detalhes: Array
+(
+    [id] => 1HxWGezDZcgC
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => 1HxWGezDZcgC
+            [etag] => XylLptdSfew
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/1HxWGezDZcgC
+            [volumeInfo] => Array
+                (
+                    [title] => Learning Python
+                    [subtitle] => Powerful Object-Oriented Programming
+                    [authors] => Array
+                        (
+                            [0] => Mark Lutz
+                        )
+
+                    [publisher] => "O'Reilly Media, Inc."
+                    [publishedDate] => 2009-10-06
+                    [description] => <p>Google and YouTube use Python because it's highly adaptable, easy to maintain, and allows for rapid development. If you want to write high-quality, efficient code that's easily integrated with other languages and tools, this hands-on book will help you be productive with Python quickly -- whether you're new to programming or just new to Python. It's an easy-to-follow self-paced tutorial, based on author and Python expert Mark Lutz's popular training course. <br><br> Each chapter contains a stand-alone lesson on a key component of the language, and includes a unique Test Your Knowledge section with practical exercises and quizzes, so you can practice new skills and test your understanding as you go. You'll find lots of annotated examples and illustrations to help you get started with Python 3.0. <br><br> Learn about Python's major built-in object types, such as numbers, lists, and dictionaries Create and process objects using Python statements, and learn Python's general syntax model Structure and reuse code using functions, Python's basic procedural tool Learn about Python modules: packages of statements, functions, and other tools, organized into larger components Discover Python's object-oriented programming tool for structuring code Learn about the exception-handling model, and development tools for writing larger programs Explore advanced Python tools including decorators, descriptors, metaclasses, and Unicode processing</p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 144937932X
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9781449379322
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 1216
+                    [printedPageCount] => 1218
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / Languages / Python
+                            [1] => Computers / Programming / General
+                            [2] => Computers / General
+                            [3] => Computers / Reference
+                        )
+
+                    [averageRating] => 4
+                    [ratingsCount] => 5
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 0.11.8.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=1HxWGezDZcgC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE72JXe41inTwk7xF4HAJS6g9g-ei03xgaJl3DFRp7oPdXuEksV4eR4hH-67IA8OcjaorMnAArjCPB6t2U-sQNPLkN_vHpvXDAy_e79clKY0HxBm6DRm6JhLelDisawc48J8cuv5q&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=1HxWGezDZcgC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71Zp7ooHhUysuPp1GsbrKnnSkadiVSfgp781_vqeV_jr4sqZD4XpgDZIGc6FdXmkGz_O2Gx9h_TyOWi74Bysgw_YLrvCeW9LK0SrmrBKG19_wl7Rbk6v6FUZyeRAcS6gkJtUxBD&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=1HxWGezDZcgC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71_Xd9daeg4sSM2H60bmc3AoRKnfIVO_i2nz_jL9qD8QFZVXB-pvm0TRz2RGUYclwyrIegxETo09Sw9eK889tmLEonFBnzvOSYGV7vC0lf-bAvtbgfqXMpxRQAvucib5cUwv50k&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=1HxWGezDZcgC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71q4q7CNg8gDw7UshWCkHKbPU0aQUv9q-BPssVPM95Z3NTvPtsdfvDa-tew97KVyf846vGDPRwACLbeR2oYhYFI7OAKrnanRiKJCd_ecUWOHj5gqRYn-J1ueuW-TDgpnPuU5P4i&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=1HxWGezDZcgC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE729PpPm36DSf6xLJ9CF9xYwGfu5t0YWdVoz_inPshs19sJrMjYVrU63gPG1J5tVkP9k9ooSADwsApy3-ZN3olQGbygbNneZS4Pg3xhLAB4M3CZgXqMaW8w9Vy-p_PTvNtoQq0OH&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=1HxWGezDZcgC&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE722GlHCZtsuwYFfyU2mgCQ2R6FBpp7tgMdK6KCBM1ZoQYjK2oFSOS1zd5lWRqbP8cowjw6Umk9Oxh7D7JIrCtTyhd--U3MOrUKwaRAdzNlphJIPjoTsRztItlAiw0yaagxZjU99&source=gbs_api
+                        )
+
+                    [language] => en
+                    [previewLink] => http://books.google.com.br/books?id=1HxWGezDZcgC&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=1HxWGezDZcgC&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=1HxWGezDZcgC
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 11
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=1HxWGezDZcgC&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 16:37:32 - Processando livro - Detalhes: Array
+(
+    [id] => Oj5FDwAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => Oj5FDwAAQBAJ
+            [etag] => c/eLrabuvQg
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/Oj5FDwAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Python para análise de dados
+                    [subtitle] => Tratamento de dados com Pandas, NumPy e IPython
+                    [authors] => Array
+                        (
+                            [0] => Wes McKinney
+                        )
+
+                    [publisher] => Novatec Editora
+                    [description] => Obtenha instruções completas para manipular, processar, limpar e extrair informações de conjuntos de dados em Python. Atualizada para Python 3.6, este guia prático está repleto de casos de estudo práticos que mostram como resolver um amplo conjunto de problemas de análise de dados de forma eficiente. Você conhecerá as versões mais recentes do pandas, da NumPy, do IPython e do Jupyter no processo.<br><br>Escrito por Wes McKinney, criador do projeto Python pandas, este livro contém uma introdução prática e moderna às ferramentas de ciência de dados em Python. É ideal para analistas, para quem Python é uma novidade, e para programadores Python iniciantes nas áreas de ciência de dados e processamento científico. Os arquivos de dados e os materiais relacionados ao livro estão disponíveis no GitHub.<br><br>utilize o shell IPython e o Jupyter Notebook para processamentos exploratórios;<br><br>conheça os recursos básicos e avançados da NumPy (Numerical Python);<br><br>comece a trabalhar com ferramentas de análise de dados da biblioteca pandas;<br><br>utilize ferramentas flexíveis para carregar, limpar, transformar, combinar e reformatar dados;<br><br>crie visualizações informativas com a matplotlib;<br><br>aplique o recurso groupby do pandas para processar e sintetizar conjuntos de dados;<br><br>analise e manipule dados de séries temporais regulares e irregulares;<br><br>aprenda a resolver problemas de análise de dados do mundo real com exemplos completos e detalhados.<p> </p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8575226479
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788575226476
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 1
+                        )
+
+                    [pageCount] => 616
+                    [printedPageCount] => 43
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / Programming Languages / Python
+                            [1] => Computers / Data Transmission Systems / General
+                            [2] => Computers / Databases / General
+                            [3] => Technology & Engineering / Data Transmission Systems / General
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.1.1.0.preview.1
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=Oj5FDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71SLYELLWLOHE-doDDWCJ6B2mUUpN8VY-FOxJnfzd8zBN2a0-5SB_RXKO_hIHApcUhxCY-030hW33g4GDRFRD5VNQ8L4a38lkXsaD4SctRN470lutLXGIuW5tBkR3ae9d980SRx&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=Oj5FDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72g0rHak96mrt6Vd0AFqL2JIgiwZgtYHYNtipoieuqJnF5PGhdGxXT3X4-9Vr32FYfWBxwm8zgyzHb2EcllBXzR2L8fMvgMpvgokXfMp0EEMIp-ZshuxNZZxvlW5p-ftuiHq9P-&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=Oj5FDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE716xnhWxPX78rp9nPBvTMsi5DY5g_YPQst6XT0CPDQF1rNZR8gnYP7Y6QLbqmRL0oskWeX0Qd_w-WEsa5Eg5cz9gOV5EblqtM2CAvQNzpBcjtAvu_vn0TQzFyJCUK_GqNk9Bvgg&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=Oj5FDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73Pkw4nOzl7cUTI3ILxJ2ElLRMO03Rwc7VPgUv50CwIBbv26nuFsTdGW1idzq3ksMDgtrSaak-zz7iMpDHL9p8JzzqwU-CPRETGBnT69KFnvEdGK4p3qXki11jlx_xlVpcnl4OV&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=Oj5FDwAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE70EdYjWSc8oclV7l9GL4bLraMuVHRvbjWVX_vDuwKhWEjqPvWRL2UD1GRulFdjAcG4qYvpvkQzmj7_FGPSFGfXChKYIoP6CTWkCF_892AHYQRvKrANjYhUhq3Uf4vdJOqsnTxI9&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=Oj5FDwAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70wGMvY5Ur2FJoq0elFfs3Byz0P3uJNAfkfTVHeFs898ZihTbTL5-JHcxdRSTmb6lvUIX_3TkKkGQfS98ifXGV7ZxRu7SUWsN_Njql66j2jhM1T8OzGyUoGkspLB7xiluWkQSz6&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=Oj5FDwAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=Oj5FDwAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=Oj5FDwAAQBAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Python_para_an%C3%A1lise_de_dados-sample-pdf.acsm?id=Oj5FDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=Oj5FDwAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 16:37:47 - Processando livro - Detalhes: Array
+(
+    [id] => yGXyDwAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => yGXyDwAAQBAJ
+            [etag] => dAzYofNeTvE
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/yGXyDwAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => As infinitas vidas de Dylan Reynolds
+                    [authors] => Array
+                        (
+                            [0] => Sarah Pires Barreirinhas
+                        )
+
+                    [publisher] => Editora Labrador
+                    [publishedDate] => 2020-07-21
+                    [description] => Eu sabia sobre sua dor. De como penetrava sua pele, tornando-se parte de seu corpo, misturando-se com o sangue de suas veias. Eu sabia o quanto queria viver e o quanto estava esforçando-se para isso. Eu sabia muito sobre ele. Mas o que eu não sabia era como seria sua história se não tivesse morrido naquela tarde. Não é sobre o que foi, mas o que poderia ter sido. Livro de estreia de Sarah Pires Barreirinhas, As infinitas vidas de Dylan Reynolds é exemplo de uma nova geração de romances: não apenas ressalta a complexidade do universo interior adolescente, repleto de inseguranças, lutas, dores e amores, mas denuncia uma sociedade injusta, que parece mais preocupada em cobrar padrões do que aceitar diferenças. Com personagens envolventes e realistas, a obra traz um enredo intrigante que prenderá o leitor até a última página.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 655625021X
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9786556250212
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 208
+                    [printedPageCount] => 239
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Young Adult Fiction / General
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.6.6.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73H9tf2BbMmMZ_Ija2uqCUj2cd05plc2qvJjBpS5CTFVTBGbZUOJxzL6KSy_gY9k-WUkb4NT08AJ0toFVFFYGG2Zqs61zyJ_-fuhWz0eluw6jaVmN9VZ-NBwsTg4n0cR47ZC2nx&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72sL3RYKQ3dYg7LVQgpJjnDPQugDFcC7JTJ8EY8tU1CIuG8assTUfPhUPMBJKccJAO9bfODxT0kz_0bKVJPSLQSpsWAGly4EHVmdt0yRu6h4A2m6kSy9PGse9jxgAO8gKcASL3M&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE70NnLYSmFiNOlxy9eo61tkWquvUjCmpPt6ZvWcsT6Yy4sCoyaTv54aI-aqbtDmO-eKhMpe4qY9XsyvHr1TGpOhatyBS_Hs58B5wPWrF5YK6Wt85bwTj6g7pyrt_1qktUsNT_5vt&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71tIg9LgDN-KU2rFxDwd3nFkYXezmt5pF_23x1HDHlIutlzZ570N3enfyPEMwjqaVu98ANQ3hBeFxOVjxqnB1PZ8-_002N980U07IZo4nPOGVS74QGF4i4EWo-kz5YAWICmKYuM&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE714FMF4yunAISAs3ZmFxYk2m3WyrDAsJ-Uju5N7oCky1FxDY8o988bA8uE1-BdCTL6Q-vDqT-7dB9zrX13ECdsTzIkIBfWlA-ZqvFO0TKl2TSwNah90K0xfhDTaKLpCSIFToS4M&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE73ojtEyJ5WiruYjvpOU-hUZQ3O331ZCllbRUE9IiUUGebFyjAoGZhEKS3veomjSx-yaZi_sl4Z-KmPpLRt9ZvJAxCa6WPs_xGVhazvQ8Vl9imu-bxmdW8bkM0TArA-Uu_dxG0MS&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=yGXyDwAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=yGXyDwAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=yGXyDwAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 7
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 35
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 35
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=yGXyDwAAQBAJ&rdid=book-yGXyDwAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 35000000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 35000000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/As_infinitas_vidas_de_Dylan_Reynolds-sample-epub.acsm?id=yGXyDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/As_infinitas_vidas_de_Dylan_Reynolds-sample-pdf.acsm?id=yGXyDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=yGXyDwAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 16:37:48 - Processando livro - Detalhes: Array
+(
+    [id] => zmQA0AEACAAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => zmQA0AEACAAJ
+            [etag] => uBezbkSUMz4
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/zmQA0AEACAAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Razão e Sensibilidade
+                    [authors] => Array
+                        (
+                            [0] => Jane Austen
+                        )
+
+                    [publisher] => Instituto Brasileiro de Cultura Ltda
+                    [publishedDate] => 2023-12-20
+                    [description] => <p>A narrativa envolvente desta obra tem seu foco nas duas irmãs Dashwood, Elinor e Marianne, cuja maneira de encarar as adversidades da vida representam uma verdadeira dualidade: enquanto Elinor é sensata e prudente, Marianne se deixa envolver pelas emoções. Ao longo da trama, as personagens vivem intensos desa os e reviravoltas enquanto tentam sobreviver em uma sociedade baseada no dinheiro e no status social. Razão e Sensibilidade, sem dúvida, gura entre os mais populares romances da literatura.</p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 6599793797
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9786599793790
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 
+                        )
+
+                    [pageCount] => 226
+                    [printedPageCount] => 226
+                    [dimensions] => Array
+                        (
+                            [height] => 23.00 cm
+                            [width] => 15.10 cm
+                            [thickness] => 1.20 cm
+                        )
+
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Fiction / Classics
+                            [1] => Fiction / Fantasy / Romance
+                            [2] => Fiction / Romance / Contemporary
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => preview-1.0.0
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=zmQA0AEACAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE70DF98pFQpL5hLHJZrf5W9pFcsuXRu-gmSv9Iu5Jvq6NCNR12CnqDB4EdtcAlsSsvBgqzrwcqB_1Aoqbn_6dkt6KZrkFSeOdOyeArgQII1foh-8kKcD80R9VdeUYrBTIxiR8hYr&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=zmQA0AEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71h6jI1z-8L5fKhU9KWfPYMRxxn4E0uNmFaFA36aWp9QTcEoPAFeOJ3AFgcqjyb4egw8dHFH-85KVwvsesYhHIJiF_BUTXahnOLMHnnsXxnLo3PHxQrbCxHBQjc0n7Ly86VQIoV&source=gbs_api
+                        )
+
+                    [language] => pt
+                    [previewLink] => http://books.google.com.br/books?id=zmQA0AEACAAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=zmQA0AEACAAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=zmQA0AEACAAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => NO_PAGES
+                    [embeddable] => 
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=zmQA0AEACAAJ&hl=&source=gbs_api
+                    [accessViewStatus] => NONE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 16:37:49 - Processando livro - Detalhes: Array
+(
+    [id] => 0d7vDAAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => 0d7vDAAAQBAJ
+            [etag] => IQP/sKTn8j8
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/0d7vDAAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Ensaio autobiográfico
+                    [authors] => Array
+                        (
+                            [0] => Jorge Luis Borges
+                        )
+
+                    [publisher] => Editora Companhia das Letras
+                    [publishedDate] => 2016-08-31
+                    [description] => Neste texto, um dos mais longos de um autor conhecido pela concisão e frugalidade, Borges fala de seus ancestrais paternos e maternos, de sua infância quase isolada do mundo, de suas experiências ruins na escola e daquilo que ele mesmo chama de "evento principal" de sua vida: a grande biblioteca de seu pai, da qual ele acredita "nunca ter saído". A partir dessas primeiras leituras, quase todas em inglês, ele traça a autobiografia literária e intelectual que compõe o cerne do livro. São informações preciosas para compreender a formação e a carreira de um dos escritores mais singulares do século XX. Há também algumas pitadas de política (não tão controvertidas quanto as que marcariam os últimos anos de sua vida), onde transparece seu ódio de Perón ("Em 1946 subiu ao poder um presidente cujo nome não quero lembrar"), que o teria "promovido" de bibliotecário a inspetor de aves e coelhos nos mercados municipais. <br>E em suas páginas de estilo límpido, Borges faz generosas menções a grandes amigos, como Macedonio Fernández e seu parceiro em algumas obras, Adolfo Bioy Casares. Mas não faz nenhuma referência a mulheres ou à sua vida amorosa. Quase por acaso, ficamos sabendo que está casado. Curiosamente, o <i>Ensaio autobiográfico</i> foi ditado no período em que estava se separando da esposa (a união durou menos de três anos) e se apaixonando novamente. Talvez venha daí a surpreendente confissão pessoal do último período do livro: "Não considero mais a felicidade inatingível, como eu acreditava tempos atrás. Agora sei que pode acontecer a qualquer momento, mas nunca se deve procurá-la. Quanto ao fracasso e à fama, parecem-me totalmente irrelevantes e não me preocupam. Agora o que procuro é a paz, o prazer do pensamento e da amizade. E, ainda que pareça demasiado ambicioso, a sensação de amar e ser amado". Estava com 71 anos.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8543807239
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788543807232
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 88
+                    [printedPageCount] => 88
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Biography & Autobiography / Personal Memoirs
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.3.3.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=0d7vDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71YWO5hPKoaVWdTclqbEJlY6ScyzDhBM6zoGUsSKCWHzcFDxS8ln8-NDbRcftp8Y7kaUhAgrla-NZcXnuOYo2BQPXH2d261k1UZjVxKaB4gZdqRJkJmh2pr4-aVTODzhdr2lKdI&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=0d7vDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73fq8Q5V6mA8SYE3lIQjo9tV5szmoNQ_0yUkfrtSUFJuqQVKMdQM725wVRhVlLo9q3o6z_Qm-Gh__9nqKqU3reSVMuO6shnrBf_6g1varEKUvizsv5OiOuPDKGQ_tw91zz0PRIl&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=0d7vDAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE70wCeGHLbHkI-uIxIYZPsphsZBjDS7iceuEc1rdFL6kRGY3Y8MSQeuk29WWbYWM_AvF_Y8HKI8g139OpmRaWxfxSdtVSOkgph4-Asmg1b_k1UxE2SAG9gG48ykVCe79r8WDVw1T&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=0d7vDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70kJ90ouU0gso9YZCICTQY2UelBcnnpBEW-9blpvII16D9oXxvUMydmd3Edf3VtKvwmyL3TOWcAqouXgpa3DFXnN1iod-E1nRY41ZGdVDYhu5Mx3HKBhbTL3N5VViOHwGxhUbWu&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=0d7vDAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE708BLEWHhe7BdATWOouLVfBu0BYbxud3PNHRZAIuXTuVLJtxLWmXa9hQDket89yn96A-L6HGaJ7Nn3ovdYqMwLyu4jDNu4oRbaSHSQCpNiWgi8RtoYGNZ7jNIyUIk6VmEBqOepK&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=0d7vDAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE73bBvDec46g3ZZbXUlx2GiVYFuny2lIcjOIpUXJ7c3cJX3GzUGHU1LutkkJqqpeXhb1mTyeoHu4hs42ogDHnSSZmENK8DrvDyMmNJiAn3tZVr_qbijXq4jje4eUgbF9eq6T3J5C&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=0d7vDAAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=0d7vDAAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=0d7vDAAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 4
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 27.9
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 27.9
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=0d7vDAAAQBAJ&rdid=book-0d7vDAAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 27900000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 27900000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Ensaio_autobiogr%C3%A1fico-sample-epub.acsm?id=0d7vDAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Ensaio_autobiogr%C3%A1fico-sample-pdf.acsm?id=0d7vDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=0d7vDAAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 16:37:49 - Processando livro - Detalhes: Array
+(
+    [id] => UGIC7N0Op2MC
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => UGIC7N0Op2MC
+            [etag] => FXlX1j3quyo
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/UGIC7N0Op2MC
+            [volumeInfo] => Array
+                (
+                    [title] => Orgulho e Preconceito
+                    [authors] => Array
+                        (
+                            [0] => Jane Austen
+                        )
+
+                    [publisher] => L&PM Editores
+                    [publishedDate] => 2010-01-21
+                    [description] => "É verdade universalmente reconhecida que um homem solteiro em posse de boa fortuna deve estar necessitado de esposa." É com essas palavras que Jane Austen inicia "Orgulho e preconceito", conduzindo o leitor diretamente ao lar dos Bennet, família com não menos que cinco noivas em potencial: Jane, Elizabeth, Mary, Kitty e Lydia. Quando o sr. Bingley e o sr. Darcy, dois jovens distintos, chegam a Hertfordshire, todas ficam em alerta: eles são solteiros, bonitos e, claro, donos de uma boa fortuna. O que poderia ser uma típica história de amor é, nas mãos de uma das escritoras de língua inglesa mais difundidas pelo mundo, um espetáculo de grandes personagens e diálogos sagazes, com um timing perfeito para a ironia.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8525404357
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788525404350
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 400
+                    [printedPageCount] => 324
+                    [dimensions] => Array
+                        (
+                            [height] => 23.00 cm
+                        )
+
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Fiction / General
+                        )
+
+                    [averageRating] => 5
+                    [ratingsCount] => 1
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 2.32.32.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=UGIC7N0Op2MC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE70vTTF4hH4pUmCEbFuWpk0rlFDKOvnASpXGZkV8xMUEcZ7mL3jjXhO5lErdM15SS5xRVW2saO_lRbNTlxjhffRk1YBUBs9wCqkN22xqqCJCo6vQ-VUUiGfL_M0X9QwZ2E8sJ-V8&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=UGIC7N0Op2MC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE728TOa_-QdHwYajniD1j2NDDRF0NcgupjJoy-ZVY0ZdkWDHS4H-MY-4D1il9_NJJygekKm6UwI4S0m_xOVHw7Ts_HLopcR1nSe-X5csQp4KRSyDFW-DpKrQUor7tuG7jlgsiGBe&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=UGIC7N0Op2MC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71WRPWnJb6IcU1JuEPfoeBYr4x4Xltz8UAi-w5ijejNz0M_7t_F0a7hPsg7umOmUJA2fR0onXAze53ODoamM4y9BQ5TtuBJtTOTNkPyK_Mq-r_w1Df7rA_JDK8XhC4s8cYfmmFb&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=UGIC7N0Op2MC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73pN2mLvo2S9m04y7CJ36nAhg9hjLVvY0grYlE3hCaocwm97SoXZPRYl_IGSCHfPYkRM_IgV-GYWy-3KlZ08w2zua38RV9c-0jvtaHTohlxpxEmGdF3oQtJX55aT__omtrDB3QV&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=UGIC7N0Op2MC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE709YDeD2kbyptuY38N2qsduWpXXjvSk4DlnGU7kE83N0Pq9fVfAlmfV36720U5EaiYXa-2OOAkPDCXR6xtqhrXxKxPDxeMnZp-Ynb5dFeLojRCMeex_oOrC5o4XOW49aYT4dXX7&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=UGIC7N0Op2MC&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE73Vp2QdtFnQgbGbdjrgb5giGhwzolwTObkeVJ0XIS_cn2Q2o7AGuUFfROwCKhrMdfyupaa5ECsVrXC41vMk2UfKQcKti_pbvb1M4DyhaOzRqyS7xcP3PlrnKU1sFSgVBRlt82EZ&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=UGIC7N0Op2MC&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=UGIC7N0Op2MC&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=UGIC7N0Op2MC
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 33
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 39.9
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 39.9
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=UGIC7N0Op2MC&rdid=book-UGIC7N0Op2MC&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 39900000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 39900000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Orgulho_e_Preconceito-sample-epub.acsm?id=UGIC7N0Op2MC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Orgulho_e_Preconceito-sample-pdf.acsm?id=UGIC7N0Op2MC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=UGIC7N0Op2MC&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 16:50:49 - Processando livro - Detalhes: Array
+(
+    [id] => lY6KDwAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => lY6KDwAAQBAJ
+            [etag] => 1vcDsFhhlf8
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/lY6KDwAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Box - Grandes obras de Jane Austen 2
+                    [authors] => Array
+                        (
+                            [0] => Jane Austen
+                        )
+
+                    [publisher] => Nova Fronteira
+                    [publishedDate] => 2019-02-28
+                    [description] => Poucos romancistas conseguiram transmitir as sutilezas e nuances de seu próprio meio social com a inteligência e a perspicácia de Jane Austen. Uma das principais romancistas da literatura mundial, consagrou-se pela ironia presente em seus romances, repletos de diálogos afiados. Neste boxe estão reunidas três grandes obras da autora. "Mansfield Park" (1814) é considerado o romance mais ambicioso e profundo de Jane Austen. Em "Abadia de Northanger" (1818) é feita uma paródia ao romance gótico, muito em voga na Inglaterra na segunda metade do século XVIII. E "Persuasão" (1818), uma sátira da sociedade provinciana inglesa do início do século XIX, é considerado o mais maduro e bem-realizado romance da memorável carreira da escritora.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8520943969
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788520943960
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 
+                        )
+
+                    [pageCount] => 888
+                    [printedPageCount] => 1235
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Fiction / Classics
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.7.7.0.preview.2
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=lY6KDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE72Y6aWq0QjAr2vlY3BeuiPPu9aLswqlGokmlHEblO7ZPviLQ4F5ICMi_RwSdIFK_KHLmZimPqntNU0hGvxUZCUdXDnDi12IKWml0ZcVkyeLF4jLaXRY_6cwKaTxvDG51mkBJdTK&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=lY6KDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70nRjbCNDNW5totUHEoPTznFYlmlDtYLa2UaVOgWLH4Lwpking5WZxypADdBRU9HbtkcOZ4bSze4ObEST8ExvBrhWrS8YcXHZPiyURldccb5OWP2Gp7bVRgDNPGTHANSvhB7Yt2&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=lY6KDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE70ZhL6urR4ls8Xiw0k5UsMWRiZRmJ48BlSc6cQwpj368rav2i8bZMvTgsYEuSkqzCAJTRcMfGzsc1qcDLTyxsAuWo6aRDFo_cPaC1FQKFjohSV0VmUf9d-HfGCBRFEj4ZKUNEQi&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=lY6KDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71i8YasNr3k3ym3U15awnsG4VGLIP_bjTsC60WKeb8HsuGpnsP472oJci2HkEIs83gZ9krfNVkOsCGhYMoQkW2NN4LfZTijaBAwrMm5ib3pGsO8NjJySB5GJ4vNvKIzrY55w1Yv&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=lY6KDwAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE713kItEpBFEbK10FOM3nyed3S4quhaKuX8dMMoJIRtczzzTO-I0Hw4HWJtciKBpbM5doV-TvXfuXZ_a50Qd__Eyjh1POA-SsoBTFWaHvh6dlnyLj_M1dGycNr25bnN8ve67lcQE&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=lY6KDwAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE728ULbsG6RgwysPgArRaaRr8cKhzzaDeOgkcfAbLCFA-B_YVs9WAzgG_8ooMj9yf8wQHtVG64Kl8VKPIPz31w865657Y4Vn8v7as3_wSJp6Ael0ncBjUMiSzFt_UEa-avq-MXH9&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=lY6KDwAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=lY6KDwAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=lY6KDwAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 9
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 94.99
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 94.99
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=lY6KDwAAQBAJ&rdid=book-lY6KDwAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 94990000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 94990000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Box_Grandes_obras_de_Jane_Austen_2-sample-epub.acsm?id=lY6KDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=lY6KDwAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 16:58:20 - Processando livro - Detalhes: Array
+(
+    [id] => VXpWCgAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => VXpWCgAAQBAJ
+            [etag] => SyKuWg1Gii8
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/VXpWCgAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Automatize tarefas maçantes com Python
+                    [subtitle] => Programação prática para verdadeiros iniciantes
+                    [authors] => Array
+                        (
+                            [0] => Al Sweigart
+                        )
+
+                    [publisher] => Novatec Editora
+                    [publishedDate] => 2015-08-11
+                    [description] => APRENDA PYTHON. FAÇA O QUE TEM DE SER FEITO. <br><br>Se você já passou horas renomeando arquivos ou atualizando centenas de células de planilhas, sabe quão maçantes podem ser esses tipos de tarefa. Que tal se você pudesse fazer o seu computador executá-las para você? <br><br>Em Automatize tarefas maçantes com Python, você aprenderá a usar o Python para criar programas que farão em minutos o que exigiria horas para ser feito manualmente – sem que seja necessário ter qualquer experiência anterior com programação. Após ter dominado o básico sobre programação, você criará programas Python que realizarão proezas úteis e impressionantes de automação sem nenhum esforço: <br><br>•        Pesquisar texto em um arquivo ou em vários arquivos. <br><br>•        Criar, atualizar, mover e renomear arquivos e pastas. <br><br>•        Pesquisar na Web e fazer download de conteúdos online. <br><br>•        Atualizar e formatar dados em planilhas Excel de qualquer tamanho. <br><br>•        Separar, combinar, adicionar marcas-d'água e criptografar PDFs. <br><br>•        Enviar emails para lembretes e notificações textuais. <br><br>•        Preencher formulários online. <br><br>Instruções passo a passo descreverão cada programa e projetos práticos no final de cada capítulo desafiarão você a aperfeiçoar esses programas e a usar suas habilidades recém-adquiridas para automatizar tarefas semelhantes. <br><br>Não gaste seu tempo executando tarefas que um macaquinho bem treinado poderia fazer. Mesmo que não tenha jamais escrito uma linha de código, você poderá fazer o seu computador realizar o trabalho pesado. Saiba como em Automatize tarefas maçantes com Python.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8575224468
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788575224465
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 1
+                        )
+
+                    [pageCount] => 568
+                    [printedPageCount] => 61
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / Programming Languages / Python
+                            [1] => Computers / Programming / General
+                        )
+
+                    [averageRating] => 5
+                    [ratingsCount] => 1
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.2.1.0.preview.1
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71plWIi60ANZ1Kn-GTChNwBjabqkagpVGMaoEyX3-5Sq3fH249Hq4x_tS2pdyXPnNOf9H3u9phm7h8n2h1yire1wTYFYWew3_VVv8CiAMM8TjQooidkFkCcHL86K_WUuALfyopx&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71bFAUhu-Xqu0_vuVkLJej_eusUyKFGf1MLa5L8pKrmpENg70x_zhWjtGRQLfPJoFbTweCROLRhsSNNDTQ0RnG8hjgl5le0kGuZhiXvMig28g8fqXHyPvtJL0XI8h9SnFTj0XQO&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71Q4xNfBCSgdr9nWdm2a2c3f7hdWt2m7i4Y-u_Lt_USZKB0p4syXzjRRWhpdA2E1MwhDhhaSOPG84JBjFCANx5JoF6jCTGp3HA-rAO6698J90Px9fRsP0hS8sJ5IYWObrybDFgm&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72AIsDLzCg_G9mNmXDtTbBWsFZTZhGOktqDq1KGX0eaC2XrM8QSa9q_9cgbngsR7RQU2fxBkIM5TRfop2t7A64n8m8gqCpZ-VDXsismmpSPCJ8lmthJdw21obHzQE-boqNFnK1k&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71JAm0DUHC0P5y8o9GnRUTRSWWbvW1timAAHxQefMQM9QbORySm445YgMDhrmEDdqsnvIKvme2abxh_HxQNWUSjVF1b1x79BUtjxoC52o-dWhtVC_v8bsM-LHM4cq1C6xH75eHz&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=VXpWCgAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE73UZ1j7gWUyjz2YrusKaIhZ2zh0ySVKBEtzTmMxLOeZkATtT_4YK2owzGnUD9NJ3SKZaULqwqehfe9Iq6VgA5woDcqMCjlRg6FnCa0Uv6KKfcpBXdMTLUHV0fM1RlgWGy7lCwII&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=VXpWCgAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=VXpWCgAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=VXpWCgAAQBAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Automatize_tarefas_ma%C3%A7antes_com_Python-sample-pdf.acsm?id=VXpWCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=VXpWCgAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 16:58:20 - Processando livro - Detalhes: Array
+(
+    [id] => XqbfCgAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => XqbfCgAAQBAJ
+            [etag] => 4+BrGJVjj+g
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/XqbfCgAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Python fluente
+                    [subtitle] => Programação clara, concisa e eficaz
+                    [authors] => Array
+                        (
+                            [0] => Luciano Ramalho
+                        )
+
+                    [publisher] => Novatec Editora
+                    [publishedDate] => 2015-11-05
+                    [description] => A simplicidade de Python permite que você se torne produtivo rapidamente, porém isso muitas vezes significa que você não estará usando tudo que ela tem a oferecer. Com este guia prático, você aprenderá a escrever um código Python eficiente e idiomático aproveitando seus melhores recursos – alguns deles, pouco conhecidos. O autor Luciano Ramalho apresenta os recursos essenciais da linguagem e bibliotecas de Python mostrando como você pode tornar o seu código mais conciso, mais rápido e mais legível ao mesmo tempo. <br><br>Muitos programadores experientes tentam dobrar o Python para que ele se enquadre em padrões aprendidos com outras linguagens e jamais descobrem os recursos do Python que estão além de sua experiência. Com este livro, esses programadores Python aprenderão a ser totalmente proficientes em Python 3. <br><br>Este livro inclui: <br><br>•        O modelo de dados do Python: entenda como os métodos especiais são o segredo para o comportamento consistente dos objetos. <br><br>•        Estruturas de dados: tire total proveito dos tipos embutidos e entenda a dualidade entre texto e bytes na era do Unicode. <br><br>•        Funções como objetos: veja as funções Python como objetos de primeira classe e entenda como isso afeta alguns padrões de projeto populares. <br><br>•        Técnicas de orientação a objetos: crie classes após dominar referências, mutabilidade, interfaces, sobrecarga de operadores e herança múltipla. <br><br>•        Controle de fluxo: tire proveito de gerenciadores de contexto, geradores, corrotinas e concorrência com os pacotes concurrent.futures e asyncio. <br><br>•        Metaprogramação: entenda como funcionam propriedades, descritores de atributos, decoradores de classe e metaclasses.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 857522462X
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788575224625
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 1
+                        )
+
+                    [pageCount] => 800
+                    [printedPageCount] => 55
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / Programming Languages / Python
+                            [1] => Computers / Programming / General
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.1.1.0.preview.1
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE72IYUQVasR96ojsG9LSSve7TdZOFx1RjzhkWopl2ZP7LUoJ74Pqn8VwzS3AApXtGq5dfZF4yUY_vLwFyuWFghpXnbw_hpbhmJ2T9LYZdCi5NLM0OqsrfBfTD-w5b6UdRtEv-ndE&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE7244_ZrmrqSTnUPbuXz4aqUbk7d9A8Ixcfd5trdGa_aoUp0TBO2cSpFar4-Hx7ku-n9uwpS9t-JfKnrY8EseadDdCaIBDJtu8oWsDKZELR3Rad9xJDZW7cZ4OSnkCqXd_RzRaJo&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE717rBLM6vYJek90ChE3MU-s5ry4kG3pepaoT9K59ZPKO5P2SUkXIkB1WcF6lI3HATZI1jc5S7H20_FgFZ0ZbuNZyTfp-uamT3B0CJUzdiJ7DpmpJ9MNxbhXKGY-4dVD9R6oONBy&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70tI2xDZtdC2OdmfXK8wOT-QzJaRNcjNqImNxfU2C_5oNqf4X3WqwomHx6sCR7aFdoa7IHKZnsnMltLguEw2u4JMX4bz200c1IYppwZmXn18oe-07csNnncwvItmPlob4sdQuFv&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE73vlWEqZDPvRl98boeGNij_Akm30EtU6hWudDue4xgHz19XfDlBrRBkwRZ80fnoacEoDjn9b8iBP66_7_wic16lFRqqAR2hHyWb1IFBYyY4WzgTZ0_d9fswu86fxY527EbCId47&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=XqbfCgAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE73RsIT-1aeagjB_1H42baDfxeEsZoOLNjc_B1IpkaaM8pCYzX5kv2VbWl8_WpsMwvS3jqQbdLd_Mlg3bdHhISbFmQ5dwoAUAioWtuVY3czCcTcUjmirnS_G4_W-5GvMu4e9W8eG&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=XqbfCgAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=XqbfCgAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=XqbfCgAAQBAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Python_fluente-sample-pdf.acsm?id=XqbfCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=XqbfCgAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:08:00 - Processando livro - Detalhes: Array
+(
+    [id] => uze6DwAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => uze6DwAAQBAJ
+            [etag] => Wz99/LFdo4I
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/uze6DwAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Flask de A a Z
+                    [subtitle] => Crie aplicações web mais completas e robustas em Python
+                    [authors] => Array
+                        (
+                            [0] => Tiago Silva
+                        )
+
+                    [publisher] => Casa do Código
+                    [publishedDate] => 2019-10-29
+                    [description] => Flask é um dos melhores frameworks para se trabalhar no Python atualmente. Por ser uma ferramenta robusta e completa, ela permite que a aplicação Web seja construída de forma a atender às necessidades de seu usuário final, ao mesmo tempo em que flexibiliza o fluxo de desenvolvimento de uma equipe. Flask interage de forma excelente com SQLAlchemy, uma biblioteca ORM muito interessante e completa, que nos permite trabalhar com diversos bancos de dados relacionais dentro do Python com segurança, e isso trará muitas vantagens para nossos estudos. Neste livro, Tiago Silva mostra como criar aplicações Web e APIs Rest totalmente robustas utilizando Flask, SQLAlchemy e outras ferramentas que o Python possui. Você desenvolverá um sistema de gerenciamento de produtos, onde organizaremos suas categorias, usuários e funções, podendo limitar um usuário para que ele acesse apenas a API do sistema ou o administrador também, com autenticação segura. Ao término, teremos uma aplicação que possuirá uma API e uma área administrativa completa com templates personalizados para atender nossas regras de negócio.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8572540342
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788572540346
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 239
+                    [printedPageCount] => 196
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / Languages / Python
+                            [1] => Computers / Internet / Web Programming
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 1.9.10.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=uze6DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73L1m5WjKzEFvcjwIWFNm1tVLrxtMFRMQPvYWvZTLcaAKAJnS8auDJ8cUAlXija6HD1-0JZXShFeBNgzFb9EUPQ5o_J8O31E5md5RXLuu7tASbUbts5qNbrGLXdzLkmcNSzKh7V&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=uze6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71_-kRjedBjFLp6oYr0sPo60ISiUWy65ObSdCwifbUTWXXhM0AAp2is5kY454B5fbkx3Z16i58m3z7_t1hOs61xt7t6WwXnUVa6VCfcabG-vChkw6Ec2iMZ5_-Z6L_WdU3Fi_8n&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=uze6DwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE721eM1rvO9gkwZyni3JWLTR50oFwtDbv5rcjSCpPeJVHCH1pgKiJ59yEoOlrwCGTg9uzRDqb8A3BrWEUJOyuFEitCAlo4c6KnIZoeygInp2zlfEYumrepBekXpl81wo24BPF6eX&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=uze6DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72SO4AaeKc0EL8xWHMB61yAcAE1_dhrLxwc3dxDRVMtgI7le51eJ3jLKrdsQV3Wg8P8mFxA6ZwORO2qa0h19CaELYN8CQ9IjByzpjPuhFjNLCKiUYxEa73rO13OT0JzllSDM9Sy&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=uze6DwAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE734F7VVwRzQ56SrQP-3EExaZkW3qLsv7wGrQsfKbibJGbkKG6V1Tc2W_Z1MXRw3gxfHk2vrSVFPtR0ULyVpbJ1I-eFWNPYxldhzXwwOJMNvunoNqMGMlM8yj_S6S56N9bRogJn2&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=uze6DwAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70bP0BqIk59xQeCG9QyG2E2kkJwmULDvcPaGoh32N87E2D1JDTBODPDwdwVPeesx4Zwx3gJCiter7F5an1XpviI3xnVYhVTTaK_PLXsV6ixoNKBV8hTTatBEniCOhItWUhdq30-&source=gbs_api
+                        )
+
+                    [language] => en
+                    [previewLink] => http://books.google.com.br/books?id=uze6DwAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=uze6DwAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=uze6DwAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 13
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 49.9
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 49.9
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=uze6DwAAQBAJ&rdid=book-uze6DwAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 49900000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 49900000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Flask_de_A_a_Z-sample-epub.acsm?id=uze6DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Flask_de_A_a_Z-sample-pdf.acsm?id=uze6DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=uze6DwAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:08:01 - Processando livro - Detalhes: Array
+(
+    [id] => rvKPDwAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => rvKPDwAAQBAJ
+            [etag] => hUFx+uk5pXo
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/rvKPDwAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Flask
+                    [subtitle] => 41 Portable Cocktails to Drink Anywhere
+                    [authors] => Array
+                        (
+                            [0] => Sarah Baird
+                        )
+
+                    [publisher] => Chronicle Books
+                    [publishedDate] => 2019-07-23
+                    [description] => A compilation of portable drinks, Flask comprises 41 classic and contemporary cocktail recipes that can be transported anywhere. From imbibing in the great outdoors to ringing in the New Year, the book offers recipes for all of life's greatest moments. Bold, vivid infographics detail drink recipes for 6- and 17-ounce flasks, perfect for sipping solo or sharing with friends. Accessible and fun, the book includes a brief history of flasks, common dos and don'ts, and an interactive quiz!
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 1452173370
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9781452173375
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 144
+                    [printedPageCount] => 146
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Cooking / Beverages / Alcoholic / Bartending & Cocktails
+                            [1] => Cooking / Beverages / Alcoholic / General
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 1.3.3.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=rvKPDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE70EDPHjr2y6QGzJq5LX87LKT3208B_DSystB-FvnIkH_FZoeNn3OBUflQTBvO7Ro8cJxc2oBOZsZJ3mPMFgRE2HdcVSQXPwU9jOdw9-5ApIrpa9B6PPHsiLmO-eGWMK-E0osthV&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=rvKPDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71g9SpnSYz5AeHQxE51nDITfCscfxe9Lr3kFEnTYd_MpxMZnOVq3_gU3R2WnwNSUjJ25Hkg4KdkTo-zpQ6LxJxuO4ehSxQzu66mu2oQr6kj2m3ltcfI9U4aowJL36BOLI8mHGTX&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=rvKPDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71l6D-fiCBjgKaJb5ZLVoEP_9heRenDfW7DpItTJTP1LNue2j8rjTRi53YSQTYNHu5CJfKanaTiU3t_zbS6hx80hwQ3nvsbdf3niBz340Ppf-DH14LFd-hhyEFpW9ROD7jrWWO-&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=rvKPDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72nPZMSFLm-dCPUwMjwJNIaHZIova5wAlOljrskCmCvMx0-Soi6H4Zn3FKlic_nw2C1BtciNg-LCwc7TbWP1TRfssHiyhtbk7QoAIpwkaA9XyLXMJC8_On4VfeIEJ4zGETjJIlO&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=rvKPDwAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE73iknzGAO4LLhev0bnFYlf9jDP-h4h6snXEVXTaZgBSgzsP1bPIgo-yLok5Cb3GTxk7VB6Z7DnR606vx9RbHZ_-6VN6v-A_qV0PrBnRxax4qn2IP62AJj_r_vMIkOf15B3pB26y&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=rvKPDwAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE71kIwNIMsv3o8vOZCHZFkkCIdjOGBv9UicIKTK0ZkUjulPQ61t66f_PAFht53wDFgimdIECKutUTpx8Br7KMgX5r4gLOPt5ZjJPwoNl58xQ1rW6paymudtM9yzgQfMDni1ixS2u&source=gbs_api
+                        )
+
+                    [language] => en
+                    [previewLink] => http://books.google.com.br/books?id=rvKPDwAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=rvKPDwAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=rvKPDwAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 3
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 62.71
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 62.71
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=rvKPDwAAQBAJ&rdid=book-rvKPDwAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 62710000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 62710000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Flask-sample-epub.acsm?id=rvKPDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Flask-sample-pdf.acsm?id=rvKPDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=rvKPDwAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:08:02 - Processando livro - Detalhes: Array
+(
+    [id] => VKRwAwAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => VKRwAwAAQBAJ
+            [etag] => zPcnvqeL6wQ
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/VKRwAwAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Flask Web Development
+                    [subtitle] => Developing Web Applications with Python
+                    [authors] => Array
+                        (
+                            [0] => Miguel Grinberg
+                        )
+
+                    [publisher] => "O'Reilly Media, Inc."
+                    [publishedDate] => 2014-04-28
+                    [description] => <p>Take full creative control of your web applications with Flask, the Python-based microframework. With this hands-on book, you’ll learn Flask from the ground up by developing a complete social blogging application step-by-step. Author Miguel Grinberg walks you through the framework’s core functionality, and shows you how to extend applications with advanced web techniques such as database migration and web service communication.</p><p>Rather than impose development guidelines as other frameworks do, Flask leaves the business of extensions up to you. If you have Python experience, this book shows you how to take advantage of that creative freedom.</p><ul><li>Learn Flask’s basic application structure and write an example app</li><li>Work with must-have components—templates, databases, web forms, and email support</li><li>Use packages and modules to structure a large application that scales</li><li>Implement user authentication, roles, and profiles</li><li>Build a blogging feature by reusing templates, paginating item lists, and working with rich text</li><li>Use a Flask-based RESTful API to expose app functionality to smartphones, tablets, and other third-party clients</li><li>Learn how to run unit tests and enhance application performance</li><li>Explore options for deploying your web app to a production server</li></ul>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 1491947616
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9781491947616
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 1
+                        )
+
+                    [pageCount] => 258
+                    [printedPageCount] => 258
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / General
+                            [1] => Computers / Programming / General
+                            [2] => Computers / Languages / General
+                            [3] => Computers / Languages / Python
+                            [4] => Computers / Programming / Open Source
+                            [5] => Computers / Web / General
+                            [6] => Computers / Internet / Web Programming
+                            [7] => Computers / Internet / General
+                        )
+
+                    [averageRating] => 5
+                    [ratingsCount] => 1
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 0.2.1.0.preview.1
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=VKRwAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE737O9RqpQZJ5pk-E-mEVYH_qdILd_spCCSrhLuQR0saJKBNBI2f7r0Vzw_SXHOYVMJUAx3Rwg4ndQDkrR_wkL_cqdJuB7vCzlS7Ma6mCDy0wkp4dcu9tlN5C-AdRytvBBKN-tjj&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=VKRwAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72KThzmr6WhwBxW0-chQq0YtxsTZSx0m91LqvXSoaVwpZVMIU3FaYgKj7jmKz6SOlOg4Z2pTrhn8t3WqJz7oydo7LHKQFZYfPoDGC7zeEQCE3CCV4cHqEM2cmY5iuWfwkj0hrKs&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=VKRwAwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE722vU0MYiKlzLMCVMnz8sCcWdwLozhNozdIcCXaKxZBMvxByJglUbTdC2-ms9UZ-tsgMZd1Ka97K4ZQlmk_Fw8oSGrbm55jZix6joRqIFktFkfGWJH7-qpLYE8q56m9IhtnmP_J&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=VKRwAwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72a2A5V3IgwADytVVweVSdFEJOfefq5OV5o4W9N03_1ubAcwOj9-QDXOAivsBi9lR6dJ-6P1B0w1mA665AzbrHGRAJZD0Z2Ibp6jw5Rybo4M64XVv2baPZcyo8oKLKzhx6rsi_W&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=VKRwAwAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE70tyWDekLYuOcPxHzyVDbxbUxrXwuv2vJDNKSkmeg_LjCNbb8bPMw86clK9M141Q0Edw5aWjSUNKXgyEQ_c9enOcfsoULumP_WBav86O2veERYD6CdHDlTONwZgydJ-z1gKlRcO&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=VKRwAwAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE71WparJ1Cx-r6cBVnOn9Zs8exyZSTSpNL9LG9fn7WLQiHpgOshzGKMdDU1UmowjB0wXfmNSYCOsrH9a7hp_Tc4SAMlbYgEuRPfaEbBEtgATuFGKo0vYnPsqtWtEeze7KhPgcscI&source=gbs_api
+                        )
+
+                    [language] => en
+                    [previewLink] => http://books.google.com.br/books?id=VKRwAwAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=VKRwAwAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=VKRwAwAAQBAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=VKRwAwAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:09:17 - Processando livro - Detalhes: Array
+(
+    [id] => I-fUDAAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => I-fUDAAAQBAJ
+            [etag] => l8TsVWR0p5w
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/I-fUDAAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Dom Casmurro
+                    [authors] => Array
+                        (
+                            [0] => Machado de Assis
+                            [1] => Edições Câmara
+                        )
+
+                    [publisher] => Edições Câmara
+                    [publishedDate] => 2016-08-12
+                    [description] => <p>Romance publicado pela primeira vez em 1899, <i>Dom Casmurro</i>, novo título da série Prazer de Ler da Edições Câmara, apresenta um olhar crítico sobre a sociedade brasileira do século XIX e  integra a trilogia realista de Machado de Assis ao lado de <i>Memórias Póstumas de Brás Cubas</i> e <i>Quincas Borba</i>.</p><p></p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8540205416
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788540205413
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 194
+                    [printedPageCount] => 194
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Fiction / Romance / General
+                        )
+
+                    [averageRating] => 5
+                    [ratingsCount] => 1
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 2.6.8.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71zqgJHpFiSYrFGFcvDOezG6tqlZbmeJAGOnhgN1PtDqPxHQpkfPS2aWDY0tdkIJpis_gos70KIlU4p0hV47PcVxXDI2YMHZszRDyCpLuiU9ouf6nxl8U0t9LRbbMCnLDPdfvyz&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70TN9TVzkslyldfBj9sHZDsNob3CBA4vohmvxRFb_JyuUOIKudZio6olIpLXvvavX0tqQWSCMUKhzASd4IvC9o1MayHVJho5TDqO3_pkhJpDjVAypbeFTNise0bBHx_jOKy1CPK&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE72qJmLPSsJHYUUqr_hupr8pFbJ_WLFFKe3uviwMR5zbuzXavLFBRSMaha-lwhhMMk1EYbP9R50CLZ5Z36B0zg6LYpgpPolXW_ztq6zxdyUIzd9lg4zPtQvSxEMQ15Sh5CxwCC-l&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71NoYU3dxlfIwgQGCm1dg1xYmup7qU_Fu2uUPnUPQ6qeRNiEFgUeS_2ULik30NRhBsG36v74BNEI27qldlpdmYyUFMbXa9WIvkO8NMad5L5JuAsSD9f6EN5Z28z-5Np7wBwgSi7&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE7330ILpTqIn7_mogILNzGWfi99Jg9UQFDeSlizufuwm2DRzIToCJ76FLBJUJc0uKIHSR0ejJ6sAep3vwXl1c5Gq6IucbM5Sx9cTGKbwbJa-xj5toTqfUUbw_OIlAn3Rh59-Y0zy&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE71RaQdYuQsOdIyo_gDQELnHroob1nuKl3IayATb-uKt9guFTUncCl3TDKx8hHgwO6z7i2-2-nGIVUo0FTDp8mCwX7fBZg3Af9Yew7zDONnnxQ20BIq5bGeW_FfYR83CrMopPVYb&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=I-fUDAAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=I-fUDAAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=I-fUDAAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 11
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 0
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 0
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=I-fUDAAAQBAJ&rdid=book-I-fUDAAAQBAJ&rdot=1&source=gbs_api
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => ALL_PAGES
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Dom_Casmurro-sample-epub.acsm?id=I-fUDAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Dom_Casmurro-sample-pdf.acsm?id=I-fUDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=I-fUDAAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:09:18 - Processando livro - Detalhes: Array
+(
+    [id] => 99vuAAAAMAAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => 99vuAAAAMAAJ
+            [etag] => HZCNFzZxC9s
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/99vuAAAAMAAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Venha ver o pôr-do-sol & outros contos
+                    [authors] => Array
+                        (
+                            [0] => Lygia Fagundes Telles
+                        )
+
+                    [publisher] => Editora Atica
+                    [publishedDate] => 1988
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8508028601
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788508028603
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 
+                        )
+
+                    [pageCount] => 79
+                    [printedPageCount] => 90
+                    [dimensions] => Array
+                        (
+                            [height] => 21.00 cm
+                        )
+
+                    [printType] => BOOK
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.6.4.0.preview.0
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=99vuAAAAMAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE71tFxq_uWs3-gWekBBHEHnZ61BlY3UHgyVJt_edsPsjSZJIpTS8egDHnVv3h5fOe-7YIQH-lENpksQiB5m4UW2vdmt4ukLBpn51Dj090tSV3W7D_pIMzvOSOV5stzAr1Pria4Nn&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=99vuAAAAMAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72En3C0sm7IrlibfiX7x-43ZpurzK6gchwv0C1bi1HPtP_MQM0d-hy4dzP_bcgSnKYo8OFVMOyZjWiIVYLgxQkaLfy-NEAQ2-fuqWH20fT0JfdsO7VaXpfJ4nV_k-ptEbE8Bcau&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=99vuAAAAMAAJ&printsec=frontcover&img=1&zoom=2&imgtk=AFLRE731pBiflqj89luBzjwVWg0gP9gIiLEJcijtFgUxmSWKqUXedlhyZt09TB64i1WtlcP3pYVunh-oxSQ62wIIWuRLJYKezXWiK0bOyxsksaIqsbmC6wj60DDO8IWKkwlGSBY2JiKP&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=99vuAAAAMAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE73hIAsZsFT_pPM4s3134752rMJUMFYUdvTKBclz2TV6a6Mb_qS--q3_s8ysePNA16UsCbaCQfJbgaNH6QLGIMpW6a_JMdfcwwWiPm5SkappqqQ1acce8TZ8s_ovZOaw5TRxLkmE&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=99vuAAAAMAAJ&printsec=frontcover&img=1&zoom=4&imgtk=AFLRE71lG_lpkIPBO-fCkZ4ifONhQ9UX0uLu-jee3gHJrnunNYZpd2AkHpHTefPvAQxfjb9sbNGOHmTbnBigZH0OuGCjcb99SK5y-JNkyCaDJbBrnVXfInkwK0Lvu9eUB-tJoQuNoxUZ&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=99vuAAAAMAAJ&printsec=frontcover&img=1&zoom=6&imgtk=AFLRE71G9naeyJCZ2vs6pW4LyP9VS7Dge68mKaSuRvMQfJBxfv1nFx2OKfqqfvHXvIPa0cZSBvluWGIja0ZXnfqd5eI0o45PHU-kgLA2p_3tylKKItUEG1Klrw3-ecMfFf9d5pGwebAf&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=99vuAAAAMAAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=99vuAAAAMAAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=99vuAAAAMAAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => NO_PAGES
+                    [embeddable] => 
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=99vuAAAAMAAJ&hl=&source=gbs_api
+                    [accessViewStatus] => NONE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:09:19 - Processando livro - Detalhes: Array
+(
+    [id] => TuJPa52BlKoC
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => TuJPa52BlKoC
+            [etag] => Xr5KuTVS1II
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/TuJPa52BlKoC
+            [volumeInfo] => Array
+                (
+                    [title] => Dom Casmurro
+                    [subtitle] => de Machado de Assis
+                    [authors] => Array
+                        (
+                            [0] => Wellington Srbek
+                            [1] => Machado de Assis
+                        )
+
+                    [publisher] => Distribuidora Autentica LTDA
+                    [publishedDate] => 2013-09-12
+                    [description] => Um dos principais clássicos de nossa literatura ganha versão em quadrinhos, numa fiel adaptação produzida por dois autores de destaque das HQs brasileiras.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8564823292
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788564823297
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 80
+                    [printedPageCount] => 82
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Comics & Graphic Novels / Literary
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 0.11.9.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [comicsContent] => 1
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=TuJPa52BlKoC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73XDoFWR2slmOOru_3gM_Wws_BpeL9RjvSCdDLyYOU-UHm0AUOen0yXagDw4V7BR76E6RpZPAzkArgO4AC2kmNVjmbOiqGMmS0SE_LZ1pEKEYJz5mxrYfhD_SF-0C338FamefN7&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=TuJPa52BlKoC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71nElvQSav99R8DT2kjbktA1blmgCEy_CAHG_pWM9NpdHn6PPP4_LhAWGWLls4rIh9WNrHwbfq7fWvPZJbilz5U9kQeVu7QMAPrXaloU69kUe38enlXw2TSYggiq8QFR44Y6IvB&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=TuJPa52BlKoC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE7198aDCOMb7SlDx_Eg_E3TyxTen9i6WI7ATJ2zcaol3GL8AxXHj21a2i5FZJaoGQ0GOVkcaoaMsKxcO4a6UYFl0qj0KCT7sQLuv30K95tfzWJPmplMmTQR7JIBZo67y7mClTbhn&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=TuJPa52BlKoC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72b9G04HwPlSqBdaWhiD7SbLrpQ9FNkFjPwKSWd2gpHCq_xEzKoe3-1kp3fpMv98OHrfdrwj9Z_n9q8KASo_YYONGpHA9_GpgSzhiZ6m2OiDSRePZA1al1JZHeB4vl1JKECbppu&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=TuJPa52BlKoC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71ltw7yh445irQuBVBDJ8A_a1rgK8VE-_MVr_IErQ2PY8hpEKZQ7-uWsTvEjJVOUu5aG9n61e3bVPNv9FOwSNhfp9Fa7efFzMO8GP5AH7DoV_zorB5VdvgxtReFwxAPvvdDZS95&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=TuJPa52BlKoC&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE73dXCTO4Dmf3pNPDQBwkLBmlYjItWZ9QWf8fugIWUiEl9iikUCg8eQxCroqxCILAGu3VD9Tx-0h3L9O3Hew4JmcjiALMx6oJBAcFW6LO8ok9TNwEQc_ppJMHIitO57IpY_KUhWZ&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=TuJPa52BlKoC&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=TuJPa52BlKoC&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=TuJPa52BlKoC
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 15
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 52.9
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 52.9
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=TuJPa52BlKoC&rdid=book-TuJPa52BlKoC&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 52900000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 52900000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Dom_Casmurro-sample-epub.acsm?id=TuJPa52BlKoC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Dom_Casmurro-sample-pdf.acsm?id=TuJPa52BlKoC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=TuJPa52BlKoC&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:09:33 - Processando livro - Detalhes: Array
+(
+    [id] => yGXyDwAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => yGXyDwAAQBAJ
+            [etag] => PEHtQTNhBXQ
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/yGXyDwAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => As infinitas vidas de Dylan Reynolds
+                    [authors] => Array
+                        (
+                            [0] => Sarah Pires Barreirinhas
+                        )
+
+                    [publisher] => Editora Labrador
+                    [publishedDate] => 2020-07-21
+                    [description] => Eu sabia sobre sua dor. De como penetrava sua pele, tornando-se parte de seu corpo, misturando-se com o sangue de suas veias. Eu sabia o quanto queria viver e o quanto estava esforçando-se para isso. Eu sabia muito sobre ele. Mas o que eu não sabia era como seria sua história se não tivesse morrido naquela tarde. Não é sobre o que foi, mas o que poderia ter sido. Livro de estreia de Sarah Pires Barreirinhas, As infinitas vidas de Dylan Reynolds é exemplo de uma nova geração de romances: não apenas ressalta a complexidade do universo interior adolescente, repleto de inseguranças, lutas, dores e amores, mas denuncia uma sociedade injusta, que parece mais preocupada em cobrar padrões do que aceitar diferenças. Com personagens envolventes e realistas, a obra traz um enredo intrigante que prenderá o leitor até a última página.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 655625021X
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9786556250212
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 208
+                    [printedPageCount] => 239
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Young Adult Fiction / General
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.6.6.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE707sneg0Bfhyek2LGQgj_fB4_a8gPP-STHJLWSbWTlEabD4SYejWaqqeoYjjckyirqtnYX7pFj817CQau5_UMgevKNraNofmGJ9q-m_CZM8nRPYkU97lF39W9QqCL2_xwkiGV8q&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72K1IR0PCnwrS4UHqLnh4dBQyEB_FyOhv3REII23wfhXIy5VFnWujjltIGKCxJ0NJ0lzxOWiH1CUu8_DH5Z2VDJdMpksClnhT3eey5bHj7XtnbUL5GiptEMyAzwS5ci6K0PbUlf&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE70A45LHYEpgOgH5W47Kb2X0sPLcDpa-JKMAQhgBkN1cDgXGyAAc0zzNTO0mT5-Gv8EQBrJEQZLHxLLH1uUuW4zQPhPqwR494Rn6Uvmnk-TRgkNaqxs9J8HtQYEQSzm_XnAVUav-&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71oKXw0x7mNF0c47bEhq5y8JANr7iYTz6ovS8FCjUzNUfO9UmRL9IGIuWWnOOciOu67-Y2bVVxVWSJoOiFOV4QxrqcIYPJ8uGrAQsqiJnsMltQajuWOcfo0WBUFFiNwAQk_pqbr&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE72lIZSb1seD0xkHGay-NkUV_NdwqOeWqco6_zAZH4mc6K73DkoCObFOpAR5A2d5nz2TP0BNXX0YsgOIzfbhiW04OBTokWiRn_g96G9BljuxpwEGQlNTVpmM9okk4-BqVVA5Glcn&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70nf8XLdee3LV2nXgHJ8EW88RsFMMTXMZ2PvTXsSgQRF0jJ1j9KrCtpMBuQT7D1vYgofe_fcDDsOJPxwSnH5U56zX9-w5McLX0qncO44_R8vGgFa58xCxDzvWq8D7iA6F_oE7q0&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=yGXyDwAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=yGXyDwAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=yGXyDwAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 7
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 35
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 35
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=yGXyDwAAQBAJ&rdid=book-yGXyDwAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 35000000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 35000000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/As_infinitas_vidas_de_Dylan_Reynolds-sample-epub.acsm?id=yGXyDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/As_infinitas_vidas_de_Dylan_Reynolds-sample-pdf.acsm?id=yGXyDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=yGXyDwAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:09:34 - Processando livro - Detalhes: Array
+(
+    [id] => D-anDwAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => D-anDwAAQBAJ
+            [etag] => SopgRfSTy7Y
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/D-anDwAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Orgulho
+                    [authors] => Array
+                        (
+                            [0] => Ibi Zoboi
+                        )
+
+                    [publisher] => HARLEQUIN
+                    [publishedDate] => 2019-08-27
+                    [description] => Zuri Benitez tem orgulho. Orgulho do Brooklyn, de sua família e de suas raízes afro-latinas. Mas orgulho não é o suficiente para salvar seu bairro da gentrificação e de se tornar irreconhecível. Quando a rica família Darcy se muda para o outro lado da rua, Zuri não quer contato com seus dois filhos adolescentes, mesmo quando sua irmã Janae começa a se apaixonar pelo encantador Ainsley. Acima de tudo, ela não suporta o crítico e arrogante Darius, mas eles são forçados a se entender, e o que antes era um confronto se torna uma inesperada amizade. Agora, com quatro irmãs a empurrando em direções diferentes, com o adorável Warren em busca de sua atenção e com as candidaturas para a faculdade chegando, Zuri luta entre encontrar seu lugar na paisagem em transição de Bushwick ou perder tudo. Nesta adaptação contemporânea do clássico Orgulho e preconceito, a autora aclamada pela crítica, Ibi Zoboi, habilidosamente equilibra identidade cultural, classe e gentrificação com a mágica do primeiro amor em sua vibrante versão do amado romance.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8595080585
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788595080584
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 
+                        )
+
+                    [pageCount] => 272
+                    [printedPageCount] => 226
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Juvenile Fiction / Social Themes / Prejudice & Racism
+                            [1] => Juvenile Fiction / General
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.15.14.0.preview.2
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=D-anDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE70T_NcCfva7xD6Q5czX7MdM_HwpX-uLjBg-p4P-nZziEoh6e1FJ4kI2iHoSI9mJiiyKYwWniDq0RjdKEH-oCG4c346Teo-ykRt6WASG_gF13K4-FlTA5v-G_TcQ_hsejIAHrgQE&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=D-anDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72NXTHk4RFyDmiNxSRhjTxHlMHq_7j6bqSltK2_o8Lec3ePmfF0YgDbAlnbCnKnx_aDh5hJT4THGMOmTEUlMyrHj0NUmJHqPIIvfhSiEthcP9tVl6bcPqPxGHoCDPEaQuKfmjxt&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=D-anDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE737gmALEmSK5XBHr5pQ-wP2upT-CzcIad8vIL0PF_Lw1oADJWkmFFSy7s-dia0x77eS1uwNKJHNfPs6vBK4O54y3olTg7qe3or3nUKM5k9YcWhAlsstvJxuo5n0vHyyIgc_JWGI&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=D-anDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE707zx3nljJ5Tv2ENAMbaDflEQ3Uhn775cs5-w3Dt_yUJS5gHsKM2DKfrDtLllEmD9wJI6ysxfiDs2iGvNwiRW65HwpVrRRVUFTenbdh03Mh7sJi17bdVDb8sMdfFw9ccdT9YWkc&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=D-anDwAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71o4EmhW7_n_NpS_K3CCn_GlQJqaCzdO1l4VmUUR_u1GarnjbntLMWg3Yd93-8xM0X3S8bULal5peyRGPeotAhRo5saNy-OwmLnyws6mILaUtK4yCA-Bi-kptopqDiTOdwqVzqq&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=D-anDwAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE71YsMuUUPeWW7LBi1GSq1UOwn8aXb9_KST8UEIgSHbN-l88t56zYayM7wWt0mR9gvji5QoMLDsCvc5G0COv4BzYFn7XyL-Ql3XtuFg5gK9QmZ0Iz6Y0UXy7_NxoofQ6HrTb4814&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=D-anDwAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=D-anDwAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=D-anDwAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 16
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 11.96
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 11.36
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=D-anDwAAQBAJ&rdid=book-D-anDwAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 11960000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 11360000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Orgulho-sample-epub.acsm?id=D-anDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=D-anDwAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:20:08 - Processando livro - Detalhes: Array
+(
+    [id] => Q9OP0ClTTvIC
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => Q9OP0ClTTvIC
+            [etag] => c4kmMOdXWIc
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/Q9OP0ClTTvIC
+            [volumeInfo] => Array
+                (
+                    [title] => PHP 5 For Dummies
+                    [authors] => Array
+                        (
+                            [0] => Janet Valade
+                        )
+
+                    [publisher] => John Wiley & Sons
+                    [publishedDate] => 2004-04-26
+                    [description] => Covers the latest major release of PHP, the most popular open source Web scripting language, in the friendly, easy-to-understand For Dummies style <ul> <li>PHP is installed on nearly nine million servers, and usage has grown at the rate of 6.5 percent per month for the past two years</li> <li>PHP is easy to learn, well suited for Web development, and can be embedded with HTML, making it a good choice for creating dynamic Web pages for e-commerce sites and other Web applications; a database-friendly language, it connects easily to Sybase, MySQL, mSQL, Oracle, and other databases</li> <li>Explains how to acquire and install PHP, how PHP's features make it a useful scripting language, and how to use PHP for three of the most common applications: interactive Web sites, database storage, and common operating system tasks</li> </ul>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 0764556622
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9780764556623
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 1
+                        )
+
+                    [pageCount] => 408
+                    [printedPageCount] => 410
+                    [dimensions] => Array
+                        (
+                            [height] => 23.00 cm
+                        )
+
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / Internet / Web Design
+                            [1] => Computers / Programming / General
+                        )
+
+                    [averageRating] => 3.5
+                    [ratingsCount] => 4
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 3.2.1.0.preview.1
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=Q9OP0ClTTvIC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE722S8aQJFc4mFeUyJK81zhKdJvivx7YZCGyOFSeIGjQcMBqM_X-d8fyqOCyRX-CYVPv75ATFuO_0zUxp2bsnEUxX70l658hve33qKlAzmxeP1ihY_KzYud0GIaIFW4EhFbkAYuQ&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=Q9OP0ClTTvIC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73Q6YDIZnHea5UIOkJAEfu-Qid6qH1mYr_THOMCLq0JoVO3vX-bPda_RO3g4hngHAHO-aEWBIWVgrG5bRsRpAvIuijjt1KzXPXPlMkyZUzXHLZZTHTMxcBgxvov4Kxuej6zuMtq&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=Q9OP0ClTTvIC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71M6Y5QixcMZgJTa0ESjhw8m_qNH_KDGe-LSYOmQKkbSHb5zj-xhTljW30ZoAE1c0S6p8CFruroYUq9dKf8V7K4J6nUiJnM4nOGGTNnGsC9ZBNRmOPhZClZQYt4LoafpSQ_XBnv&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=Q9OP0ClTTvIC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72AHq1evivfgnkSNH9fctwxT4CSFqAd0X3NIuqvKTOfhS1CSJawn0ljQKZkZ5jfW4X2cQjI1xzc01O0SRpGhrkvALFajIQrhI0a9AJQJcJ13_08K923tNmBGTQnyVOMDc-JAuje&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=Q9OP0ClTTvIC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE73nHUAf_Pz9hFtd58aUC4x_U-aJ-1nhRhNk1XGKvaqNaf3uXbDYy3dg_s3R4c2_-oAJ75TyYX6wqWSBT3-aiur6ki4WzSATk4VpPNU8KZuewWnap0uisXe6kdqxKlnJQhW2pFFc&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=Q9OP0ClTTvIC&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE72PVbwii1laMUsWGQg_TqI1hDdCrrudCe0O1znMmmDY56_jJdeHuvYVavRwyrQS1WDuN976GHLpp138WpAip_nJL2jpPfS1NOFoxXiA-Vf8iFc_KjHQY1wbue0RR4aTuiQMfIHu&source=gbs_api
+                        )
+
+                    [language] => en
+                    [previewLink] => http://books.google.com.br/books?id=Q9OP0ClTTvIC&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=Q9OP0ClTTvIC&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=Q9OP0ClTTvIC
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/PHP_5_For_Dummies-sample-pdf.acsm?id=Q9OP0ClTTvIC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=Q9OP0ClTTvIC&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:20:09 - Processando livro - Detalhes: Array
+(
+    [id] => mPzUH1EPEJkC
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => mPzUH1EPEJkC
+            [etag] => 3Pjpa39eEAY
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/mPzUH1EPEJkC
+            [volumeInfo] => Array
+                (
+                    [title] => PHP and MySQL by Example
+                    [authors] => Array
+                        (
+                            [0] => Ellie Quigley
+                            [1] => Marko Gargenta
+                        )
+
+                    [publisher] => Prentice Hall Professional
+                    [publishedDate] => 2006-11-22
+                    [description] => <b>Quickly master dynamic, database-driven Web development–no experience necessary!</b> <p>Even if you’re completely new to PHP, MySQL, and Web database development, this book will guide you through every step of building powerful, database-driven, dynamic Web sites. Direct from the world’s top scripting instructor, Ellie Quigley, <b><i>PHP and MySQL by Example</i></b> illuminates every concept with tested code examples, screen shots showing program output, and clear, line-by-line explanations. </p> <p>Classroom-tested in Ellie Quigley’s Silicon Valley training courses and at Marko Gargenta’s Marakana training company in San Francisco, this book takes you from the simplest PHP scripting and SQL querying techniques all the way to dynamic, database driven Web site construction with PHP and MySQL. From simple fill-in forms to program security and debugging, it’s the only PHP/MySQL book you’ll ever need!</p> <p>This book covers</p> <ul> <li>Complete PHP fundamentals, including operators, strings, conditionals, loops, arrays, functions, and more </li> <li>PHP QuickStart for more advanced readers–makes you productive with PHP in the space of just fifteen book pages </li> <li>Essential Web development techniques, from file handling to validating user input with regular expressions </li> <li>Powerful PHP features, including user-defined functions and self-processing PHP Forms </li> <li>Day-to-day MySQL administration </li> <li>A complete SQL tutorial for creating queries, retrieving data, and writing data with MySQL </li> <li>Session management and cookies </li> <li>Object Oriented PHP </li> <li>Best practices for using PHP and MySQL together</li> </ul> <p>Nearly 100,000 professionals and power users have relied on Ellie Quigley’s books to master scripting languages. With <b><i>PHP and MySQL by Example,</i></b> you can, too. And once you’ve become an expert, you’ll turn to this book constantly as your go-to source for reliable answers, solutions, and code.</p> <p> </p> <b>Lab Solutions</b> <p>Solutions to the end-of-chapter labs are available at www.prenhallprofessional.com/title/0131875086.</p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 0138006024
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9780138006020
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 912
+                    [printedPageCount] => 910
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / Languages / General
+                            [1] => Computers / Internet / Web Programming
+                        )
+
+                    [averageRating] => 5
+                    [ratingsCount] => 5
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 2.7.7.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=mPzUH1EPEJkC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73fr_yvoX6S-QvOEQvvXMrQP6Bbs6vZ0PA20Pl1R_spa9foLt91kFno-sR_2zrxtw0FqFN6VspqhhYsBgCX6JmiaZElB6m34Roz-ySh5KUj7oFC0OHBJyudO8K0WxXhEZiAozKW&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=mPzUH1EPEJkC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE734rARns9Wl8XD6VWEDtEVPQWfq41chNwZVt6DB6wRjcEi-62A6dKN6lczeIZ58qAoo7H8a-1IJxqzVWLhLAiQlu5HVtgMayp33yUcihGdVG9NKv_TCqzntjKBZefsViUGE41yV&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=mPzUH1EPEJkC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71ngvW4wzPMl2y4H4ZiVpLZE4dRgspWpBMu-tgx9YeX7-HXM8Slgdip3f64x28ajm0H9_veDLBs2x_ZDDiad3754wPwm_R7Kd49USaGjZwNyGSywZpSksUs8BAMeTawUL4mflLM&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=mPzUH1EPEJkC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70VMHcSmvX5JCSNJH5YXii85CoC_1sXcth7vk_9H--NLe4tYKZaWbzJVwC8vp0sO6uW842GK7vYhsv7MjAayLyA1S6xbTDcWHsGIeEJ9VkiRM3aU1KIeoAAsI46WWfw0XQQ49gU&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=mPzUH1EPEJkC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE73fKc7SrZOwZNjTYthuaN98x5_rUMyaK9b7MXZva_JG-Mx3x15pfo-9g-mgt5lGDICePPSfneTQfKS8APCshi41SYO6JLqdOFiD3yqZQvbIx-ccVs8QPnInEvlqW5YVjmpJARIZ&source=gbs_api
+                        )
+
+                    [language] => en
+                    [previewLink] => http://books.google.com.br/books?id=mPzUH1EPEJkC&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=mPzUH1EPEJkC&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=mPzUH1EPEJkC
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 7
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 147.92
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 147.92
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=mPzUH1EPEJkC&rdid=book-mPzUH1EPEJkC&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 147920000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 147920000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED_FOR_ACCESSIBILITY
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=mPzUH1EPEJkC&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:20:09 - Processando livro - Detalhes: Array
+(
+    [id] => 7IVIiQLvBW8C
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => 7IVIiQLvBW8C
+            [etag] => LpEMTSNP8mY
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/7IVIiQLvBW8C
+            [volumeInfo] => Array
+                (
+                    [title] => Object-Oriented PHP
+                    [subtitle] => Concepts, Techniques, and Code
+                    [authors] => Array
+                        (
+                            [0] => Peter Lavin
+                        )
+
+                    [publisher] => No Starch Press
+                    [publishedDate] => 2006
+                    [description] => <p>It can be tough to learn the concepts of object-oriented programming with a language like C++. Fortunately, PHP's simple object model makes it an ideal language for learning about object-oriented programming.<br><br>For the uninitiated, this guide to the latest version of PHP offers a speedy introduction to object-oriented programming, including a thorough explanation of classes as well as coverage of constructors, destructors, inheritance, polymorphism, and interfaces. In this easy-to-follow, example-filled guide, new concepts are coupled with fully-functional, ready-to-use PHP classes (all available for download from the book’s companion website,http://<wbr>objectorientedphp.com).<br><br>You’ll learn to:</p><p>* Promote code reuse by creating your own classes and using built-in classes<br>* Customize and improve classes through inheritance<br>* Simplify database access by developing MySQL database and result set classes<br>* Incorporate an RSS reader into your site using only four lines of code<br>* Use XML easily with an object-oriented approach<br>* Employ PHP to autogenerate documentation for your code<br>* Make thumbnail images on the fly<br>* Replace clumsy error trapping with exception handling<br>* Take full advantage of advanced OO features in PHP<br>* Incorporate AJAX into your OO PHP code<br><br><i>Object-Oriented PHP</i> will show you how to maximize PHP’s features, with much less work than you might think. With <i>Object-Oriented PHP</i>, you can master the basics of object-oriented programming and get up to speed on PHP in one fell swoop.</p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 1593270771
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9781593270773
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 216
+                    [printedPageCount] => 216
+                    [dimensions] => Array
+                        (
+                            [height] => 24.00 cm
+                            [width] => 17.80 cm
+                            [thickness] => 1.70 cm
+                        )
+
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / Programming / Object Oriented
+                            [1] => Computers / Programming Languages / JavaScript
+                            [2] => Computers / Web / Design
+                        )
+
+                    [averageRating] => 4.5
+                    [ratingsCount] => 8
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 2.3.5.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=7IVIiQLvBW8C&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71GgGlaRoNtRU61Z7lNQ-Fln-J2axP3uddrbMa3YVTYp5_rwlCSXPYpNPf--9J4qle0HHh7emT11S5IGkFFUKt5xMqZUyeFM-F_puwxnDzboYigqqKtPkfiTu2LvIhLxqWdcdYg&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=7IVIiQLvBW8C&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72IXExuit_ygb-kxVbzXLnqh4vOBixArXprco-8BCFcSdMyiGlkLypTfD8ujE0eUMsS8Rx5ZHfRHJYfJb396Q2HJFFUj4W7rawzGO_PJkDaA_z6Gp8B6osgZFS9Ub_S-4c9qPlV&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=7IVIiQLvBW8C&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE72GRIKsYhsZ4v5eFqsDJtZBu9uH4Fi8Uqf5c2sNQonvLC3Y0r-zCeL3ZK3RZu2_hXvN2fJ5KwKkcAZ_T6S7NbNFIWb5sFXOhYJ9J_MmuUFV2kzo9RHJ_hYb5lmd2_ml7h-xaXQV&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=7IVIiQLvBW8C&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71UW8KqF6xwCLCeen2hLkJ-ZQHfzLMOQcMEt5USShVmSvZETpdMHGUdnLD975EhpelmQY87qRdDgHYlX8_HNc73VPyX2WUiVqCBQrdgWzh0LktkbBu5jepMA-9tgNCpFx891FHc&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=7IVIiQLvBW8C&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71UhWkw0F7Jjf_FJjjb6LU1-qd459Nedp0BZAs5S36RoaB3nyVCU0BAApJy765iEf1UmRwC_buRj1i5Z3TxVdW7YXZUNnk9CyYkCGJr7Cz7diSTwe2aaxkLgwIEkLfRMEpEElkG&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=7IVIiQLvBW8C&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70f-dkzicpBzpqBEgVXTV-Ggz-g_0yYOdR4wZZVtIg7PFbsZT_bYAdfaAQMKgzjfYK1NgRru3nothjFF1J1u_GQtjftcPvFzeU9E5kK4sRAk9rjShr-pydculOOjS0KNvolZimn&source=gbs_api
+                        )
+
+                    [language] => en
+                    [previewLink] => http://books.google.com.br/books?id=7IVIiQLvBW8C&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=7IVIiQLvBW8C&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=7IVIiQLvBW8C
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 8
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=7IVIiQLvBW8C&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-05-27 17:20:10 - Processando livro - Detalhes: Array
+(
+    [id] => iUfIqyAbIU4C
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => iUfIqyAbIU4C
+            [etag] => 9X8xUFpF5V4
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/iUfIqyAbIU4C
+            [volumeInfo] => Array
+                (
+                    [title] => PHP Cookbook
+                    [authors] => Array
+                        (
+                            [0] => David Sklar
+                            [1] => Adam Trachtenberg
+                        )
+
+                    [publisher] => "O'Reilly Media, Inc."
+                    [publishedDate] => 2003
+                    [description] => <p>PHP is a simple yet powerful open source scripting language that has become a big player in web development. Over a million web sites, from large corporate sites to small personal sites, are using PHP to serve dynamic web content. PHP's broad feature set, approachable syntax, and support for different operating systems and web servers make it an ideal language for rapid web development.</p> <p>The <i>PHP Cookbook</i> is a collection of problems, solutions, and practical examples for PHP programmers. The book contains a unique and extensive collection of best practices for everyday PHP programming dilemmas. For every problem addressed in the book, there's a worked-out solution or "recipe" -- short, focused pieces of code that you can insert directly into your applications. But this book offers more than cut-and-paste code. You also get explanations of how and why the code works, so you can learn to adapt the problem-solving techniques to similar situations.</p> <p>The recipes in the <i>PHP Cookbook</i> range from simple tasks, such as sending a database query and fetching URLs, to entire programs that demonstrate complex tasks, such as printing HTML tables and generating bar charts. This book contains over 250 recipes on the following topics:</p> <ul> <li>Working with basic data types, including strings, numbers, dates and times, and arrays</li> <li>PHP building blocks, such as variables, functions, classes, and objects</li> <li>Web programming, including forms, database access, and XML</li> <li>Useful features like regular expressions, encryption and security, graphics, internationalization and localization, and Internet services</li> <li>Working with files and directories</li> <li>Command-line PHP and PHP-GTK</li> <li>PEAR, the PHP Extension and Application Repository</li> </ul> This book contains an impressive collection of useful code for PHP programmers, from novices to advanced practitioners. Instead of poking around mailing lists, online documentation, and other sources, you can rely on the <i>PHP Cookbook</i> to provide quick solutions to common problems, so you can spend your time on those out-of-the-ordinary problems specific to your application.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 1565926811
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9781565926813
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 1
+                        )
+
+                    [pageCount] => 608
+                    [printedPageCount] => 640
+                    [dimensions] => Array
+                        (
+                            [height] => 24.00 cm
+                            [width] => 17.80 cm
+                            [thickness] => 2.80 cm
+                        )
+
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Computers / General
+                            [1] => Computers / Computer Science
+                            [2] => Computers / Data Science / General
+                            [3] => Computers / Database Administration & Management
+                            [4] => Computers / Programming / General
+                            [5] => Computers / Languages / JavaScript
+                            [6] => Computers / Languages / PHP
+                            [7] => Computers / Internet / Web Browsers
+                            [8] => Computers / Internet / Online Safety & Privacy
+                            [9] => Computers / Web / Page Design
+                            [10] => Computers / Web / Site Directories
+                            [11] => Computers / Web / General
+                            [12] => Computers / Internet / Web Design
+                            [13] => Computers / Internet / General
+                        )
+
+                    [averageRating] => 3.5
+                    [ratingsCount] => 6
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 6.6.5.0.preview.1
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=iUfIqyAbIU4C&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73VPTFi7AzavySYcvzgBbJlXpbIZZ3TDZtqUvBFIfMr4YAVAsOZ9blORw_ivHwSc2eKLtcIQxeAXk9RzSVS15esx0SI-TjLagMwq0ev8qkzS_w--UzIbV5JzpWis9oedAsAYJcv&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=iUfIqyAbIU4C&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70ja5t2gfzDP1KrtPjf_k9taXwQVcmf_Ec50wk70gtKoa6DOsqZrGZuAZpZovloytmde5Z9JcwsdMABOzAiLSQM7GE3I1KrT6ZQ4sKj6qudChlqrUPwUKMfuQYUzSO-7uGm7ePU&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=iUfIqyAbIU4C&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE72G_zGSQBWzBOGl9OxxIPxVLxRZanq6yVA7Vz8_5uCm_uC5fFnJptpJYCLQLMM_-cisAEsp-OKwXpucL9CYX9F_MmoZuT1a1SteweEZpI746ma9D64tyQF3zm7_n_Wh_kF4q5t7&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=iUfIqyAbIU4C&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72DfyFIq9hiH_Dz7YmCkkYkGaecaTvbrrcXhlc2UkjGbBEsLvrnHzhJmMPkU8uy92rQwdn3lw5EygzSE1RiGbWt4CMXjPcp8QrDstfRb_S25_EaOYAuGyNegYmuVn5XTH2y6AdJ&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=iUfIqyAbIU4C&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE72xmtkS6X5pGRaPZRo3cgUQ0qPlLBM1rqqtoq5BTiCsEByZIqBOc1Kcn0U_VaEhD163Bfp-tZxxqA_SgFqm7nLajWM7A67FPKEC5uGs60pBCgunizTnfG5D7ACpY4ZeluuQqhjX&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=iUfIqyAbIU4C&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE714119gVBVNshTq53GDci0w-Ih3nwc3sGndmp0WOA7DP1YtOGBGSj_iOXTYMNoag_2Plefa62Wx6iKXOM1vJjtCAAhykNKUXuvK5abMZTEd1lHKsEK_f4BmevGtWjG7BwZGQLs_&source=gbs_api
+                        )
+
+                    [language] => en
+                    [previewLink] => http://books.google.com.br/books?id=iUfIqyAbIU4C&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=iUfIqyAbIU4C&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=iUfIqyAbIU4C
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=iUfIqyAbIU4C&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+

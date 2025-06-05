@@ -1,0 +1,27 @@
+{
+    "name": "biblioteca/mvc-biblioteca",
+    "description": "Sistema de gerenciamento de biblioteca escolar",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "phpoffice/phpspreadsheet": "1.21",
+        "maennchen/zipstream-php": "^2.1",
+        "dompdf/dompdf": "^2.0",
+        "ezyang/htmlpurifier": "^4.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Biblioteca\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alef de Souza Sobrinho",
+            "email": "alefsouzasobrinho51@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
