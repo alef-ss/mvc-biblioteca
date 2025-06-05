@@ -1,0 +1,204 @@
+:root {
+    --primary-color: #4361ee;
+    --primary-hover: #3a56d4;
+    --secondary-color: #f0f4f8;
+    --text-color: #212121;
+    --card-bg: #ffffff;
+    --body-bg: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --icon-color: #4361ee;
+    --danger-color: #ef233c;
+    --danger-hover: #d90429;
+    --header-bg: linear-gradient(135deg, #4361ee, #3a0ca3);
+    --stats-card-bg: #ffffff;
+    --quick-action-bg: #edf2fb;
+    --notification-badge: #f72585;
+    --success-color: #4cc9f0;
+    --warning-color: #f8961e;
+}
+
+[data-theme="dark"] {
+    --primary-color: #4cc9f0;
+    --primary-hover: #4895ef;
+    --secondary-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --body-bg: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --icon-color: #4cc9f0;
+    --danger-color: #f72585;
+    --danger-hover: #b5179e;
+    --header-bg: linear-gradient(135deg, #1a1a2e, #16213e);
+    --stats-card-bg: #252525;
+    --quick-action-bg: #2b2d42;
+    --notification-badge: #f72585;
+    --success-color: #4cc9f0;
+    --warning-color: #f8961e;
+}
+
+body {
+    background: var(--body-bg);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    transition: all 0.5s ease;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 600px;
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    text-align: center;
+    animation: fadeInUp 0.6s ease both;
+    margin: 1rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    animation: fadeInDown 0.8s ease;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    outline: none;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle i {
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+/* Stars for Dark Theme */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+[data-theme="dark"] .stars {
+    opacity: 1;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle var(--duration) infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { 
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from { 
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .theme-toggle {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+}

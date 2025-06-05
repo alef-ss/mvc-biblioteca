@@ -1,2 +1,19 @@
-ErrorDocument 404 /gestao_de_biblioteca/includes/404.php
 RewriteEngine On
+
+# Página de erro 404 personalizada
+ErrorDocument 404 /mvc-biblioteca/includes/404.php
+
+# Redirect non-existent files to 404 page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /mvc-biblioteca/includes/404.php [L]
+
+# Permite acesso apenas aos arquivos necessários
+<FilesMatch "\.(php|html?|css|js|jpe?g|png|gif)$">
+    Require all granted
+</FilesMatch>
+
+# Bloqueia acesso direto apenas a arquivos sensíveis
+<FilesMatch "(config\.php|database\.php|\.htaccess)">
+    Require all denied
+</FilesMatch>
