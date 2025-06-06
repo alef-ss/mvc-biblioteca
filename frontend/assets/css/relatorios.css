@@ -1,0 +1,373 @@
+:root {
+    --primary-color: #4361ee;
+    /* Azul primário */
+    --primary-hover: #3a56d4;
+    /* Azul escuro para hover */
+    --secondary-color: #f0f4f8;
+    /* Cor de fundo suave */
+    --text-color: #212121;
+    /* Cor do texto */
+    --text-muted: #6c757d;
+    /* Cor para texto desativado */
+    --card-bg: #ffffff;
+    /* Cor de fundo dos cards */
+    --body-bg: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    /* Fundo suave */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    /* Cor de sombra leve */
+    --icon-color: #4361ee;
+    /* Cor dos ícones */
+    --danger-color: #ef233c;
+    /* Cor para erros */
+    --danger-hover: #d90429;
+    /* Cor de hover para erros */
+    --header-bg: linear-gradient(135deg, #4361ee, #3a0ca3);
+    /* Cabeçalho com gradiente de azul */
+    --stats-card-bg: #ffffff;
+    /* Fundo de cards de estatísticas */
+    --quick-action-bg: #edf2fb;
+    /* Cor de fundo de ações rápidas */
+    --notification-badge: #f72585;
+    /* Cor de badge de notificação */
+    --success-color: #4cc9f0;
+    /* Cor para sucesso */
+    --warning-color: #f8961e;
+    /* Cor de alerta */
+    --placeholder-color: #a0a0a0;
+    /* Cor dos placeholders */
+}
+
+[data-theme="dark"] {
+    --primary-color: #4cc9f0;
+    /* Azul mais claro para o tema escuro */
+    --primary-hover: #4895ef;
+    /* Azul escuro para hover no tema escuro */
+    --secondary-color: #121212;
+    /* Cor de fundo escura */
+    --text-color: #fcf7f7;
+    /* Texto claro para o tema escuro */
+    --text-muted: #a0a0a0;
+    /* Texto desativado claro */
+    --card-bg: #1e1e1e;
+    /* Cor de fundo dos cards no tema escuro */
+    --body-bg: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+    /* Fundo escuro com gradiente */
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    /* Sombra mais forte para o tema escuro */
+    --icon-color: #4cc9f0;
+    /* Ícones com a cor azul mais clara */
+    --danger-color: #f72585;
+    /* Cor de erro em tema escuro */
+    --danger-hover: #b5179e;
+    /* Hover de erro em tema escuro */
+    --header-bg: linear-gradient(135deg, #1a1a2e, #16213e);
+    /* Cabeçalho escuro com gradiente */
+    --stats-card-bg: #252525;
+    /* Fundo de cards de estatísticas no tema escuro */
+    --quick-action-bg: #2b2d42;
+    /* Ações rápidas com fundo escuro */
+    --notification-badge: #f72585;
+    /* Badge de notificação em tema escuro */
+    --success-color: #4cc9f0;
+    /* Cor de sucesso no tema escuro */
+    --warning-color: #f8961e;
+    /* Cor de alerta no tema escuro */
+    --placeholder-color: #777777;
+    /* Cor de placeholder no tema escuro */
+}
+
+body {
+    background: var(--body-bg);
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container-link {
+    border-radius: 5px;
+}
+
+table {
+    background-color: var(--table-bg);
+    color: var(--table-text);
+    border-color: var(--table-border);
+}
+
+table th,
+table td {
+    border-color: var(--table-border);
+}
+
+/* body {
+    background: var(--body-bg);
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+    height: 100vh;
+    margin: 0;
+} */
+
+.container {
+    max-width: 1200px;
+}
+
+/* .page-header h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 30px;
+} */
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    background-color: var(--card-bg);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow-color);
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary-color), #224abe);
+    color: white;
+    border-bottom: none;
+    padding: 15px 25px;
+    border-radius: 15px 15px 0 0 !important;
+    transition: all 0.5s ease;
+}
+
+.card-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-header i {
+    margin-right: 10px;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 500px;
+    width: 100%;
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-weight: 700;
+    border-top: none;
+    transition: all 0.5s ease;
+}
+
+.table td {
+    vertical-align: middle;
+    color: var(--text-color);
+    transition: all 0.5s ease;
+}
+
+.badge-count {
+    background-color: var(--notification-badge);
+    color: white;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #224abe;
+    transform: translateY(-2px);
+}
+
+.sala-card {
+    border-left: 5px solid var(--primary-color);
+    margin-bottom: 15px;
+    transition: all 0.5s ease;
+}
+
+.sala-card .card-body {
+    padding: 15px;
+}
+
+.sala-card h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.aluno-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--secondary-color);
+    transition: all 0.5s ease;
+}
+
+.aluno-row:last-child {
+    border-bottom: none;
+}
+
+.aluno-info {
+    display: flex;
+    align-items: center;
+}
+
+.aluno-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+/* @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+} */
+
+/* .pulse {
+    animation: pulse 2s infinite;
+} */
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(78, 115, 223, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(78, 115, 223, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(78, 115, 223, 0);
+    }
+}
+
+.top-sala {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-sala::after {
+    content: "TOP";
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    background-color: var(--accent-color);
+    color: white;
+    width: 100px;
+    text-align: center;
+    transform: rotate(45deg);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Text elements */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    border: none;
+    outline: none;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1) rotate(15deg);
+}
+
+.theme-toggle i {
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+/* Floating Stars (for dark theme) */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+[data-theme="dark"] .stars {
+    opacity: 1;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle var(--duration) infinite ease-in-out;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

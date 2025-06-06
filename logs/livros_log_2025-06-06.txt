@@ -1,0 +1,159 @@
+2025-06-06 15:15:13 - Processando livro - Detalhes: Array
+(
+    [id] => yGXyDwAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => yGXyDwAAQBAJ
+            [etag] => 8MS5ngD0KQ0
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/yGXyDwAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => As infinitas vidas de Dylan Reynolds
+                    [authors] => Array
+                        (
+                            [0] => Sarah Pires Barreirinhas
+                        )
+
+                    [publisher] => Editora Labrador
+                    [publishedDate] => 2020-07-21
+                    [description] => Eu sabia sobre sua dor. De como penetrava sua pele, tornando-se parte de seu corpo, misturando-se com o sangue de suas veias. Eu sabia o quanto queria viver e o quanto estava esforçando-se para isso. Eu sabia muito sobre ele. Mas o que eu não sabia era como seria sua história se não tivesse morrido naquela tarde. Não é sobre o que foi, mas o que poderia ter sido. Livro de estreia de Sarah Pires Barreirinhas, As infinitas vidas de Dylan Reynolds é exemplo de uma nova geração de romances: não apenas ressalta a complexidade do universo interior adolescente, repleto de inseguranças, lutas, dores e amores, mas denuncia uma sociedade injusta, que parece mais preocupada em cobrar padrões do que aceitar diferenças. Com personagens envolventes e realistas, a obra traz um enredo intrigante que prenderá o leitor até a última página.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 655625021X
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9786556250212
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 208
+                    [printedPageCount] => 239
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Young Adult Fiction / General
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.6.6.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE72IFwiYIKAX-QuzswRDiCKgjKGGIJNnbQDRIlAq3Msk4PpKjYcWJzI_PgzLl48f-5Q5HijcrSUiEfNkEPbGc4kfNJbHFhadgLfRWlF4SCWR10KCgis7FPps5yvY8ySh7gACvjQm&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73wqJVqBCHgLfTRw2arshZAf6wxU639SoJmiZaTSR5jzQY7kdb8u94J6Cfa8zcNvmkLyeI-9qJp9TZTq1FKw7ltgOpdtdvcctSh6G3V0C7fmzvrmTSdpk73L2ng3mxjHPdcbRqu&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE72lsCOF0NtFGjogQdtZH71fmn6LxDmZ9Wlox3lpCvijGSEsZVvjAym421ShM8ZcEAzYOSyAeHyOZ-D3XYtPcQEwg2_Dz4bIUzGv0gqJ_X7-crKt9BRF4lYpeWsYjHdMjLIyeVhc&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73QzYlz61mMFOubmdrl5wisyM7d2qoiajO1Kt1a2q_IisPLLxOR-ErqX6ROSSl-o2sNJX9GsKCfMPO0I4Kl8jdd--YucRA5D_R93HRfFk2rT1R0XIe7kf1K0BI1TvGztnN8wApy&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE73P3_n1xuN_mMcg9YEC3go_V1bYHroXBUn5avoU5PBzHVxE50nmNGkfce4IoeW4U0MCZu-HBUVGzf1OBeSAfVQSpgstIOmh2rjdaQU4H0tR7_hkMYDkImMH_HqtPuTblUs4YWhw&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=yGXyDwAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70hDP-SS9lrPT7UT58KLa061JhsfbUG82NxEwjT2O0Ro2WU5fDMxHtUS3zCihU_yVn9bd868TDuEH3VcZHwEv2f4aasGofvLZfsATPnHFQ6A4XkkActiGeY2rsQ0VAEO7-ZXiL4&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=yGXyDwAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=yGXyDwAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=yGXyDwAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 7
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 35
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 35
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=yGXyDwAAQBAJ&rdid=book-yGXyDwAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 35000000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 35000000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/As_infinitas_vidas_de_Dylan_Reynolds-sample-epub.acsm?id=yGXyDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/As_infinitas_vidas_de_Dylan_Reynolds-sample-pdf.acsm?id=yGXyDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=yGXyDwAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+

@@ -13,6 +13,8 @@
     --stats-card-bg: #ffffff;
     --quick-action-bg: #e3f2fd;
     --notification-badge: #ff5722;
+    --form-bg: #ffffff;
+    --input-bg: #f8f9fa;
 }
 
 [data-theme="dark"] {
@@ -30,6 +32,8 @@
     --stats-card-bg: #1e1e1e;
     --quick-action-bg: #263238;
     --notification-badge: #ff7043;
+    --form-bg: #2d2d2d;
+    --input-bg: #3d3d3d;
 }
 
 body {
@@ -40,94 +44,67 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-}
-
-.page-header {
-    background-color: var(--header-bg);
-    color: white;
-    padding: 1.5rem 0;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.8s ease;
-}
-
-.page-header h1 {
-    font-weight: 600;
-    font-size: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.card {
-    border-radius: 12px;
-    box-shadow: 0 8px 24px var(--shadow-color);
-    transition: all 0.5s ease;
-    background-color: var(--card-bg);
-    border: none;
-    margin-bottom: 2rem;
     overflow: hidden;
 }
 
-.card-header {
-    border-radius: 12px 12px 0 0;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1.5rem;
-    transition: all 0.5s ease;
+.container {
+    max-width: 800px;
+    margin-top: 3rem;
 }
 
-.card-header h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.card-body {
-    padding: 1.5rem;
-    background-color: var(--card-bg);
-    transition: all 0.5s ease;
-}
-
-.stats-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.stat-card {
-    background-color: var(--stats-card-bg);
-    border-radius: 12px;
-    padding: 1.5rem;
-    flex: 1;
-    min-width: 200px;
-    box-shadow: 0 4px 12px var(--shadow-color);
-    transition: all 0.4s ease;
-    cursor: pointer;
-    text-align: center;
-}
-
-.stat-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px var(--shadow-color);
-}
-
-.stat-number {
-    font-size: 2rem;
-    font-weight: 700;
+h2 {
     color: var(--primary-color);
-    margin: 0.5rem 0;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.stat-label {
-    font-size: 1rem;
+form {
+    background-color: var(--form-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px var(--shadow-color);
+    transition: all 0.5s ease;
+}
+
+.form-label {
+    font-weight: 500;
     color: var(--text-color);
-    opacity: 0.8;
+    margin-bottom: 0.5rem;
 }
 
+.form-control,
+.form-select {
+    background-color: var(--input-bg);
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border-color: var(--primary-hover);
+    box-shadow: 0 0 0 0.25rem rgba(0, 121, 107, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
 
 /* Theme Toggle */
 .theme-toggle {
@@ -249,5 +226,60 @@ body {
     100% {
         transform: scale(1.1);
         opacity: 0.6;
+    }
+}
+
+/* Floating Stars (for dark theme) */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+[data-theme="dark"] .stars {
+    opacity: 1;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle var(--duration) infinite ease-in-out;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    .theme-toggle {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
     }
 }

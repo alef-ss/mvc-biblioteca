@@ -20,9 +20,10 @@ $sql = "
 ";
 
 $sql_alunos = "
-    SELECT alunos.nome, COUNT(emprestimos.id) AS total_emprestimos
+    SELECT alunos.nome, alunos.serie, COUNT(emprestimos.id) AS total_emprestimos
     FROM emprestimos
     JOIN alunos ON emprestimos.aluno_id = alunos.id
+    WHERE emprestimos.devolvido = '0'
     GROUP BY emprestimos.aluno_id
     ORDER BY total_emprestimos DESC
     LIMIT 5
@@ -32,6 +33,7 @@ $sql_salas = "
     SELECT alunos.serie, COUNT(emprestimos.id) AS total_emprestimos
     FROM emprestimos
     JOIN alunos ON emprestimos.aluno_id = alunos.id
+    
     GROUP BY alunos.serie
     ORDER BY total_emprestimos DESC
     LIMIT 1
