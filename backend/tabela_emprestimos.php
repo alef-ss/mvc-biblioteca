@@ -42,9 +42,9 @@ if ($result->num_rows > 0) {
         if ($row['devolvido'] == 'Sim') {
             echo "<button class='btn btn-success btn-sm' disabled><i class='fas fa-check'></i> Devolvido</button>";
         } else {
-            echo "<a href='?devolver_id=" . (int)$row['id'] . "' class='btn btn-danger btn-sm' onclick=\"return confirm('Confirma devolução do livro?');\">
-                        <i class='fas fa-undo-alt'></i> Devolver
-                    </a>";
+            echo "<button class='btn btn-danger btn-sm btn-confirmar-devolucao' data-id='" . (int)$row['id'] . "'>
+            <i class='fas fa-undo-alt'></i> Devolver
+            </button>";
         }
 
         echo "</td></tr>";
