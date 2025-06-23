@@ -10,6 +10,7 @@ $livrosMaisEmprestados = obterLivrosMaisEmprestados($conn);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Livros Mais Emprestados</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       // Carrega o pacote corechart do Google Charts
@@ -48,6 +49,8 @@ $livrosMaisEmprestados = obterLivrosMaisEmprestados($conn);
     </script>
 </head>
 <body>
+      <div class="menu-lateral"><i class="bi bi-list"></i></div>
+
     <!-- Div onde o gráfico será renderizado -->
     <div id="piechart" style="width: 900px; height: 500px;"></div>
 </body>
