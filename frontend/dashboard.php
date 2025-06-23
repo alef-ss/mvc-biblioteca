@@ -47,11 +47,75 @@ $livrosMaisEmprestados = obterLivrosMaisEmprestados($conn);
         chart.draw(data, options);
       }
     </script>
-</head>
+  </head>
 <body>
       <div class="menu-lateral"><i class="bi bi-list"></i></div>
 
     <!-- Div onde o gráfico será renderizado -->
     <div id="piechart" style="width: 900px; height: 500px;"></div>
+
+  <!-- Div pra carregar o gráfico -->
+  <!-- <div id="piechart" style="width: 900px; height: 500px"></div> -->
+
+  <nav class="menu-lateral">
+    <div class="botao-expandir">
+      <i class="bi bi-list" id="botao-expandir"></i>
+    </div>
+
+    <ul>
+      <li class="item selecionado">
+        <a href="#">
+          <span class="icone"><i class="bi bi-house-fill"></i></span>
+          <span class="txt-link">Início</span>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#">
+          <span class="icone"><i class="bi bi-journal-plus"></i></span>
+          <span class="txt-link">Livros</span>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#">
+          <span class="icone"><i class="bi bi-person-plus-fill"></i></span>
+          <span class="txt-link">Alunos</span>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#">
+          <span class="icone"><i class="bi bi-person-badge-fill"></i></span>
+          <span class="txt-link">Professores</span>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#">
+          <span class="icone"><i class="bi bi-arrow-left-right"></i></span>
+          <span class="txt-link">Empréstimos</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script>
+    var itemMenu = document.querySelectorAll('.item');
+
+    function linkSelecionado() {
+      itemMenu.forEach((item) =>
+        item.classList.remove('selecionado'));
+      this.classList.add('selecionado');
+    }
+
+    itemMenu.forEach((item) =>
+      item.addEventListener('click', linkSelecionado)
+    );
+
+    // expandir o menu
+    var botaoExpandir = document.querySelector('#botao-expandir');
+    var menuLateral = document.querySelector('.menu-lateral');
+
+    botaoExpandir.addEventListener('click', function(){
+      menuLateral.classList.toggle('expandir')
+    });
+  </script>
 </body>
 </html>
