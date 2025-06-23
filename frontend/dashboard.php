@@ -12,36 +12,6 @@ include('../backend/dashboard.php');
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/dashboard.css">
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load('current', {
-      'packages': ['corechart']
-    });
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-      var totalLivros = <?php echo $totalLivros ?>;
-      var totalEmprestimos = <?php echo $totalEmprestimos ?>;
-      var totalAtrasados = <?php echo $totalDevolucoesPendentes ?>;
-
-      var data = google.visualization.arrayToDataTable([
-        ['Livros mais emprestados', 'Total'],
-        ['Work', 11],
-        ['Eat', 2],
-        ['Commute', 2],
-        ['Watch TV', 2],
-        ['Sleep', 7]
-      ]);
-
-      var options = {
-        title: 'My Daily Activities'
-      };
-
-      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-      chart.draw(data, options);
-    }
-  </script>
 </head>
 
 <body>
