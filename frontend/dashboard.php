@@ -1,6 +1,7 @@
 <?php
 include('../backend/dashboard.php');
-// var_dump($totalAlunos, $totalLivros, $totalEmprestimos, $totalSalas);
+// Chama a função para obter os 10 livros mais emprestados
+$livrosMaisEmprestados = obterLivrosMaisEmprestados($conn);
 ?>
 
 <!DOCTYPE html>
