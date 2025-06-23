@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100vh;
+}
+
+nav.menu-lateral {
+    width: 50px;
+    height: 100%;
+    background-color: rgb(46, 46, 46);
+    padding: 14px 0 40px 1%;
+    box-shadow: 3px 00 #416AA3;
+
+    position: fixed;
+    top: 0; left: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+.botao-expandir {
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.botao-expandir > i {
+    color: azure;
+    font-size: 26px;
+    cursor: pointer;
+}
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item a {
+    color: azure;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 4%;
+    display: flex;
+    line-height: 40px;
+}
+ul li.item a .icone {
+    font-size: 26px;
+}
+ul li.item {
+    transition: .2s;
+}
+ul li.selecionado {
+    background-color: #416AA3;
+}
+ul li.item:hover {
+    background-color: #416AA3;
+}
+ul li.item a .txt-link {
+    margin-left: 20px;
+    transition: .7s;
+    opacity: 0;
+}
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 36px;
+    opacity: 1;
+}
+ul li.item a .icon > i {
+    font-size: 20px;
+}
+ul li.item .icone {
+    margin-left: 10px;
+}
