@@ -25,16 +25,6 @@ include('../backend/relatorios.php');
                 <i class="fas fa-file-alt animate-bounce" class="fundo-titulo"></i> Relatórios de Empréstimos
             </h1>
         </div>
-        <!-- ======= -->
-
-        <body>
-            <div class="stars" id="stars"></div>
-
-            <!-- Theme Toggle Button -->
-            <button class="theme-toggle" id="themeToggle">
-                <i class="fas fa-moon" id="themeIcon"></i>
-            </button>
-
             <!-- <div class="container mt-4 mb-5">
         <div class="page-header">
             <h1 class="text-center mb-0">
