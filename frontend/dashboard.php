@@ -35,28 +35,48 @@ $livrosMaisEmprestados = obterLivrosMaisEmprestados($conn);
         // Converte o array para o formato aceito pelo Google Charts
         var data = google.visualization.arrayToDataTable(dataArray);
 
-        // Opções do gráfico
-        var options = {
-          title: 'Top 10 Livros Mais Emprestados',
-          pieHole: 0.4, // Gráfico do tipo donut
-          legend: { position: 'right' },
-          chartArea: { width: '70%', height: '70%' }
-        };
+      // Opções do gráfico
+      var options = {
+        title: 'Top 10 Livros Mais Emprestados',
+        legend: { position: 'right' },
+        chartArea: { width: '70%', height: '70%' },
+        width: document.getElementById('piechart').offsetWidth,
+        height: document.getElementById('piechart').offsetHeight,
+        responsive: true
+      };
 
-        // Cria o gráfico de pizza e desenha no elemento com id 'piechart'
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        chart.draw(data, options);
+      // Cria o gráfico de colunas e desenha no elemento com id 'piechart'
+      var chart = new google.visualization.ColumnChart(document.getElementById('piechart'));
+      chart.draw(data, options);
       }
     </script>
   </head>
 <body>
-      <div class="menu-lateral"><i class="bi bi-list"></i></div>
+  <nav class="container-botoes">
+        <ul>
+          <li class="botao">
+            <button>
+              <span class="icone"><i></i></span>
+              <span class="txt">Gerar Relatório</span>
+            </button>
+          </li>
+          <li class="botao">
+            <button>
+              <span class="icone"><i></i></span>
+              <span class="txt">Backup</span>
+            </button>
+          </li>
+          <li class="botao">
+            <button>
+              <span class="icone"><i></i></span>
+              <span class="txt">Baixar Relatório</span>
+            </button>
+          </li>
+        </ul>
+  </nav>
 
     <!-- Div onde o gráfico será renderizado -->
     <div id="piechart" style="width: 900px; height: 500px;"></div>
-
-  <!-- Div pra carregar o gráfico -->
-  <!-- <div id="piechart" style="width: 900px; height: 500px"></div> -->
 
   <nav class="menu-lateral">
     <div class="botao-expandir">
