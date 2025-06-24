@@ -1,75 +1,240 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    height: 100vh;
+  height: 100vh;
+  background-color: #d5dbd4;
+}
+
+.container-botoes {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+  gap: 10px;
+  width: 100%;
+  height: 150px;
+  background-color: #244b1e;
+}
+
+.container-botoes ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container-botoes ul li.botao {
+  display: flex;
+  align-items: center;
+}
+
+.container-botoes ul li.botao button {
+  background-color: #7bb661;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-botoes ul li.botao button:hover {
+  background-color: #5a8f3e; /* darker green on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 nav.menu-lateral {
-    width: 50px;
-    height: 100%;
-    background-color: rgb(46, 46, 46);
-    padding: 14px 0 40px 1%;
-    box-shadow: 3px 00 #416AA3;
+  width: 55px;
+  height: 100%;
+  background-color: #d5dbd4;
+  padding: 14px 0 40px 1%;
+  box-shadow: 3px 00 #416aa3;
 
-    position: fixed;
-    top: 0; left: 0;
-    overflow: hidden;
-    transition: .4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.4s;
 }
+
+#piechart {
+  max-width: 100%;
+  height: 60vh;
+  margin: 0 auto;
+}
+
 nav.menu-lateral.expandir {
-    width: 300px;
+  width: 300px;
 }
 .botao-expandir {
-    width: 100%;
-    padding-left: 10px;
-    padding-bottom: 10px;
+  width: 100%;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 .botao-expandir > i {
-    color: azure;
-    font-size: 26px;
-    cursor: pointer;
+  color: #006400;
+  font-size: 26px;
+  cursor: pointer;
 }
 ul {
-    height: 100%;
-    list-style-type: none;
+  height: 100%;
+  list-style-type: none;
 }
 
 ul li.item a {
-    color: azure;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 14px 4%;
-    display: flex;
-    line-height: 40px;
+  color: #006400;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 14px 4%;
+  display: flex;
+  line-height: 40px;
 }
 ul li.item a .icone {
-    font-size: 26px;
+  font-size: 26px;
 }
 ul li.item {
-    transition: .2s;
+  transition: 0.2s;
 }
 ul li.selecionado {
-    background-color: #416AA3;
+  background-color: #416aa3;
+  box-shadow: 0 3px 2px 0.5px black;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 ul li.item:hover {
-    background-color: #416AA3;
+  background-color: #416aa3;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 ul li.item a .txt-link {
-    margin-left: 20px;
-    transition: .7s;
-    opacity: 0;
+  margin-left: 20px;
+  transition: 0.7s;
+  opacity: 0;
 }
 nav.menu-lateral.expandir .txt-link {
-    margin-left: 36px;
-    opacity: 1;
+  margin-left: 36px;
+  opacity: 1;
 }
 ul li.item a .icon > i {
-    font-size: 20px;
+  font-size: 20px;
 }
 ul li.item .icone {
-    margin-left: 10px;
+  margin-left: 10px;
+}
+
+/* Responsividade avançada para telas menores */
+/* Ajusta o layout dos botões para empilhar verticalmente em telas pequenas */
+@media (max-width: 768px) {
+  .container-botoes {
+    flex-direction: column; /* empilha os botões verticalmente */
+    height: auto; /* altura automática para acomodar os botões empilhados */
+    padding: 10px 0; /* espaçamento vertical */
+  }
+
+  .container-botoes ul {
+    flex-direction: column; /* empilha os itens da lista */
+    gap: 8px; /* espaçamento menor entre os botões */
+    width: 100%; /* ocupa toda a largura disponível */
+    align-items: center; /* centraliza os botões */
+  }
+
+  .container-botoes ul li.botao {
+    width: 80%; /* largura dos botões reduzida para melhor visual */
+    justify-content: center; /* centraliza o conteúdo do botão */
+  }
+
+  .container-botoes ul li.botao button {
+    width: 100%; /* botão ocupa toda a largura do li */
+    padding: 10px 0; /* padding vertical para toque confortável */
+    font-size: 14px; /* fonte um pouco menor */
+  }
+
+  /* Ajusta o tamanho do gráfico para telas pequenas */
+  #piechart {
+    height: 40vh; /* altura reduzida para melhor encaixe */
+  }
+}
+
+/* Responsividade para telas muito pequenas (ex: celulares) */
+@media (max-width: 400px) {
+  .container-botoes ul li.botao {
+    width: 100%; /* botão ocupa toda a largura disponível */
+  }
+
+  .container-botoes ul li.botao button {
+    font-size: 12px; /* fonte menor para caber na tela */
+    padding: 8px 0; /* padding reduzido */
+  }
+}
+
+/* Responsividade para o menu lateral em telas pequenas */
+@media (max-width: 768px) {
+  nav.menu-lateral {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    top: auto;
+    padding: 10px 0;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+  }
+
+  nav.menu-lateral.expandir {
+    width: 100%;
+  }
+
+  nav.menu-lateral ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav.menu-lateral ul li.item {
+    flex: 1;
+    text-align: center;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  nav.menu-lateral ul li.item a {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav.menu-lateral ul li.item a .icone {
+    font-size: 20px;
+    margin: 0 0 4px 0;
+  }
+
+  nav.menu-lateral ul li.item a .txt-link {
+    margin-left: 0;
+    opacity: 1;
+    font-size: 12px;
+  }
+
+  .botao-expandir {
+    display: none; /* esconde o botão expandir no menu móvel */
+  }
+  .botao-expandir > i {
+    display: none;
+  }
 }
