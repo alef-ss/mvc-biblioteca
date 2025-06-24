@@ -75,3 +75,47 @@ function obterLivrosMaisEmprestados($conn) {
     // Retorna o array com os 10 livros mais emprestados
     return $livrosMaisEmprestados;
 }
+
+/**
+ * Função para obter os gêneros mais lidos.
+ * Esta função realiza uma consulta no banco de dados para contar
+ * quantos empréstimos cada gênero teve, ordena do mais lido para o menos,
+ * e retorna os resultados.
+ *
+ * @param mysqli $conn Conexão com o banco de dados
+ * @return array Retorna um array associativo com os gêneros e a quantidade de empréstimos
+ */
+function obterGenerosMaisLidos($conn) {
+    // Monta a consulta SQL para contar os empréstimos por gênero
+    $sql = "
+        SELECT l.genero AS genero, COUNT(e.id) AS total_emprestimos
+        FROM livros l
+        LEFT JOIN emprestimos e ON l.id = e.livro_id
+        GROUP BY l.genero
+        ORDER BY total_emprestimos DESC
+        LIMIT 10
+    ";
+
+    // Executa a consulta no banco de dados
+    $resultado = $conn->query($sql);
+
+    // Verifica se a consulta retornou resultados
+    if (!$resultado) {
+        // Em caso de erro, retorna um array vazio
+        return [];
+    }
+
+    // Inicializa o array para armazenar os gêneros mais lidos
+    $generosMaisLidos = [];
+
+    // Percorre os resultados e adiciona ao array
+    while ($row = $resultado->fetch_assoc()) {
+        $generosMaisLidos[] = [
+            'genero' => $row['genero'],
+            'total_emprestimos' => $row['total_emprestimos']
+        ];
+    }
+
+    // Retorna o array com os gêneros mais lidos
+    return $generosMaisLidos;
+}
