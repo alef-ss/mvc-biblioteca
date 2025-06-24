@@ -11,6 +11,7 @@ $livrosMaisEmprestados = obterLivrosMaisEmprestados($conn);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Livros Mais Emprestados</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       // Carrega o pacote corechart do Google Charts
@@ -97,24 +98,29 @@ $livrosMaisEmprestados = obterLivrosMaisEmprestados($conn);
   </nav>
 
   <script>
+    // Seleciona todos os itens do menu
     var itemMenu = document.querySelectorAll('.item');
 
+    // Função para marcar o item clicado como selecionado
     function linkSelecionado() {
       itemMenu.forEach((item) =>
         item.classList.remove('selecionado'));
       this.classList.add('selecionado');
     }
 
+    // Adiciona o evento de clique para cada item do menu
     itemMenu.forEach((item) =>
       item.addEventListener('click', linkSelecionado)
     );
 
-    // expandir o menu
+    // Seleciona o botão que expande o menu pelo ID
     var botaoExpandir = document.querySelector('#botao-expandir');
-    var menuLateral = document.querySelector('.menu-lateral');
+    // Seleciona o elemento <nav> com a classe 'menu-lateral' para expandir/recolher o menu
+    var menuLateral = document.querySelector('nav.menu-lateral');
 
+    // Adiciona o evento de clique no botão para alternar a classe 'expandir' no menu
     botaoExpandir.addEventListener('click', function(){
-      menuLateral.classList.toggle('expandir')
+      menuLateral.classList.toggle('expandir');
     });
   </script>
 </body>
