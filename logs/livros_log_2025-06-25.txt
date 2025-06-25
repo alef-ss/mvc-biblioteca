@@ -1,0 +1,400 @@
+2025-06-25 15:00:53 - Processando livro - Detalhes: Array
+(
+    [id] => tsNbpFw3PdMC
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => tsNbpFw3PdMC
+            [etag] => 4062LWSIBZg
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/tsNbpFw3PdMC
+            [volumeInfo] => Array
+                (
+                    [title] => Diario de Um Banana, V.2
+                    [authors] => Array
+                        (
+                            [0] => Jeff Kinney
+                        )
+
+                    [publisher] => Vergara & Riba Editoras Ltda
+                    [publishedDate] => 2008
+                    [description] => Greg Heffley tells about his summer vacation and his attempts to steer clear of trouble when he returns to middle school and tries to keep his older brother Rodrick from telling everyone about Greg's most humiliating experience of the summer.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8576831953
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788576831952
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 1
+                        )
+
+                    [pageCount] => 216
+                    [printedPageCount] => 228
+                    [dimensions] => Array
+                        (
+                            [height] => 21.00 cm
+                        )
+
+                    [printType] => BOOK
+                    [averageRating] => 4.5
+                    [ratingsCount] => 34
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 0.4.8.0.preview.1
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=tsNbpFw3PdMC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73uETnHeRK67U45xDDRK3_PP4bmiYQI2lngGEYus6rN8Pn-x6DWOlU9Gm71l6hOCwD4ZJf9oIZm3VNqeP0LhRKKPNwLJ1uH94YlgXtAw2V3-bUOP7T7SlCG0upQs9PpWoInTODp&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=tsNbpFw3PdMC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70L6W0pnL-8dkiH-o_NaXMFJ2N_5NUjupx4SWJ5GjdIha2Jejntcy4sAZ7b9YvTvUrTxtYLZNoFm5m4h8EMbUxIgNBOIQvr8v4Ya5gW3-gQIF_nPwMQ1qqqlDyab4A8OG9j5Dx_&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=tsNbpFw3PdMC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE70VF2AyPoJVArZ28q3pDkBRZ3dzl_oQFg24Q8fAp_YnvffjWqEORX0A336mxV5lvHsYQKDTcBaKKsNmeAw0FZ0yF84BxVhKJXLrInXlAb2sEpvWwJGJKHF0jzab6QaGsKM3eZxl&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=tsNbpFw3PdMC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72IoT7XXFhYFSxANkx4XX7rLwMuoTHsPBumIDebA5p4dQWwo6h3hfx9CiGtq7cGA6e3Itqyhb6jb1uN5yupPCtsJU8sw-da8EaOowZC2kvShbtspMrbEvnz-HNtX-TK45_LNlxy&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=tsNbpFw3PdMC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE718vgcBAlxUEhBoQ11CoUEdjEOY3gUKKDBVpidEVWYhmF5jX5FRlUGfqHUoPKig8_2P-8f4UoOZ6RD7vZZkma67F3uAy53HZp7lLqC0aQrZp_qrlv0TnNlc1r3pD1HMv75yqfKM&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=tsNbpFw3PdMC&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE71Nsu2JQn1XJo2qEGzcVw3Jru1Ji6N6iuKxIgu46SipdcFfOs-MxRX6Y-wO_Il38Yu3Gm2YAryaYnD_tEQOEyfhaXKdcCWjandrd2crCrU__sdQOV-j8Eb5FQgIEXy9zyjYqHvG&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=tsNbpFw3PdMC&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=tsNbpFw3PdMC&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=tsNbpFw3PdMC
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Diario_de_Um_Banana_V_2-sample-pdf.acsm?id=tsNbpFw3PdMC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=tsNbpFw3PdMC&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-06-25 15:00:54 - Processando livro - Detalhes: Array
+(
+    [id] => L7kqAgAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => L7kqAgAAQBAJ
+            [etag] => 7yLnOZ88qI4
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/L7kqAgAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Diário de um Banana 3
+                    [subtitle] => A gota d'água
+                    [authors] => Array
+                        (
+                            [0] => Jeff Kinney
+                        )
+
+                    [publisher] => Vergara e Riba Editoras S/A
+                    [publishedDate] => 2013-05-23
+                    [description] => Greg não toma jeito mesmo. E a cada dia se envolve em mais confusão. O difícil é fazer seu pai engolir esse talento de Greg para se meter em situações embaraçosas. Ele já está por aqui com o garoto. E para botar algum juízo na cabeça dele, Frank Heffley tenta de tudo um pouco. É claro que Greg sempre encontra uma maneira de estragar tudo. Até que seu pai faz uma grande ameaça e as coisas mudam de figura. Qual será a gota d'água que vai fazer a paciência de Frank transbordar de vez? Destaque: Não é fácil ser criança. E ninguém sabe disso melhor do que Greg Heffley, que se vê mergulhado no mundo do ensino fundamental, onde fracotes são obrigados a dividir os corredores com garotos mais altos, mais malvados e que já se barbeiam. Com uma linguagem universal e própria dos pré-adolescentes, essa coleção já vendeu mais de 40 milhões de exemplares em todo o mundo. É uma das séries infantis de maior sucesso de todos os tempos.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8576835207
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788576835202
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 224
+                    [printedPageCount] => 227
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Juvenile Fiction / Family / General
+                            [1] => Juvenile Fiction / School & Education
+                        )
+
+                    [averageRating] => 4.5
+                    [ratingsCount] => 3
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 2.13.9.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=L7kqAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73JO2ut36hi6_iRWekaJRh2FanFxm-bTVG8d6z-OKRe4sadDAyQuN4uRv707-IQkwqJziay7smnUZEUMc_V-ogR0bmVvznw-gyMdKJvnE1tQKOpR9o3utylRMg-3uC6ehw2p7pd&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=L7kqAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71EiR3LrMjRZfOu9Fg13FGkmVSQZ9lpcBlbujhcy75UCC9ld_XZ-XAb_R6YY9KcFT-x0lYl4lMo65L3zbNfZjCOO6eNa2lCPbxTYn2f2sldaswt39hJOWry-tiQZgylvlpyocei&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=L7kqAgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE73cK0OwPFl1UAJPINxghxhPxaZOLlL3UcF7_P5cymXYrN7LuvXLsCZUL0a7400BhHkJKakuKYX0CuoDlGvo4VqJ6Mj3mMGsZJLNNKRk9hy3wYgOA-EKtH90L8c1JSuZrxa3O8P8&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=L7kqAgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72z_j20zppiwY13wkSPArwq6FtLumN1McsJxwisCk_prVYePORX7XKXhD8dCI-KmYZ4kx0AgRTIHb6KRtW2x_57keFr9Iw6lUfqzlnh3WXKRBZFUaxKZEAAbAD4AkLltIYk7EJF&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=L7kqAgAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE72Q99MEfh6ERJUJArvxqm4ERWlhWRoDNzL8of7EopSYcHMeFQZOlnAbCGA34Rv7L1ON4vVgOKfrEMViGzSZT-xoiYlNrYq2ZpL62myqanX7ZA0gYLeVT_OZMEvqeJ-TwK72woqr&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=L7kqAgAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70txiPg469RBmtxC7jqtDXd0ZyOKcqnee2hOi0OlTT_kvWcETuUK-K50c3a8567bf2wx9P7cO_FmnYefyN613w1xAqrQMoPCwDsEqDISqd-9804A4wn8UePBABLFsJsCntTuw-2&source=gbs_api
+                        )
+
+                    [language] => es
+                    [previewLink] => http://books.google.com.br/books?id=L7kqAgAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=L7kqAgAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=L7kqAgAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 20
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 30.11
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 30.11
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=L7kqAgAAQBAJ&rdid=book-L7kqAgAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 30110000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 30110000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Di%C3%A1rio_de_um_Banana_3-sample-epub.acsm?id=L7kqAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Di%C3%A1rio_de_um_Banana_3-sample-pdf.acsm?id=L7kqAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=L7kqAgAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-06-25 15:00:56 - Processando livro - Detalhes: Array
+(
+    [id] => t_6VEAAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => t_6VEAAAQBAJ
+            [etag] => pKt03bg8+os
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/t_6VEAAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => O Diário de um Banana 1
+                    [authors] => Array
+                        (
+                            [0] => Jeff Kinney
+                        )
+
+                    [publisher] => BOOKSMILE
+                    [publishedDate] => 2022-10-21
+                    [description] => <p>Como o Greg diz no seu diário: Não esperem que eu me ponha para aqui com "Querido Diário" isto e "Querido Diário" aquilo. Felizmente para nós, o que o Greg diz e o que realmente faz são duas coisas muito diferentes.</p> <p>«Não é fácil ser criança. E ninguém sabe isso melhor do que o Greg Heffley, que se vê aprisionado na escola preparatória, onde fracotes minorcas pidem os corredores com miúdos mais altos e malvados que já fazem a barba. Em <b> <i>O Diário de um Banana</i> </b>, o autor e ilustrador Jeff Kinney apresenta-nos um herói improvável.</p> <p>Como o Greg diz no seu diário: Não esperem que eu me ponha para aqui com "Querido Diário" isto e "Querido Diário" aquilo. Felizmente para nós, o que o Greg diz e o que realmente faz são duas coisas muito diferentes.»</p> <p>«O mundo está louco pela coleção O Diário de um Banana e pelo Jeff Kinney!» <b>The Sun</b> </p> <p>«Jeff Kinney está no topo, juntamente com J. K. Rowling, dos autores infantojuvenis mais bem-sucedidos do mundo.» <b>The Independent</b> </p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 9896237336
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9789896237332
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 224
+                    [printedPageCount] => 226
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Juvenile Fiction / Comics & Graphic Novels / Humorous
+                            [1] => Juvenile Fiction / Humorous Stories
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 1.7.4.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [comicsContent] => 1
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=t_6VEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE70Hx0YZtbThjF9uLKcP_BLiNfepWT8PshhaalrPNq4fVGtdeh52yOxvrRgfWiLKiD__K5HE7xKDj-VmSPYFzmBiDT5qBwtQ4mUI7Dy2HU2XeQXW5B7loq9mOYkz-Upj_dONtAPQ&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=t_6VEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE710QCmk_6uQfMnzlacT4i6SXbkGgUpTvXHJpzlfQN5feiDb5uiWW0AJW9MMJ8t49R57Xn9POKPNILBkyODf86227wTu0M3xNFtN6Smg3sQgRMW_dU89rCbPtarsz2g2thAABDYz&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=t_6VEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE73dRX_pT9ggkiChvZATplO7FDRVQuMTR0hVUKunYM43sJsVTInj0QY78a85JWUcx9Fy3V4Rvc_8vcMIOR_Erz8dRyjNnlJRabNwVExQxarGUpFysHJqul0I-WpOwcSkBZ0jvqA6&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=t_6VEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70adKAc6Trk8LuUK-bN8Nu73WcIrEyI43YCCzuT4R7exLiqmBzlzIRr8o2QIjRBwzcSww5FWTlnozYLIPsd40W1UVIxWJ3szSOH5tv4KeLjWCpwRPO3Pi3QRKjaBhPKJFNselKA&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=t_6VEAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE73aLQKBPptWiISOJmFCG6fvf3vg0s7ryBjH-BzM8t3Aum5MhKgiCY6KI6tVq0Jeijp4E-UlW42IQV9eSa6rZPxyIWUZsk9u6rHl4LM-fNlyQRd3hNdjC05e8dcko0vW4i3naimQ&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=t_6VEAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE72N-Gux3v1aRUSxZ30cFoVok2hjVO2vJ0t4TEi97F-V7DZnJUyQfZh0o5Zh7oQFd8Iu_9ph8tls6Q-0FVR9KeYT-1sx88NPc7d_MWzoaavXvt91i6X8OpKJovJhkzM_u3ID0EOw&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=t_6VEAAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=t_6VEAAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=t_6VEAAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 9
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED_FOR_ACCESSIBILITY
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/O_Di%C3%A1rio_de_um_Banana_1-sample-epub.acsm?id=t_6VEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/O_Di%C3%A1rio_de_um_Banana_1-sample-pdf.acsm?id=t_6VEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=t_6VEAAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+

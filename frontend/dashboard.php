@@ -3,8 +3,13 @@ include('../backend/dashboard.php');
 // Chama as funções para obter os dados necessários
 $livrosMaisEmprestados = obterLivrosMaisEmprestados($conn);
 $generosMaisLidos = obterGenerosMaisLidos($conn);
+$tendenciaEmprestimos = obterTendenciaEmprestimos($conn);
+$tempoUltimoEmprestimo = obterTempoUltimoEmprestimo($conn);
 ?>
-
+<!--
+  tenho que baixar algum gif pra colocar como easter egg, talvez um vídeo ou um monte que vai alternando
+  sempre que for aberto, igual as frases
+-->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -78,13 +83,33 @@ $generosMaisLidos = obterGenerosMaisLidos($conn);
     </script>
   </head>
   <body>
+
+
+      <!-- Modal escondido -->
+<div id="easterModal" class="modal-custom">
+  <div class="modal-content-custom">
+    <span class="close-btn" id="fecharModal">&times;</span>
+    <h2>🐣 Você encontrou o easter egg!</h2>
+    <div class="tenor-gif-embed" data-postid="24923789" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/reading-stan-marsh-south-park-studying-read-a-book-gif-24923789">Reading Stan Marsh GIF</a>from <a href="https://tenor.com/search/reading-gifs">Reading GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  </div>
+</div>
+
+    
     <!-- Barra superior com informações -->
     <div class="info-bar">
       <div class="ultimo-emprestimo">
-        <i class="bi bi-clock-history"></i> Último empréstimo há 2 horas
+        <i class="bi bi-clock-history"></i>
+        Último empréstimo há
+        <?php
+          if ($tempoUltimoEmprestimo === null) {
+            echo "sem registros";
+          } else {
+            echo $tempoUltimoEmprestimo;
+          }
+        ?>
       </div>
       <div class="voce-sabia">
-        <i class="bi bi-bell-fill"></i> Você sabia? “Dom Casmurro” tem mais de 150 adaptações teatrais registradas!
+        <i class="bi bi-bell-fill icone">Você sabia?</i> <div id="curiosidades-cabecalho"></div>
       </div>
     </div>
 
@@ -93,21 +118,18 @@ $generosMaisLidos = obterGenerosMaisLidos($conn);
       <ul>
         <li class="botao">
           <button>
-            <span class="icone"><i class="bi bi-journal-text"></i></span>
-            <span class="txt">Gerar Relatório</span>
-          </button>
-        </li>
-        <li class="botao">
-          <button>
             <span class="icone"><i class="bi bi-download"></i></span>
             <span class="txt">Baixar Gráfico</span>
           </button>
         </li>
         <li class="botao">
           <button>
-            <span class="icone"><i class="bi bi-question-lg"></i></span>
-            <span class="txt">?</span>
+            <span class="icone"><i class="bi bi-cloud-arrow-down"></i></span>
+            <span class="txt">Backup</span>
           </button>
+        </li>
+        <li class="botao">
+           <button class="txt"><i class="bi bi-file-earmark-bar-graph icone"></i>Relatórios Detalhados</button>
         </li>
       </ul>
     </nav>
@@ -118,10 +140,13 @@ $generosMaisLidos = obterGenerosMaisLidos($conn);
       <div id="generosChart" style="width: 45%; height: 400px;"></div>
     </div>
 
-    <!-- Caixa "Você sabia?" abaixo dos gráficos -->
+    <!-- Caixa "Você sabia?" abaixo dos gráficos com curiosidades aleatórias de literatura-->
     <div class="voce-sabia-box">
       <h3>Você sabia?</h3>
-      <p>“Dom Casmurro” Leo mais Jeff'</p>
+      <div id="curiosidade">
+        <!-- as frasees vão ser 'inseridas' nessa div-->
+      </div> <br>
+      <button class="nova-curiosidade" onclick="novaCuriosidade()">Quer uma nova curiosidade aleatória sobre literatura? Clique aqui!</button>
     </div>
 
     <!-- Nova seção inferior com Tendência, tema sazonal, curiosidade e easter egg -->
@@ -129,24 +154,30 @@ $generosMaisLidos = obterGenerosMaisLidos($conn);
       <!-- Box Tendência -->
       <div class="tendencia-box">
         <h4>Tendência: <span class="arrow up">⬆️</span></h4>
-        <p>+10% livros emprestados esta semana</p>
+        <p>
+          <?php
+            if ($tendenciaEmprestimos === null) {
+              echo "Dados insuficientes para calcular a tendência.";
+            } else if ($tendenciaEmprestimos > 0) {
+              echo "+{$tendenciaEmprestimos}% livros emprestados esta semana";
+            } else if ($tendenciaEmprestimos < 0) {
+              echo "{$tendenciaEmprestimos}% livros emprestados esta semana";
+            } else {
+              echo "Sem variação nos empréstimos esta semana";
+            }
+          ?>
+        </p>
       </div>
 
-      <!-- Elemento visual temático sazonal -->
-      <div class="seasonal-theme" title="Tema sazonal">
-        <!-- Exemplo: ícone de floco de neve para inverno -->
-        <i class="bi bi-snow"></i>
-      </div>
-
-      <!-- Seção divertida "Você sabia?" -->
-      <div class="fun-fact-box">
-        <h4>Você sabia?</h4>
-        <p>“Dom Casmurro” tem mais de 150 adaptações teatrais registradas!</p>
+          <!-- Curiosidade - easter egg -->
+      <div class="fun-fact-box voce-sabia">
+        <span class="icone"><i class="bi bi-patch-question-fill"> </i>Curiosidades</span>
+        <p>Pode haver alguma surpresa no Painel</p>
       </div>
 
       <!-- Easter egg escondido -->
-      <div class="easter-egg" title="Clique para surpresa!">
-        <img src="assets/img/pixel-cat.png" alt="Easter Egg" />
+      <div class="space-invader-img" title="Clique" id="easter-egg">
+        <img src="assets/img/spaceInvader8Bit.jpg" alt="img"/>
       </div>
     </div>
 
@@ -158,19 +189,19 @@ $generosMaisLidos = obterGenerosMaisLidos($conn);
 
       <ul>
         <li class="item selecionado">
-          <a href="#">
+          <a href="dashboard.php">
             <span class="icone"><i class="bi bi-house-fill"></i></span>
             <span class="txt-link">Início</span>
           </a>
         </li>
         <li class="item">
-          <a href="#">
+          <a href="buscar_livros.php">
             <span class="icone"><i class="bi bi-journal-plus"></i></span>
             <span class="txt-link">Livros</span>
           </a>
         </li>
         <li class="item">
-          <a href="#">
+          <a href="">
             <span class="icone"><i class="bi bi-person-plus-fill"></i></span>
             <span class="txt-link">Alunos</span>
           </a>
@@ -212,6 +243,90 @@ $generosMaisLidos = obterGenerosMaisLidos($conn);
       botaoExpandir.addEventListener("click", function () {
         menuLateral.classList.toggle("expandir");
       });
+
+      // lsita com as frases
+      const curiosidade = [
+        'Oda Eiichirō chegou ao Top 10 autores com exemplares mais vendidos da história, mesmo sendo um mangá.',
+        'O livro mais vendido de todos os tempos é a Bíblia, com mais de 6 bilhões de exemplares vendidos',
+        'O autor com mais livros publicados no mundo é José Carlos Ryoki de Alpoim Inoue, com mais de mil livros desde 1986, conforme o Guinness Book',
+        'A frase "Elementar, meu caro Watson", não existe nos livros de Sherlock Holmes, embora seja frequentemente associada ao personagem, de acordo com um site de curiosidades',
+        'Oda Eiichirō chegou ao Top 10 autores com exemplares mais vendidos da história, mesmo sendo um mangá.',
+        'Monteiro Lobato foi o primeiro editor brasileiro de livros infantis.',
+        '“O Pequeno Príncipe” é o livro mais traduzido depois da Bíblia.',
+        'Oda Eiichirō chegou ao Top 10 autores com exemplares mais vendidos da história, mesmo sendo um mangá.',
+        'Harry Potter já foi rejeitado por 12 editoras antes de ser publicado.',
+        'O primeiro livro publicado em português foi a "Prosopopeia", de Bento Teixeira, em 1601',
+        'Nísia Floresta foi a primeira mulher a publicar um livro no Brasil, com "Direitos das mulheres e injustiça dos homens", em 1832. Ela também foi uma pioneira no feminismo no país',
+        'Oda Eiichirō chegou ao Top 10 autores com exemplares mais vendidos da história, mesmo sendo um mangá.',
+        'Agatha Christie é a autora mais traduzida em todo o mundo, com mais de 6.598 traduções de suas obras',
+        'a famosa "Carta de Pero Vaz de Caminha" foi escrita para relatar o descobrimento do Brasil à coroa portuguesa, e não como um documento oficial',
+        'Oda Eiichirō chegou ao Top 10 autores com exemplares mais vendidos da história, mesmo sendo um mangá.'
+      ]
+
+      const curiosidadeCabecalho = [
+        'Oda Eiichirō chegou ao Top 10 autores com exemplares mais vendidos da história, mesmo sendo um mangá.',
+        'O livro mais vendido de todos os tempos é a Bíblia, com mais de 6 bilhões de exemplares vendidos',
+        'Oda Eiichirō chegou ao Top 10 autores com exemplares mais vendidos da história, mesmo sendo um mangá.',
+        'Monteiro Lobato foi o primeiro editor brasileiro de livros infantis.',
+        '“O Pequeno Príncipe” é o livro mais traduzido depois da Bíblia.',
+        'Oda Eiichirō chegou ao Top 10 autores com exemplares mais vendidos da história, mesmo sendo um mangá.',
+        'Harry Potter já foi rejeitado por 12 editoras antes de ser publicado.',
+        'O primeiro livro publicado em português foi a "Prosopopeia", de Bento Teixeira, em 1601',
+        'Oda Eiichirō chegou ao Top 10 autores com exemplares mais vendidos da história, mesmo sendo um mangá.',
+        'Agatha Christie é a autora mais traduzida em todo o mundo, com mais de 6.598 traduções de suas obras',
+        'A Carta de Pero Vaz de Caminha foi escrita para relatar o descobrimento do Brasil à coroa portuguesa, não como documento oficial.',
+        'Oda Eiichirō chegou ao Top 10 autores com exemplares mais vendidos da história, mesmo sendo um mangá.'
+      ]
+
+      // escolher uma frase aleatória da lsita
+      const indice = Math.floor(Math.random() * curiosidade.length);
+      const frase = curiosidade[indice];
+
+      // randomiza as curiosidades para aparecer no cabeçalho
+      const indiceCabecalho = Math.floor(Math.random() * curiosidadeCabecalho.length);
+      const fraseCabecalho = curiosidadeCabecalho[indiceCabecalho]
+
+      // mostra a frase escolhida
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("curiosidade").innerHTML = `<p>${frase}</p>`
+      });
+
+      // mostra a frase escolhida no cabeçalho
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("curiosidades-cabecalho").innerHTML = `<p>${fraseCabecalho}</p>`
+      });
+
+
+      function novaCuriosidade() {
+        const indice = Math.floor(Math.random() * curiosidade.length);
+        const frase = curiosidade[indice];
+        document.getElementById("curiosidade").innerHTML = `<p>${frase}</p>`
+      }
+
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const easterEgg = document.getElementById("easter-egg");
+        const modal = document.getElementById("easterModal");
+        const fechar = document.getElementById("fecharModal");
+
+        if (easterEgg && modal && fechar) {
+          easterEgg.addEventListener("click", () => {
+          modal.style.display = "block";
+        });
+
+        fechar.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+
+        window.addEventListener("click", (event) => {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      } else {
+        console.warn("Algum elemento não foi encontrado no DOM.");
+      }
+    });
     </script>
   </body>
 </html>

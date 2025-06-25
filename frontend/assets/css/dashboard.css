@@ -1,92 +1,276 @@
+/* Reset and base styles */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-body {
-  height: 100vh;
-  background-color: #d5dbd4;
 }
 
-.container-botoes {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  line-height: 1.6;
+  padding-left: 60px; /* space for sidebar */
+  transition: padding-left 0.4s ease;
+  min-height: 100vh;
+}
+
+/* When sidebar expanded */
+nav.menu-lateral.expandir ~ body {
+  padding-left: 300px;
+}
+
+/* Info bar top */
+.info-bar {
+  position: fixed;
+  top: 0;
+  left: 60px;
+  right: 0;
+  height: 40px;
+  background-color: #416aa3;
+  color: #fff;
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center; /* centraliza verticalmente */
-  gap: 10px;
-  width: 100%;
-  height: 150px;
-  background-color: #196411;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1001;
+  transition: left 0.4s ease;
+}
+
+nav.menu-lateral.expandir ~ .info-bar {
+  left: 300px;
+}
+
+.info-bar > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.info-bar i {
+  font-size: 1.1rem;
+}
+
+/* Container botoes (buttons nav) */
+.container-botoes {
+  margin: 60px 20px 20px 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+  transition: margin-left 0.4s ease;
+}
+
+nav.menu-lateral.expandir ~ .container-botoes {
+  margin-left: 280px;
 }
 
 .container-botoes ul {
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  gap: 15px;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 
 .container-botoes ul li.botao {
-  display: flex;
-  align-items: center;
+  flex: 1 1 auto;
 }
 
 .container-botoes ul li.botao button {
-  background-color: #227e17;
-  color: #fff;
+  background-color: #416aa3;
   border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 3px 6px rgba(65,106,163,0.4);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.nova-curiosidade {
+  background-color: #416aa3;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 3px 6px rgba(65,106,163,0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-botoes ul li.botao button:hover {
-  background-color: #083006; /* darker green on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  background-color: #2e4f7a;
+  box-shadow: 0 5px 10px rgba(46,79,122,0.6);
 }
 
+.container-botoes ul li.botao button .icone {
+  font-size: 1.3rem;
+}
+
+/* Charts container */
+.charts-container {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  transition: margin-left 0.4s ease;
+}
+
+nav.menu-lateral.expandir ~ .charts-container {
+  margin-left: 280px;
+}
+
+#livrosChart, #generosChart {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  flex: 1 1 45%;
+  height: 400px;
+  padding: 10px;
+}
+
+/* Você sabia box below charts */
+.voce-sabia-box {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+  color: #416aa3;
+  transition: margin-left 0.4s ease;
+}
+
+nav.menu-lateral.expandir ~ .voce-sabia-box {
+  margin-left: 280px;
+}
+
+/* Lower section */
+.lower-section {
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: margin-left 0.4s ease;
+}
+
+nav.menu-lateral.expandir ~ .lower-section {
+  margin-left: 280px;
+}
+
+/* Boxes inside lower section */
+.tendencia-box, .fun-fact-box {
+  background: white;
+  flex: 1 1 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  color: #416aa3;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tendencia-box h4, .fun-fact-box h4 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tendencia-box .arrow.up {
+  color: #28a745;
+  font-size: 1.3rem;
+}
+
+/* Seasonal theme icon */
+.seasonal-theme {
+  background: #416aa3;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  cursor: default;
+  box-shadow: 0 3px 8px rgba(65,106,163,0.4);
+}
+
+/* Easter egg */
+.space-invader-img {
+  flex: 1 1 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.space-invader-img img {
+  width: 200px;
+  height: 100px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.space-invader-img img:hover {
+  transform: scale(1.1);
+}
+
+/* Sidebar menu styles (existing) */
 nav.menu-lateral {
   width: 60px;
   height: 100%;
   background-color: #d5dbd4;
   padding: 14px 0 40px 1%;
-  box-shadow: 3px 00 #416aa3;
-
+  box-shadow: 3px 0 0 #416aa3;
   position: fixed;
   top: 0;
   left: 0;
   overflow: hidden;
   transition: 0.4s;
-}
-
-#piechart {
-  max-width: 100%;
-  height: 60vh;
-  margin: 0 auto;
+  z-index: 1002;
 }
 
 nav.menu-lateral.expandir {
   width: 300px;
 }
+
 .botao-expandir {
   width: 100%;
   padding-left: 10px;
   padding-bottom: 10px;
 }
+
 .botao-expandir > i {
   color: #006400;
   font-size: 26px;
   cursor: pointer;
 }
+
 ul {
   height: 100%;
   list-style-type: none;
+  padding-left: 0;
 }
 
 ul li.item a {
@@ -96,36 +280,45 @@ ul li.item a {
   padding: 14px 4%;
   display: flex;
   line-height: 40px;
+  align-items: center;
 }
+
 ul li.item a .icone {
   font-size: 26px;
 }
+
 ul li.item {
   transition: 0.2s;
 }
+
 ul li.selecionado {
   background-color: #416aa3;
   box-shadow: 0 3px 2px 0.5px black;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
 ul li.item:hover {
   background-color: #416aa3;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
 ul li.item a .txt-link {
   margin-left: 20px;
   transition: 0.7s;
   opacity: 0;
 }
+
 nav.menu-lateral.expandir .txt-link {
   margin-left: 36px;
   opacity: 1;
 }
+
 ul li.item a .icon > i {
   font-size: 20px;
 }
+
 ul li.item .icone {
   margin-left: 10px;
 }
@@ -133,50 +326,19 @@ ul li.item .icone {
 /* Responsividade avançada para telas menores */
 /* Ajusta o layout dos botões para empilhar verticalmente em telas pequenas */
 @media (max-width: 768px) {
-  .container-botoes {
-    flex-direction: column; /* empilha os botões verticalmente */
-    height: auto; /* altura automática para acomodar os botões empilhados */
-    padding: 10px 0; /* espaçamento vertical */
+  body {
+    padding-left: 0;
   }
 
-  .container-botoes ul {
-    flex-direction: column; /* empilha os itens da lista */
-    gap: 8px; /* espaçamento menor entre os botões */
-    width: 100%; /* ocupa toda a largura disponível */
-    align-items: center; /* centraliza os botões */
+  .info-bar {
+    left: 0;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    font-size: 0.85rem;
   }
 
-  .container-botoes ul li.botao {
-    width: 80%; /* largura dos botões reduzida para melhor visual */
-    justify-content: center; /* centraliza o conteúdo do botão */
-  }
-
-  .container-botoes ul li.botao button {
-    width: 100%; /* botão ocupa toda a largura do li */
-    padding: 10px 0; /* padding vertical para toque confortável */
-    font-size: 14px; /* fonte um pouco menor */
-  }
-
-  /* Ajusta o tamanho do gráfico para telas pequenas */
-  #piechart {
-    height: 40vh; /* altura reduzida para melhor encaixe */
-  }
-}
-
-/* Responsividade para telas muito pequenas (ex: celulares) */
-@media (max-width: 400px) {
-  .container-botoes ul li.botao {
-    width: 100%; /* botão ocupa toda a largura disponível */
-  }
-
-  .container-botoes ul li.botao button {
-    font-size: 12px; /* fonte menor para caber na tela */
-    padding: 8px 0; /* padding reduzido */
-  }
-}
-
-/* Responsividade para o menu lateral em telas pequenas */
-@media (max-width: 768px) {
   nav.menu-lateral {
     position: fixed;
     width: 100%;
@@ -237,4 +399,137 @@ ul li.item .icone {
   .botao-expandir > i {
     display: none;
   }
+
+  .container-botoes {
+    margin: 60px 10px 10px 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container-botoes ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .container-botoes ul li.botao {
+    width: 90%;
+  }
+
+  .container-botoes ul li.botao button {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .charts-container {
+    margin: 10px;
+    flex-direction: column;
+  }
+
+  #livrosChart, #generosChart {
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .voce-sabia-box {
+    margin: 10px;
+    font-size: 1rem;
+  }
+
+  .lower-section {
+    margin: 10px;
+    flex-direction: column;
+  }
+
+  .tendencia-box, .fun-fact-box, .easter-egg {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+
+  .seasonal-theme {
+    margin-bottom: 15px;
+  }
+}
+
+/* Responsividade para telas muito pequenas (ex: celulares) */
+@media (max-width: 400px) {
+  .container-botoes ul li.botao {
+    width: 100%;
+  }
+
+  .container-botoes ul li.botao button {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .info-bar {
+    font-size: 0.8rem;
+  }
+
+  .tendencia-box, .fun-fact-box {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+.voce-sabia-box div {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.voce-sabia i{
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.voce-sabia div{
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-custom {
+  display: none; 
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content-custom {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
 }
