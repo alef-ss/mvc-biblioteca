@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Verifica se o professor está logado
+// Verifica se o professor está logado, se não, redireciona para login
 if (!isset($_SESSION['professor_id'])) {
     header("Location: login.php");
     exit();
@@ -11,22 +11,25 @@ require '../includes/conn.php'; // Arquivo de conexão com o banco
 
 // Cadastro de aluno
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Recebe os dados do formulário
     $nome = $_POST['nome'];
     $serie = $_POST['serie'];
     $email = $_POST['email'];
 
     // Valida o formato do e-mail
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "<div class='alert alert-danger fade show' role='alert'>
-                Erro: Email inválido!
-              </div>";
-        return;
+        $_SESSION['toast'] = [
+            'type' => 'error',
+            'message' => "Erro: Email inválido!"
+        ];
+        header("Location: cadastro_aluno.php");
+        exit();
     }
 
-    // Criptografando a senha com MD5
-    $senha = isset($_POST['senha']) ? md5($_POST['senha']) : null; // Senha criptografada com MD5
+    // Usa password_hash para maior segurança na senha
+    $senha = isset($_POST['senha']) ? password_hash($_POST['senha'], PASSWORD_DEFAULT) : null;
 
-    // Verifica se o email do aluno já existe
+    // Verifica se o email do aluno já está cadastrado
     $sql_check = "SELECT id FROM alunos WHERE email = ?";
     $stmt_check = $conn->prepare($sql_check);
     $stmt_check->bind_param("s", $email);
@@ -34,23 +37,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt_check->store_result();
 
     if ($stmt_check->num_rows > 0) {
-        echo "<div class='alert alert-danger fade show' role='alert'>
-                Erro: Este email já está cadastrado!
-              </div>";
+        // Mensagem de erro e redireciona
+        $_SESSION['toast'] = [
+            'type' => 'error',
+            'message' => "Erro: Este email já está cadastrado!"
+        ];
+        header("Location: cadastro_aluno.php");
+        exit();
     } else {
-        // Inserindo no banco de dados
+        // Insere o aluno no banco de dados
         $sql = "INSERT INTO alunos (nome, serie, email, senha) VALUES (?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ssss", $nome, $serie, $email, $senha);
 
         if ($stmt->execute()) {
-            echo "<div class='alert alert-success fade show' role='alert'>
-                    Aluno cadastrado com sucesso!
-                  </div>";
+            // Mensagem de sucesso e redireciona
+            $_SESSION['toast'] = [
+                'type' => 'success',
+                'message' => "Aluno cadastrado com sucesso!"
+            ];
+            header("Location: cadastro_aluno.php");
+            exit();
         } else {
-            echo "<div class='alert alert-danger fade show' role='alert'>
-                    Erro ao cadastrar aluno!
-                  </div>";
+            // Mensagem de erro e redireciona
+            $_SESSION['toast'] = [
+                'type' => 'error',
+                'message' => "Erro ao cadastrar aluno!"
+            ];
+            header("Location: cadastro_aluno.php");
+            exit();
         }
     }
 

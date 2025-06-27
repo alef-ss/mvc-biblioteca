@@ -20,12 +20,12 @@ include('../backend/relatorios.php');
 
 <body>
     <div class="container mt-4 mb-5">
-        <div class="page-header" id="container-titulo">
+        <!-- <div class="page-header" id="container-titulo">
             <h1 class="text-center mb-0">
                 <i class="fas fa-file-alt animate-bounce" class="fundo-titulo"></i> Relatórios de Empréstimos
             </h1>
-        </div>
-        <!-- ======= -->
+        </div> -->
+
 
         <body>
             <div class="stars" id="stars"></div>
@@ -35,18 +35,6 @@ include('../backend/relatorios.php');
                 <i class="fas fa-moon" id="themeIcon"></i>
             </button>
 
-            <!-- <div class="container mt-4 mb-5">
-        <div class="page-header">
-            <h1 class="text-center mb-0">
-                <i class="fas fa-file-alt animate-bounce"></i> Relatórios de Empréstimos
-            </h1>
-        </div>
-    <div class="container mt-4 mb-5">
-        <div class="page-header">
-            <h1 class="text-center mb-0">
-                <i class="fas fa-file-alt animate-bounce"></i> Relatórios de Empréstimos
-            </h1>
-        </div> -->
 
             <!-- Seção de Alunos Destaque -->
             <div class="card">

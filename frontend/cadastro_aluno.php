@@ -1,9 +1,21 @@
 <?php
-include('../backend/cadastro_aluno.php')
+// Inclui o arquivo backend para processar o cadastro
+include('../backend/cadastro_aluno.php');
+
+// Inicia a sessão para acessar mensagens de toast
+// session_start();
+
+// Verifica se existe mensagem de toast na sessão e a armazena em $toast, depois remove da sessão
+$toast = null;
+if (isset($_SESSION['toast'])) {
+    $toast = $_SESSION['toast'];
+    unset($_SESSION['toast']);
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="pt" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +25,11 @@ include('../backend/cadastro_aluno.php')
     <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/cadastro_aluno.css">
+    <link rel="stylesheet" href="assets/css/toast.css">
 </head>
+
 <body>
-    <!-- Theme Toggle Button -->
+    <!-- Botão para alternar tema claro/escuro -->
     <button class="theme-toggle" id="themeToggle">
         <i class="fas fa-moon" id="themeIcon"></i>
     </button>
@@ -28,6 +42,21 @@ include('../backend/cadastro_aluno.php')
         </div>
     </div>
 
+    <?php if ($toast): ?>
+        <!-- Exibe mensagem toast com base no tipo (success ou error) -->
+        <div class="position-fixed top-0 end-0 p-3" style="z-index: 1100">
+            <div class="toast align-items-center text-bg-<?php echo $toast['type'] === 'success' ? 'success' : 'danger'; ?> border-0 show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        <?php echo htmlspecialchars($toast['message']); ?>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
+                </div>
+                <div class="toast-progress"></div>
+            </div>
+        </div>
+    <?php endif; ?>
+
     <div class="container">
         <div class="card">
             <div class="card-header">
@@ -35,41 +64,42 @@ include('../backend/cadastro_aluno.php')
                     <h4>
                         <i class="fas fa-user-plus"></i> Novo Aluno
                     </h4>
-                    <a href="lista_alunos.php" class="btn btn-secondary">
+                    <a href="lista_alunos.php" class="btn btn-secondary" style="cursor: pointer; z-index: 10;">
                         <i class="fas fa-list"></i> Ver Lista de Alunos
                     </a>
                 </div>
             </div>
             <div class="card-body">
+                <!-- Formulário para cadastro de aluno -->
                 <form method="POST" action="">
                     <div class="mb-3">
                         <label for="nome" class="form-label">
                             <i class="fas fa-user"></i> Nome Completo
                         </label>
-                        <input type="text" class="form-control" name="nome" id="nome" required 
-                               placeholder="Digite o nome completo">
+                        <input type="text" class="form-control" name="nome" id="nome" required
+                            placeholder="Digite o nome completo">
                     </div>
                     <div class="mb-3">
                         <label for="serie" class="form-label">
                             <i class="fas fa-graduation-cap"></i> Série
                         </label>
-                        <input type="text" class="form-control" name="serie" id="serie" required 
-                               placeholder="Digite a série">
+                        <input type="text" class="form-control" name="serie" id="serie" required
+                            placeholder="Digite a série">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">
                             <i class="fas fa-envelope"></i> Email
                         </label>
-                        <input type="email" class="form-control" name="email" id="email" required 
-                               placeholder="Digite o email">
+                        <input type="email" class="form-control" name="email" id="email" required
+                            placeholder="Digite o email">
                     </div>
                     <div class="mb-3">
                         <label for="senha" class="form-label">
                             <i class="fas fa-lock"></i> Senha
                         </label>
-                        <input type="password" class="form-control" name="senha" id="senha" required 
-                               placeholder="Digite a senha">
-                        <div class="form-text"  style="color: var(--text-color);">
+                        <input type="password" class="form-control" name="senha" id="senha" required
+                            placeholder="Digite a senha">
+                        <div class="form-text" style="color: var(--text-color);">
                             <i class="fas fa-info-circle"></i> A senha deve ter no mínimo 6 caracteres
                         </div>
                     </div>
@@ -89,5 +119,7 @@ include('../backend/cadastro_aluno.php')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/cadastro_aluno.js"></script>
+    <script src="assets/js/toast.js"></script>
 </body>
+
 </html>

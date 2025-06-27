@@ -122,17 +122,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         if (empty($erros)) {
-            $_SESSION['mensagem'] = "$sucessos livro(s) cadastrado(s) com sucesso!";
-            header("Location: buscar_livros.php?status=success");
+            $_SESSION['toast'] = [
+                'type' => 'success',
+                'message' => "$sucessos livro(s) cadastrado(s) com sucesso!"
+            ];
+            header("Location: buscar_livros.php");
         } else {
+            $mensagem = "$sucessos livro(s) cadastrado(s) com sucesso, mas alguns apresentaram erros.";
+            $_SESSION['toast'] = [
+                'type' => 'error',
+                'message' => $mensagem
+            ];
             $_SESSION['erros'] = $erros;
             $_SESSION['sucessos'] = $sucessos;
             $_SESSION['livros_com_erro'] = $livros_com_erro;
-            header("Location: buscar_livros.php?status=partial");
+            header("Location: buscar_livros.php");
         }
         exit();
     } else {
-        header("Location: buscar_livros.php?status=fail");
+        $_SESSION['toast'] = [
+            'type' => 'error',
+            'message' => "Nenhum livro selecionado para cadastro."
+        ];
+        header("Location: buscar_livros.php");
         exit();
     }
 }

@@ -1,0 +1,44 @@
+/* global_colors.css
+   Arquivo CSS global para sobrescrever cores absolutas (ex: branco)
+   e facilitar a personalização do tema em todas as páginas.
+*/
+
+/* Exemplo: substituir branco absoluto por variável de cor */
+body, .text-white, .bg-white, .btn, .form-control, .card, .modal-content {
+    /* Usar variável para cor de fundo e texto */
+    background-color: var(--background-color, #f8f9fa) !important;
+    color: var(--text-color, #212529) !important;
+}
+
+/* Sobrescrever cores absolutas específicas */
+.text-white {
+    color: var(--text-color, #212529) !important;
+}
+
+.bg-white {
+    background-color: var(--background-color, #f8f9fa) !important;
+}
+
+/* Botões padrão */
+.btn-primary {
+    background-color: var(--primary-color, #0d6efd) !important;
+    border-color: var(--primary-color, #0d6efd) !important;
+}
+
+/* Inputs e formulários */
+.form-control {
+    background-color: var(--input-bg-color, #fff) !important;
+    color: var(--input-text-color, #212529) !important;
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg-color, #fff) !important;
+    color: var(--card-text-color, #212529) !important;
+}
+
+/* Modais */
+.modal-content {
+    background-color: var(--modal-bg-color, #fff) !important;
+    color: var(--modal-text-color, #212529) !important;
+}

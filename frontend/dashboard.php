@@ -13,6 +13,7 @@ include('../backend/dashboard.php');
     <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/global_colors.css">
 </head>
 <body>
     <!-- Floating Books Background -->
