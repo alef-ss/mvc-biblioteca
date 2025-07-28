@@ -17,10 +17,12 @@ include('../backend/login.php')
 </head>
 
 <body>
-    <!-- Theme Toggle Button -->
+    <!-- Botão pra trocar o tema -->
     <button class="theme-toggle" id="themeToggle">
         <i class="fas fa-moon" id="themeIcon"></i>
     </button>
+
+    <!-- <img src="assets/img/gif/animacao-pra-pag-de-login.gif" alt=""> -->
 
     <div class="dashboard-header text-center">
         <div class="container">
@@ -79,6 +81,13 @@ include('../backend/login.php')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/login.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("contextmenu", function (e) {
+          e.preventDefault();
+          window.location.href("../includes/pagina-da-anim.html")
+        })
+      })
+    </script>
 </body>
-
 </html>

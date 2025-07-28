@@ -25,15 +25,15 @@ function updateThemeIcon(theme) {
 }
 
 // Impede o clique direito do mouse
-document.addEventListener("contextmenu", (event) => event.preventDefault());
+// document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 // Bloqueia atalhos para abrir o DevTools
 document.addEventListener("keydown", (event) => {
     if (
         event.key === "F12" ||
         (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J" || event.key === "C")) ||
-        (event.ctrlKey && event.key === "U") ||
-        (event.altKey && event.key === "ArrowLeft")
+        (event.ctrlKey && event.key === "U")
+        // (event.altKey && event.key === "ArrowLeft")
     ) {
         event.preventDefault();
         bloquearAcesso();
