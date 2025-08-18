@@ -76,7 +76,11 @@ body {
 
 .form-control:focus, .form-select:focus {
     border-color: var(--primary-color);
+    border: 1px solid var(--card-bg);
     box-shadow: 0 0 0 0.2rem rgba(67, 97, 238, 0.25);
+}
+.form-control::placeholder {
+    color: var(--primary-color);
 }
 
 .btn-primary {

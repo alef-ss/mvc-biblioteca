@@ -205,7 +205,7 @@ body {
 }
 
 .btn-danger {
-    background-color: var(--danger-color);
+    background-color: red;
     color: white;
     padding: 15px;
     border-radius: 10px;

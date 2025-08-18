@@ -82,12 +82,12 @@ include('../backend/login.php')
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/login.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document.addEventListener("contextmenu", function (e) {
-          e.preventDefault();
+      document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("contextmenu", function(e) {
+        e.preventDefault(); // impede o menu padrão
           window.location.href("../includes/pagina-da-anim.html")
-        })
-      })
+        });
+      });
     </script>
 </body>
 </html>
