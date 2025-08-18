@@ -6,9 +6,9 @@ document.addEventListener("contextmenu", function (event) {
 // Bloqueia atalhos conhecidos para abrir DevTools
 document.addEventListener("keydown", function (event) {
     if (
-        event.key === "F12" || 
-        (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J" || event.key === "C")) || 
-        (event.ctrlKey && event.key === "U") || 
+        event.key === "F12" ||
+        (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J" || event.key === "C")) ||
+        (event.ctrlKey && event.key === "U") ||
         (event.altKey && event.key === "ArrowLeft") // Bloqueia "ALT + seta para esquerda"
     ) {
         event.preventDefault();

@@ -1,5 +1,16 @@
 <?php
-include('../backend/buscar_livros.php')
+// Inclui o arquivo backend para processar a busca e cadastro
+include('../backend/buscar_livros.php');
+
+// Inicia a sessão para acessar mensagens de toast
+// session_start();
+
+// Verifica se existe mensagem de toast na sessão e a armazena em $toast, depois remove da sessão
+$toast = null;
+if (isset($_SESSION['toast'])) {
+    $toast = $_SESSION['toast'];
+    unset($_SESSION['toast']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +28,7 @@ include('../backend/buscar_livros.php')
 </head>
 
 <body>
-    <!-- Theme Toggle Button -->
+    <!-- Botão para alternar tema claro/escuro -->
     <button class="theme-toggle" id="themeToggle">
         <i class="fas fa-moon" id="themeIcon"></i>
     </button>
@@ -29,6 +40,20 @@ include('../backend/buscar_livros.php')
             </h1>
         </div>
     </div>
+
+    <?php if ($toast): ?>
+        <!-- Exibe mensagem toast com base no tipo (success ou error) -->
+        <div class="position-fixed top-0 end-0 p-3" style="z-index: 1100">
+            <div class="toast align-items-center text-bg-<?php echo $toast['type'] === 'success' ? 'success' : 'danger'; ?> border-0 show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        <?php echo htmlspecialchars($toast['message']); ?>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
 
     <div class="container">
         <div class="card">

@@ -38,11 +38,11 @@ include('../backend/cadastro_emprestimos.php');
                         <h5 class="mb-0"><i class="fas fa-filter me-2"></i>Filtros</h5>
                     </div>
                     <div class="card-body">
-                        <form id="filtroForm" method="GET">
+                        <form id="filtroForm" method="GET" style="color: whitesmoke;"></form>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="filtro_aluno" class="form-label">Nome do Aluno</label>
-                                    <input type="text" class="form-control" name="filtro_aluno" id="filtro_aluno" 
+                                    <input type="text" class="form-control" name="filtro_aluno" id="filtro_aluno"
                                            placeholder="Digite o nome do aluno">
                                 </div>
                                 <div class="col-md-6 mb-3">
@@ -58,7 +58,7 @@ include('../backend/cadastro_emprestimos.php');
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="filtro_livro" class="form-label">Título ou ISBN do Livro</label>
-                                    <input type="text" class="form-control" name="filtro_livro" id="filtro_livro" 
+                                    <input type="text" class="form-control" name="filtro_livro" id="filtro_livro"
                                            placeholder="Digite o título ou ISBN">
                                 </div>
                                 <div class="col-12">

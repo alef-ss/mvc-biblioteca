@@ -52,8 +52,7 @@ ul li.item a .icone {
 ul li.item {
     transition: .2s;
 }
-ul li.selecionado {
-    background-color: #416AA3;
+
 }
 ul li.item:hover {
     background-color: #416AA3;
@@ -69,7 +68,4 @@ nav.menu-lateral.expandir .txt-link {
 }
 ul li.item a .icon > i {
     font-size: 20px;
-}
-ul li.item .icone {
-    margin-left: 10px;
 }

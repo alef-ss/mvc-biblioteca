@@ -1,0 +1,604 @@
+2025-06-27 14:06:49 - Processando livro - Detalhes: Array
+(
+    [id] => I-fUDAAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => I-fUDAAAQBAJ
+            [etag] => 1VeiLOKaWNU
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/I-fUDAAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Dom Casmurro
+                    [authors] => Array
+                        (
+                            [0] => Machado de Assis
+                            [1] => Edições Câmara
+                        )
+
+                    [publisher] => Edições Câmara
+                    [publishedDate] => 2016-08-12
+                    [description] => <p>Romance publicado pela primeira vez em 1899, <i>Dom Casmurro</i>, novo título da série Prazer de Ler da Edições Câmara, apresenta um olhar crítico sobre a sociedade brasileira do século XIX e  integra a trilogia realista de Machado de Assis ao lado de <i>Memórias Póstumas de Brás Cubas</i> e <i>Quincas Borba</i>.</p><p></p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8540205416
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788540205413
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 194
+                    [printedPageCount] => 194
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Fiction / Romance / General
+                        )
+
+                    [averageRating] => 5
+                    [ratingsCount] => 1
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 2.6.8.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73hRCR4-W2YRIh9V2cUSpwyUEVOX_Ph6K_MIZ8VRqVAaUSdev7_ntLr_rOPprfUSjddkt6e3Me5USuGwnrVadde9-sq1dvdT1Ex6ONG9opW8l7OI0I6rYWK1joOOpng9LSf_ckx&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71NCDgV47N8eneZwLely4gr1EUk7kNgbk5JsksddfFu5t6xb7a_z3BNGy1PExdFHMKSkCqO3mPZwItFcCmQlTMP_SR6lxo1K7obfNV0Jvti7FSGJd1oxT4OcUVlbNGPFbYcVYRR&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE731a-YtFQslg2zmk3FK_bsLfYp_AEuu3gz4l-ru8-8pE0rP_NLyTeXCfDfnhyMXsQw4ZEH1jC94d5xFuZQKoWlLZ2h3k7EA9g3Y2sFM0um2DRl4EmE307OMB2oR_g00iJG1USE-&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71xezDLqxixxO9RunefvFNO9wS01NkGhG9nwg5alYg_hQLnhwYuI0X7kP-a9pdEfERN1a_Slm8h_2h5Z_gI2LXdX8RecQHdfSUgHAJe5oHc5o7PsBe0tnRY5dWxgq2lq6Crs8sw&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE72KkFmBt-gwHs0uEg3MoOe1DIUpW-s74zd49TcrCT8ZDtFRwGF1r4FsuC_S9oZ3HmiQNUWeEhlZEjjWFqYXMuy7Dd08nFbSy0N5QskWvf4bVLG-9u-KRq3W-hpCmxq1YD3yQ5x9&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=I-fUDAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70Ktq76_yrv3UknuQdoSj9ymAkUfltTexxgoWNCyb2pIDivrkLmqoVb855uOatz5Ydp4h_wuHEw1YhcjJH9YsL0cMisCR5S0sOXxKEgM7OUC9oTx1HWBqjrX8jBepO2Psp-SPyG&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=I-fUDAAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=I-fUDAAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=I-fUDAAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 11
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 0
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 0
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=I-fUDAAAQBAJ&rdid=book-I-fUDAAAQBAJ&rdot=1&source=gbs_api
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => ALL_PAGES
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Dom_Casmurro-sample-epub.acsm?id=I-fUDAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Dom_Casmurro-sample-pdf.acsm?id=I-fUDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=I-fUDAAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-06-27 14:21:36 - Processando livro - Detalhes: Array
+(
+    [id] => _j79EAAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => _j79EAAAQBAJ
+            [etag] => fQK8APiVVDg
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/_j79EAAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Vidas Secas - Edição especial
+                    [subtitle] => Edição acessível com descrição de imagens e fonte Open Dyslexic Alt
+                    [authors] => Array
+                        (
+                            [0] => Graciliano Ramos
+                        )
+
+                    [publisher] => Tabuleta V
+                    [publishedDate] => 2024-04-10
+                    [description] => <p> <b>Descubra "Vidas Secas" em uma Edição Especial pela Editora Tabuleta V</b> </p> <p>Descubra "Vidas Secas", de Graciliano Ramos, numa edição revitalizada pela editora Tabuleta V, e mergulhe na saga emocionante de uma família de retirantes em sua luta incansável pela sobrevivência no sertão nordestino. Esta edição não só reacende a chama de uma das obras mais significativas da literatura brasileira, mas também a enriquece com conteúdos exclusivos que prometem intensificar sua experiência de leitura.</p> <p>Inicie sua jornada com uma carta íntima ao leitor, preparando o cenário para a profunda narrativa que se segue. Antes mesmo de virar a primeira página, familiarize-se com Fabiano, Sinhá Vitória, seus filhos e a inesquecível cadela Baleia através de perfis detalhados, construindo uma conexão íntima que perdurará por toda a história.</p> <p>Navegue pela essência de "Vidas Secas" com uma análise meticulosa que revela o rico contexto histórico e social do Nordeste brasileiro das décadas de 1920 e 1930, trazendo à tona a realidade árida e desafiadora do sertão, assim como as lutas sociais e políticas de uma época. Esta seção destila a magia da prosa de Ramos, destacando sua habilidade em retratar a dignidade humana frente às adversidades, oferecendo uma visão aprofundada que transcende o ato de leitura.</p> <p>Aprofunde-se na vida e legado de Graciliano Ramos com uma seção dedicada a um dos pilares do modernismo literário brasileiro, capturando a essência de sua obra e o impacto duradouro em nossa cultura.</p> <p>Para estudantes e aficionados por literatura, a edição traz uma análise aprofundada de temas, símbolos e estrutura de "Vidas Secas", complementada por questões de vestibular que enriquecem o entendimento e a apreciação do texto.</p> <p>Além disso, a Tabuleta V se orgulha em apresentar esta obra-prima na fonte Open Dyslexic Alt, tornando-a acessível a leitores com dislexia e reafirmando o compromisso com a democratização da cultura e educação.</p> <p> <i> <b>"Vidas Secas" não é apenas uma leitura obrigatória, mas uma experiência imersiva que ressoa com questões de humanidade, resistência e esperança. Garanta sua cópia hoje e seja parte da jornada inesquecível de uma família pelo coração do Brasil.</b> </i> </p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 6585279042
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9786585279048
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 176
+                    [printedPageCount] => 172
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Fiction / Literary
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.2.2.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=_j79EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE702powSln0MuEh5iIqA5cFT2PAfFKWLJHSfk27wfKDqcENRxweyfKuwkjYHd_VNjhuBEEJAkm2lQtiTOR188nkmwoKvqYeR1xqjk6FVSMSD0RJ8oB9r7gpJIkmg4rQhKR3jJGLo&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=_j79EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73JMRfMVhXcDBt4NvWKlNkc3lWEhjZtltQWgsLeCH6YGK547LiTUcrN_jrZB9cN3asVFOMIUcppkRsDSvaF0UdDewog-eEhjSPmxQLkI-zvtTioX1voJ-BEMqc4gGkECQ9hG0Ds&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=_j79EAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE70puBglmr9ohe6gqbszB5dxxtvS0PTXSTE4dwNp-ZRL3y5H88jERkvahljs4tpg6IPPpvmJgwm-OkXsYuTvyL5_XVXC9Lrxkt4n24foth-bfatrzxf1dec1k9tksUZQG-b8TgJ3&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=_j79EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70ltjomZBeCpGDQG3JTscN9NVB0mskILiNaQEn6LXu5e62F_aJo9vEg8NxKrq6JjNxH1CaN42JeSLJmioBEsFOrtYqtUUlCDw0hJeWqmVL-7EFrh74y2Kh2RI5daji_LQuBOOCV&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=_j79EAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71g2lOG_t3NVcMB0TyE8HvomibCKZ03GOtLXP8hTttilVeaagzN4gnAUh8JXqjtkx0cq7og3ZxPvLmE0XwWST-P9KNblvv8Ja_ks5buC8KkrKozELc1zyBB8LUeQUCqSi-4vN6i&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=_j79EAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE71rd4ZQRAmR0n2i6w6m9RSgEqhGqWte_70UPuHCf2bc5xuIIGgxlwxoFNgOqL1O0b4sTPAlQZT3mOru4Nw9b9P4AE-6FJyi_Lx_W8VrzdUzWjbW08Mii0gmeZfqNBPq7RnvXglc&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=_j79EAAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=_j79EAAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=_j79EAAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 2
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 25.94
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 25.94
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=_j79EAAAQBAJ&rdid=book-_j79EAAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 25940000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 25940000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Vidas_Secas_Edi%C3%A7%C3%A3o_especial-sample-epub.acsm?id=_j79EAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Vidas_Secas_Edi%C3%A7%C3%A3o_especial-sample-pdf.acsm?id=_j79EAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=_j79EAAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-06-27 14:21:36 - Processando livro - Detalhes: Array
+(
+    [id] => ExUeAQAAIAAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => ExUeAQAAIAAJ
+            [etag] => uN4Nc+bwEMw
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/ExUeAQAAIAAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Roteiro de leitura
+                    [subtitle] => Vidas secas de Graciliano Ramos
+                    [authors] => Array
+                        (
+                            [0] => Dácio Antônio de Castro
+                        )
+
+                    [publisher] => Editora Atica
+                    [publishedDate] => 1997
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 8508065272
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9788508065271
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 
+                        )
+
+                    [pageCount] => 136
+                    [printedPageCount] => 148
+                    [dimensions] => Array
+                        (
+                            [height] => 21.00 cm
+                        )
+
+                    [printType] => BOOK
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 1.9.2.0.preview.0
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=ExUeAQAAIAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE70wWXdNN16wEBhyI1VIOZ3Y-m6oeTT3yLMYjfJZMxX0MUTVSYsPqDxr-Yy5zZtLnOyHwS7BFf7oH1nAj5EEgMU5xRrIK5nWWF9IbOjr_3bc_knRpQbU0QuoRwlwfqU-jfCJuj1R&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=ExUeAQAAIAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE70AscVQYkOImFh9CLYxPeMrkOuou97s63pN78ojlm6J9bvf0dTN6ng4jzia-qqQ4jBAL_v2wHx9sfMU_2BFJhT3Qz5FfAimD49X_BtPiHNdif1dWYKkkW2QHmiRREfrmIAdrorq&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=ExUeAQAAIAAJ&printsec=frontcover&img=1&zoom=2&imgtk=AFLRE71aklAsrI_4g2xpEp6MHpjZluZ5nlyJbS_S68leAEaLqYyT2KHKw_Gd92AAaGa57B2SbpLA4pADR00p476wY5jwchpESHJa3yDxGoMMuM6lWDgDVDQce4salqe6qsRRXMY-rGQe&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=ExUeAQAAIAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE70shSry1WHq_RgPAFG2-JVcn6sGWv3d8Ld0ZU8JrY91tCCXMHIcrQOrUTcMQGn7fI3x0dDdkXZQes1q3wJBMewbcmjMOhGRkNHs_a5c9KSWrqA5zSobcQ9-C6VghaQHGR0otYEl&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=ExUeAQAAIAAJ&printsec=frontcover&img=1&zoom=4&imgtk=AFLRE701Sl_aLVbmdNv_eR0S61FBW8viXd06A-ZytkQkKXpAeDWW7g9O5U-4YacCpL7W2aSFXtJtLy13Y2Z26uNP1G0gLsNCAO-4_x8mbPfCWvmxG082bmYhtWNQKv7wEKACQSh0gVjx&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=ExUeAQAAIAAJ&printsec=frontcover&img=1&zoom=6&imgtk=AFLRE73JVuKL1rpey3DQnsPw8VfJWrwa05Aj0a_BWpxO3Hd0MGvmmqa1qGbTFHW8gyYWvxRC9aMGdmZKdOvPR8WSEqzGjRwqv26Ih8f8JCMrI5s8_n_6vrIp7WdgBHHqdafDcszYLeb1&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=ExUeAQAAIAAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=ExUeAQAAIAAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=ExUeAQAAIAAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => NO_PAGES
+                    [embeddable] => 
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=ExUeAQAAIAAJ&hl=&source=gbs_api
+                    [accessViewStatus] => NONE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-06-27 14:21:37 - Processando livro - Detalhes: Array
+(
+    [id] => 8RYwAQAAIAAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => 8RYwAQAAIAAJ
+            [etag] => 3sN9ofp1drE
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/8RYwAQAAIAAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Caetés
+                    [authors] => Array
+                        (
+                            [0] => Graciliano Ramos
+                        )
+
+                    [publisher] => Livraria Martins
+                    [publishedDate] => 1965
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 
+                        )
+
+                    [pageCount] => 256
+                    [printedPageCount] => 270
+                    [dimensions] => Array
+                        (
+                            [height] => 22.00 cm
+                        )
+
+                    [printType] => BOOK
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 3.8.2.0.preview.0
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=8RYwAQAAIAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE73StZ33A3B1jKyE2lX_r_TWTBcHRPgzpw4USmbH1th7oYg_GBZoRlVETOWkiMKyJCZa4O5FfqvStDTn6cbvP2DQht28L62lEnqa3DbHZlbfqydClGrBNIj-x0YnrYTjxmcx7pMW&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=8RYwAQAAIAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71zoD0L14JGvnsm5bN5VBr7x2O6wC7N-Ov3xLMEqiYLNYem1Sp6zBRpGpMwLrn1K-W0kZUiEBDITBxDvfkgyw0T2cpmGiJ9rQR7YoFOWvZxjHwHB94kIBSfjNV4o2bPB0NDPj0v&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=8RYwAQAAIAAJ&printsec=frontcover&img=1&zoom=2&imgtk=AFLRE73O8AAGJdZC8efb8fYVYac49GYYR6lSKDI1NOct3EPEc0ypvtpzIOG6LTrLioUGFDhPjG1aZuj7XLR28VtxEmJtv9L4Db6fMTW7nQtw5PACqOyhVgMG19Q5kbyh2hLB1IMbtUGg&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=8RYwAQAAIAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE70zvyLo5c6dqvGoI9llAf3Hrjp0T1dcE0AWpyMFvdT8bSqrQ904lT3g6CjGzB4eS6h34aAhIlHygHaD4z7jIApgBPMwp6X8Emfx-r47RMb_ZANgOPjosUlyjmFi_S2mYnopBOsA&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=8RYwAQAAIAAJ&printsec=frontcover&img=1&zoom=4&imgtk=AFLRE73xBR2ntMSHkGCESBX7ftuvywVU8GLRsGqpACNEBpLvltUuSAQECkBkVuspqhGAC6ydUceNqLMlMnB5XFXGFNZB3-QOFdCqgn_T374msaVQUXatGUDK-uoqQxra-ADvKyOwPs9d&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=8RYwAQAAIAAJ&printsec=frontcover&img=1&zoom=6&imgtk=AFLRE73tE0xqoIy14coeTUXNdQ3VaC-u6TM9w6bqdrNaHONQlXOpq6vvHrBQl3RP4CuOLdmq6bhr-QmDgKKuard0G8csscKadqm2OEZow2aPwbtapeW-a_bQV2fe263PpvAvVDvT-9Xz&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=8RYwAQAAIAAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=8RYwAQAAIAAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=8RYwAQAAIAAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => NO_PAGES
+                    [embeddable] => 
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=8RYwAQAAIAAJ&hl=&source=gbs_api
+                    [accessViewStatus] => NONE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+
+2025-06-27 14:21:38 - Processando livro - Detalhes: Array
+(
+    [id] => 9BRHean3CqcC
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => 9BRHean3CqcC
+            [etag] => rI7uVKbxp9Y
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/9BRHean3CqcC
+            [volumeInfo] => Array
+                (
+                    [title] => Vidas secas
+                    [authors] => Array
+                        (
+                            [0] => Graciliano Ramos
+                        )
+
+                    [publisher] => Editorial Norma
+                    [publishedDate] => 2003
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 9580471444
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9789580471448
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 1
+                        )
+
+                    [pageCount] => 140
+                    [printedPageCount] => 140
+                    [printType] => BOOK
+                    [averageRating] => 5
+                    [ratingsCount] => 1
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => 2.5.4.0.preview.1
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=9BRHean3CqcC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE72s1wigcZgPHWM-L5td8VGau7b3FJv2-pmHrGJ2X5k5ILuo_4YlimajjD--nAoUjM17ZRhW5OS09u5pSfK8yE1vbA2Oidyo4NArc1oDmmZPD-t3wVoyd7EHoiH7OEvBR1abY1Fm&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=9BRHean3CqcC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE703SLnoTVsA54xoFEDlfPLu89s8PwlA3syp16HFtaDMDaGLUJCUjEAtQaJoH8gwOMk-e2vrDC0P-dhEuSyLB4kCnvvgoAH1_h2b92X1k9lJJA5a7fwfEAZXF_cv7HYsbr3_Svm3&source=gbs_api
+                            [small] => http://books.google.com/books/content?id=9BRHean3CqcC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE70B7hnD3qLb8--Qqs_MGPhPIhErqnX22pPu1PmZkyO8aJnvCwS-V08U4iHZxNA1oo48mSpmBafCyT-NbSXzyfjiNTTpXgincaMaviPtXwXe1ak8vSZjhpGkp3AZLT_87-hwrk9G&source=gbs_api
+                            [medium] => http://books.google.com/books/content?id=9BRHean3CqcC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7015W9VYpNBc3ocoWmEW25qfUmH1Yob3heKDLTr8R05qOjt8FcXF9cEYbw824DdimcwtUNtWyqd4CMVzF9x0sfJehtwE1b9jQVMDI4CGSfJVmosGewI0QGhROYqUUVyj6Qzb6V-&source=gbs_api
+                            [large] => http://books.google.com/books/content?id=9BRHean3CqcC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE70mY4_SoKTnNbDeC_eilzlUQEz_nTIuBPcwfH80PA1JN2yeyy2d6-nLMBItTd6fQHqkmuquI-Xe1JdDGE7YoEaHaXoOqwrOH9Hq_LJ9PKshd58bZzxr9vNXo5h9O4ZVFvZ9GyhI&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/content?id=9BRHean3CqcC&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE727edm75UYLCWIH0hZqX1LQcVAkwtn295C09gmLVzxu6-TnDDtn7-9FxGVqEhmxTJlsFgElfjVukZy7GfxisE7Fh_PbatmtT21TZAFVNzYCv_IF3y3Lx_riGIB9uzSIUuqNA2vV&source=gbs_api
+                        )
+
+                    [language] => es
+                    [previewLink] => http://books.google.com.br/books?id=9BRHean3CqcC&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=9BRHean3CqcC&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=9BRHean3CqcC
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Vidas_secas-sample-pdf.acsm?id=9BRHean3CqcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=9BRHean3CqcC&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+

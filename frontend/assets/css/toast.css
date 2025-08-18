@@ -1,0 +1,20 @@
+.toast {
+    position: relative;
+    overflow: hidden;
+}
+
+.toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: toast-progress-bar 3s linear forwards;
+    /* mesma duração do toast (3s) */
+}
+
+@keyframes toast-progress-bar {
+    from { width: 100%; }
+    to { width: 0%; }
+}
