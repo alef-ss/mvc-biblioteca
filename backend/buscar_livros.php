@@ -36,10 +36,27 @@ function registrar_log($mensagem, $detalhes = null)
 
 function buscarLivroGoogle($termo)
 {
-    $url = 'https://www.googleapis.com/books/v1/volumes?q=' . urlencode($termo);
-    $response = file_get_contents($url);
-    return json_decode($response, true);
+    try {
+        $url = 'https://www.googleapis.com/books/v1/volumes?q=' . urlencode($termo);
+
+        // Tenta obter os dados
+        $response = @file_get_contents($url);
+
+        if ($response === false) {
+            throw new Exception("Não foi possível acessar a API do Google Books.");
+        }
+
+        // Decodifica JSON para array associativo
+        return json_decode($response, true);
+
+    } catch (Exception $e) {
+        // Apenas retorna um array vazio em caso de erro
+        // Você pode trocar por echo se quiser exibir o erro
+        // echo "Erro ao buscar livros: " . $e->getMessage();
+        return [];
+    }
 }
+
 
 function buscarDetalhesLivroGoogle($id_livro)
 {
@@ -91,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     throw new Exception("ISBN não encontrado para o livro '$titulo'");
                 }
 
-                $sql = "INSERT INTO livros (titulo, autor, isbn, capa_url, descricao, categoria, ano_publicacao, genero, quantidade, preview_link) 
+                $sql = "INSERT INTO livros (titulo, autor, isbn, capa_url, descricao, categoria, ano_publicacao, genero, quantidade, preview_link)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
                 $stmt = $conn->prepare($sql);
