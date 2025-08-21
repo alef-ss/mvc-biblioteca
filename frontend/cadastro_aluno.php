@@ -93,16 +93,6 @@ if (isset($_SESSION['toast'])) {
                         <input type="email" class="form-control" name="email" id="email" required
                             placeholder="Digite o email">
                     </div>
-                    <div class="mb-3">
-                        <label for="senha" class="form-label">
-                            <i class="fas fa-lock"></i> Senha
-                        </label>
-                        <input type="password" class="form-control" name="senha" id="senha" required
-                            placeholder="Digite a senha">
-                        <div class="form-text" style="color: var(--text-color);">
-                            <i class="fas fa-info-circle"></i> A senha deve ter no mínimo 6 caracteres
-                        </div>
-                    </div>
                     <button type="submit" class="btn btn-primary w-100">
                         <i class="fas fa-save"></i> Cadastrar Aluno
                     </button>
