@@ -16,15 +16,6 @@ include('../backend/cadastro_emprestimos.php');
 </head>
 <body>
     <div class="container mt-5">
-        <!-- Botão Voltar -->
-        <div class="row mb-4">
-            <div class="col-12">
-                <a href="dashboard.php" class="btn btn-primary">
-                    <i class="fas fa-arrow-left me-2"></i>Voltar ao Painel
-                </a>
-            </div>
-        </div>
-
         <!-- Theme Toggle Button -->
         <button class="theme-toggle" id="themeToggle">
             <i class="fas fa-moon" id="themeIcon"></i>
@@ -130,6 +121,14 @@ include('../backend/cadastro_emprestimos.php');
                         </form>
                     </div>
                 </div>
+                <!-- Botão Voltar -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <a href="dashboard.php" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-arrow-left me-2"></i>Voltar ao Painel
+                </a>
+            </div>
+        </div>
             </div>
         </div>
     </div>
