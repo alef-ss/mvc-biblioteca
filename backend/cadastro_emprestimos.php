@@ -1,7 +1,7 @@
 <?php
 session_start();
 $professor_id = $_SESSION['professor_id'] ?? null;
-var_dump($_POST);
+// var_dump($_POST);
 
 
 if (!isset($_SESSION['professor_id'])) {
