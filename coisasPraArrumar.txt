@@ -22,7 +22,7 @@
  3. Não precisa.
   4. Mais ou menos feito.
   5. Era problema de internet, mas eu usei Try pra tentar previnir que mostre o erro.
-  6. Ainda vou fazer.
+  6. Formulário funcionando já, só falta adicionar os outros campos e fazer o CSS.
   7. Não tinha erro, era problema de internet também.
   8. Coloquei de propósito pra resolver um erro, ainda vou tirar.
   9. Também problema de internet, tá funcionando 👍.
