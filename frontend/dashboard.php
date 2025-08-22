@@ -31,7 +31,7 @@ include('../backend/dashboard.php');
 
   <div class="dashboard-header text-center">
     <div class="container">
-      <h1 class="mb-2">Sistema de Gestão de Biblioteca</h1>
+      <h1 class="mb-2">MVC Biblioteca</h1>
       <div class="subtitle">Bem-vindo ao seu painel de controle</div>
     </div>
   </div>
