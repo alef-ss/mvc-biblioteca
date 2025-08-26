@@ -121,7 +121,7 @@ themeToggle.addEventListener('click', () => {
         html.setAttribute('data-theme', newTheme);
         updateThemeIcon(newTheme);
         localStorage.setItem('theme', newTheme);
-    }, 800);
+    });
 });
 
 function updateThemeIcon(theme) {
