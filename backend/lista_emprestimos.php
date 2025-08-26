@@ -69,7 +69,7 @@ if (!empty($filtro_livro)) {
 
 // Consulta final com filtros
 $sql = "SELECT e.id, l.titulo, a.nome, e.data_emprestimo, e.data_devolucao, e.devolvido
-        FROM emprestimos e 
+        FROM emprestimos e
         JOIN livros l ON e.livro_id = l.id
         JOIN alunos a ON e.aluno_id = a.id
         $where

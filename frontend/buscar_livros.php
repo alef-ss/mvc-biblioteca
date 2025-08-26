@@ -135,6 +135,9 @@ if (isset($_SESSION['toast'])) {
                         <i class="fas fa-exclamation-triangle"></i> Nenhum livro encontrado.
                     </div>
                 <?php endif; ?>
+                <div>
+                  <p class="form-control" style="border: none;">Não encontrou o que queria? Cadastre o livro manualmente <a href="cadastro_livro_manual.php">aqui</a></p>
+                </div>
             </div>
         </div>
 

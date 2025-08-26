@@ -1,7 +1,7 @@
 <?php
 include('../backend/lista_emprestimos.php');
-echo "Sessão: " . $_SESSION['professor_id'] . "\n";
-var_dump($professor_id);
+// echo "Sessão: " . $_SESSION['professor_id'] . "\n";
+// var_dump($professor_id);
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ var_dump($professor_id);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="_css/listar_emprestimos.css?v=1">
+    <link rel="stylesheet" href="assets/css/listar_emprestimos.css?v=1">
 </head>
 
 <body>
