@@ -2,29 +2,26 @@
 session_start();
 require_once '../../includes/auth_admin.php';
 
-// Validar nome do arquivo
-$file = $_GET['file'] ?? '';
-if (!preg_match('/^backup_completo_\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2}\.zip$/', $file)) {
-    die('Arquivo inválido.');
-}
+// Recebe o nome do arquivo via GET
+$filename = basename($_GET['file'] ?? '');
+$backup_dir = realpath(__DIR__ . '/../../backups');
+$file_path = $backup_dir . '/' . $filename;
 
-$backup_dir = '../../backups';
-$file_path = $backup_dir . '/' . $file;
-
-// Verificar se arquivo existe
+// Verifica se o arquivo existe
 if (!file_exists($file_path)) {
-    die('Arquivo não encontrado.');
+    http_response_code(404);
+    echo "Arquivo não encontrado!";
+    exit;
 }
 
-// Headers para download
-header('Content-Type: application/zip');
-header('Content-Disposition: attachment; filename="' . $file . '"');
-header('Content-Length: ' . filesize($file_path));
-header('Cache-Control: no-cache, must-revalidate');
-header('Pragma: no-cache');
+// Força o download do arquivo .sql
+header('Content-Description: File Transfer');
+header('Content-Type: application/sql');
+header('Content-Disposition: attachment; filename="' . $filename . '"');
 header('Expires: 0');
-
-// Enviar arquivo
+header('Cache-Control: must-revalidate');
+header('Pragma: public');
+header('Content-Length: ' . filesize($file_path));
 readfile($file_path);
 exit;
-?> 
+?>

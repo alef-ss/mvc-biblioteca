@@ -67,8 +67,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validação dos dados de entrada
     $aluno_id = filter_input(INPUT_POST, 'aluno_id', FILTER_VALIDATE_INT);
     $livro_id = filter_input(INPUT_POST, 'livro_id', FILTER_VALIDATE_INT);
-    $data_emprestimo = filter_input(INPUT_POST, 'data_emprestimo', FILTER_SANITIZE_STRING);
-    $data_devolucao = filter_input(INPUT_POST, 'data_devolucao', FILTER_SANITIZE_STRING);
+    $data_emprestimo = filter_input(INPUT_POST, 'data_emprestimo');
+    $data_devolucao = filter_input(INPUT_POST, 'data_devolucao');
 
     if (!$aluno_id || !$livro_id || !$data_emprestimo || !$data_devolucao) {
         $error_message = "Dados inválidos fornecidos!";

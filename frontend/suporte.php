@@ -32,7 +32,7 @@
                 </h4>
             </div>
             <div class="card-body">
-                <form action="https://formsubmit.co/alef.ss@proton.me" method="POST">
+                <form action="https://formsubmit.co/alefsouzasobrinho51@gmail.com" method="POST">
                     <input type="hidden" name="_captcha" value="false" />
                     <div class="mb-4">
                         <label for="name" class="form-label">

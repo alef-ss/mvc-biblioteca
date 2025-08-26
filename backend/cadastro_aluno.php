@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Usa password_hash para maior segurança na senha
-    $senha = isset($_POST['senha']) ? password_hash($_POST['senha'], PASSWORD_DEFAULT) : null;
+    // $senha = isset($_POST['senha']) ? password_hash($_POST['senha'], PASSWORD_DEFAULT) : null;
 
     // Verifica se o email do aluno já está cadastrado
     $sql_check = "SELECT id FROM alunos WHERE email = ?";
@@ -46,9 +46,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         // Insere o aluno no banco de dados
-        $sql = "INSERT INTO alunos (nome, serie, email, senha) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO alunos (nome, serie, email) VALUES (?, ?, ?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssss", $nome, $serie, $email, $senha);
+        $stmt->bind_param("sss", $nome, $serie, $email);
 
         if ($stmt->execute()) {
             // Mensagem de sucesso e redireciona

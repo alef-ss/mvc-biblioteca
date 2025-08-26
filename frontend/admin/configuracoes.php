@@ -12,8 +12,8 @@ $config = $stmt->get_result()->fetch_assoc();
 if (!$config) {
     $conn->query("
         INSERT INTO configuracoes (
-            dias_emprestimo, 
-            max_livros_aluno, 
+            dias_emprestimo,
+            max_livros_aluno,
             max_renovacoes,
             multa_dia_atraso,
             backup_automatico,
@@ -29,7 +29,7 @@ if (!$config) {
             'light'
         )
     ");
-    
+
     $stmt->execute();
     $config = $stmt->get_result()->fetch_assoc();
 }
@@ -109,31 +109,31 @@ if (!$config) {
                         <!-- Empréstimos -->
                         <div class="col-md-6">
                             <h5 class="mb-4">Configurações de Empréstimo</h5>
-                            
+
                             <div class="mb-3">
                                 <label class="form-label">Dias de Empréstimo</label>
-                                <input type="number" class="form-control" name="dias_emprestimo" 
+                                <input type="number" class="form-control" name="dias_emprestimo"
                                        value="<?php echo $config['dias_emprestimo']; ?>" min="1" max="30">
                                 <small class="text-muted">Quantidade padrão de dias para devolução</small>
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Máximo de Livros por Aluno</label>
-                                <input type="number" class="form-control" name="max_livros_aluno" 
+                                <input type="number" class="form-control" name="max_livros_aluno"
                                        value="<?php echo $config['max_livros_aluno']; ?>" min="1" max="10">
                                 <small class="text-muted">Quantidade máxima de livros que um aluno pode emprestar</small>
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Máximo de Renovações</label>
-                                <input type="number" class="form-control" name="max_renovacoes" 
+                                <input type="number" class="form-control" name="max_renovacoes"
                                        value="<?php echo $config['max_renovacoes']; ?>" min="0" max="5">
                                 <small class="text-muted">Quantidade máxima de vezes que um empréstimo pode ser renovado</small>
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Multa por Dia de Atraso (R$)</label>
-                                <input type="number" class="form-control" name="multa_dia_atraso" 
+                                <input type="number" class="form-control" name="multa_dia_atraso"
                                        value="<?php echo $config['multa_dia_atraso']; ?>" step="0.01" min="0">
                                 <small class="text-muted">Valor da multa por dia de atraso na devolução</small>
                             </div>
@@ -145,7 +145,7 @@ if (!$config) {
 
                             <div class="mb-3">
                                 <label class="form-label">Email para Notificações</label>
-                                <input type="email" class="form-control" name="email_notificacao" 
+                                <input type="email" class="form-control" name="email_notificacao"
                                        value="<?php echo $config['email_notificacao']; ?>">
                                 <small class="text-muted">Email que receberá as notificações do sistema</small>
                             </div>
@@ -161,7 +161,7 @@ if (!$config) {
 
                             <div class="mb-3">
                                 <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" name="backup_automatico" 
+                                    <input class="form-check-input" type="checkbox" name="backup_automatico"
                                            <?php echo $config['backup_automatico'] ? 'checked' : ''; ?>>
                                     <label class="form-check-label">Backup Automático</label>
                                 </div>
@@ -226,7 +226,7 @@ if (!$config) {
         // Salvar Configurações
         function salvarConfiguracoes() {
             const formData = new FormData(document.getElementById('configForm'));
-            
+
             $.ajax({
                 url: '../../backend/admin/salvar_configuracoes.php',
                 type: 'POST',
@@ -270,26 +270,14 @@ if (!$config) {
             $.ajax({
                 url: '../../backend/admin/realizar_backup.php',
                 type: 'POST',
+                dataType: 'json', // <-- Adicione esta linha!
                 success: function(response) {
-                    if (response.success) {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Sucesso!',
-                            text: 'Backup realizado com sucesso!',
-                            confirmButtonText: 'Download',
-                            showCancelButton: true,
-                            cancelButtonText: 'Fechar'
-                        }).then((result) => {
-                            if (result.isConfirmed) {
-                                window.location.href = response.file;
-                            }
-                        });
+                    if (response.success && response.file) {
+                        // Inicia o download automaticamente
+                        window.location.href = '../../backend/admin/download_backup.php?file=' + encodeURIComponent(response.file.split('/').pop());
+                        Swal.fire('Sucesso!', 'Backup realizado e download iniciado.', 'success');
                     } else {
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Erro!',
-                            text: response.message
-                        });
+                        Swal.fire('Erro!', response.message || 'Falha ao realizar backup.', 'error');
                     }
                 },
                 error: function() {
@@ -303,4 +291,4 @@ if (!$config) {
         }
     </script>
 </body>
-</html> 
+</html>

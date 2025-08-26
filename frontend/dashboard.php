@@ -13,7 +13,11 @@ include('../backend/dashboard.php');
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<<<<<<< HEAD
 <link rel="stylesheet" href="./assets/css/dashboard.css">
+=======
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+>>>>>>> 381e181f2197f34626ee4c15cfe4797a29cbb88c
   <!-- <link rel="stylesheet" href="assets/css/global_colors.css"> -->
 </head>
 <body>
@@ -110,7 +114,11 @@ include('../backend/dashboard.php');
             <div class="stats-card">
               <div class="text-center">
                 <i class="fas fa-users stats-icon"></i>
+<<<<<<< HEAD
                 <div class="stats-number"><?php echo $totalAlunos; ?></div>
+=======
+                <div class="stats-number"><?php echo $total_students; ?></div>
+>>>>>>> 381e181f2197f34626ee4c15cfe4797a29cbb88c
                 <div class="stats-label">Alunos Cadastrados</div>
               </div>
             </div>
@@ -119,7 +127,11 @@ include('../backend/dashboard.php');
             <div class="stats-card">
               <div class="text-center">
                 <i class="fas fa-book stats-icon"></i>
+<<<<<<< HEAD
                 <div class="stats-number"><?php echo $totalLivros; ?></div>
+=======
+                <div class="stats-number"><?php echo $total_books; ?></div>
+>>>>>>> 381e181f2197f34626ee4c15cfe4797a29cbb88c
                 <div class="stats-label">Livros no Acervo</div>
               </div>
             </div>
@@ -128,7 +140,11 @@ include('../backend/dashboard.php');
             <div class="stats-card">
               <div class="text-center">
                 <i class="fas fa-exchange-alt stats-icon"></i>
+<<<<<<< HEAD
                 <div class="stats-number"><?php echo $totalEmprestimos; ?></div>
+=======
+                <div class="stats-number"><?php echo $total_loans; ?></div>
+>>>>>>> 381e181f2197f34626ee4c15cfe4797a29cbb88c
                 <div class="stats-label">Empréstimos Ativos</div>
               </div>
             </div>
@@ -137,7 +153,11 @@ include('../backend/dashboard.php');
             <div class="stats-card">
               <div class="text-center">
                 <i class="fas fa-clock stats-icon"></i>
+<<<<<<< HEAD
                 <div class="stats-number"><?php echo $totalDevolucoesPendentes; ?></div>
+=======
+                <div class="stats-number"><?php echo $total_pending_returns; ?></div>
+>>>>>>> 381e181f2197f34626ee4c15cfe4797a29cbb88c
                 <div class="stats-label">Devoluções Pendentes</div>
               </div>
             </div>
