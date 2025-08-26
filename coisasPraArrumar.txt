@@ -1,0 +1,31 @@
+1- fazer o redirecionamento automatico do arquivo index.html par ao arquivo de loin.php
+2- retirar o campo de senha de aluno do front end e do banco de dados tabela aluno
+3- retirar o campo professor_id do banco de dados da tabela aluno
+4- colocar as informações de contato e links uteis em uma linha reta
+5- corrigir erro (Warning: file_get_contents(https://www.googleapis.com/books/v1/volumes?q=dom+casmurro): Failed to open stream: Uma tentativa
+   de conexão falhou porque o componente conectado não respondeu corretamente após um período de tempo ou a conexão estabelecida falhou porque
+   o host conectado não respondeu in C:\xampp\htdocs\biblioteca\backend\buscar_livros.php on line 40)
+6- colocar campos para inserir livro manualmente, caso a busca automática falhe, ou não encontre o livro
+7- http://localhost:8081/biblioteca/frontend/cadastro_emprestimos.php, não abre
+8- em http://localhost:8081/biblioteca/frontend/listar_emprestimos.php?devolver_id=24, corrigir (Sessão: 4 int(4) )que aparece indevidamente
+   ou de forma errada
+9- http://localhost:8081/biblioteca/frontend/visualizar_livros.php não abre
+10- em http://localhost:8081/biblioteca/frontend/historico_emprestimos.php os 2 botões exportar não funcionam
+11- em http://localhost:8081/biblioteca/frontend/cadastro_emprestimos.php verificar informações que aparecem após realizer um emprestimo,
+ talvez elas não devessem aparecer, analizar css dos botoes
+12- em novo emprestimo, não ve se selecionar o aluno, pois pode term mais de 1000 na escola, faça com que os nomes aparecam, comforme vai digitando
+ as letras do nome
+
+
+ 1. Feito.
+ 2. Feito.
+ 3. Não precisa.
+  4. Mais ou menos feito.
+  5. Era problema de internet, mas eu usei Try pra tentar previnir que mostre o erro.
+  6. Formulário funcionando já, só falta adicionar os outros campos e fazer o CSS.
+  7. Não tinha erro, era problema de internet também.
+  8. Coloquei de propósito pra resolver um erro, ainda vou tirar.
+  9. Também problema de internet, tá funcionando 👍.
+  10. Só o botão de exportar pra Excel não funciona e eu não vou arrumar porque não precisa, vou só tirar ele de lá, pra PDF funciona.
+  11. Coloquei as informações pra fazer uns testes também, ainda vou tirar.
+  12. Não entendi essa, mas tem opção de filtrar por série, nome, ISBN e título do livro, além de mais opção de pesquisar pelo nome do aluno e título do livro.

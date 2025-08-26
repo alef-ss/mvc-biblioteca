@@ -5,8 +5,8 @@ require_once '../../includes/conn.php';
 
 // Buscar todos os professores
 $stmt = $conn->prepare("
-    SELECT 
-        p.*, 
+    SELECT
+        p.*,
         COUNT(e.id) as total_emprestimos,
         MAX(e.data_emprestimo) as ultimo_emprestimo
     FROM professores p
@@ -133,9 +133,9 @@ $professores = $stmt->get_result();
                                 <tr>
                                     <td>
                                         <div class="d-flex align-items-center">
-                                            <img src="https://ui-avatars.com/api/?name=<?php echo urlencode($prof['nome']); ?>&background=random" 
-                                                 alt="<?php echo htmlspecialchars($prof['nome']); ?>" 
-                                                 class="rounded-circle me-2" 
+                                            <img src="https://ui-avatars.com/api/?name=<?php echo urlencode($prof['nome']); ?>&background=random"
+                                                 alt="<?php echo htmlspecialchars($prof['nome']); ?>"
+                                                 class="rounded-circle me-2"
                                                  style="width: 32px; height: 32px;">
                                             <?php echo htmlspecialchars($prof['nome']); ?>
                                         </div>
@@ -143,10 +143,10 @@ $professores = $stmt->get_result();
                                     <td><?php echo htmlspecialchars($prof['email']); ?></td>
                                     <td><?php echo $prof['total_emprestimos']; ?></td>
                                     <td>
-                                        <?php 
-                                        echo $prof['ultimo_emprestimo'] 
+                                        <?php
+                                        echo $prof['ultimo_emprestimo']
                                             ? date('d/m/Y', strtotime($prof['ultimo_emprestimo']))
-                                            : 'Nunca';
+                                            : 'Vazio';
                                         ?>
                                     </td>
                                     <td>
@@ -161,7 +161,7 @@ $professores = $stmt->get_result();
                                             <button class="btn btn-sm btn-primary" onclick="editarProfessor(<?php echo $prof['id']; ?>)">
                                                 <i class="fas fa-edit"></i>
                                             </button>
-                                            <button class="btn btn-sm btn-<?php echo $prof['ativo'] ? 'danger' : 'success'; ?>" 
+                                            <button class="btn btn-sm btn-<?php echo $prof['ativo'] ? 'danger' : 'success'; ?>"
                                                     onclick="alterarStatus(<?php echo $prof['id']; ?>, <?php echo $prof['ativo']; ?>)">
                                                 <i class="fas fa-<?php echo $prof['ativo'] ? 'ban' : 'check'; ?>"></i>
                                             </button>
@@ -357,4 +357,4 @@ $professores = $stmt->get_result();
         }
     </script>
 </body>
-</html> 
+</html>

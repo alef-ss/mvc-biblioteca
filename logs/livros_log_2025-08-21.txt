@@ -1,0 +1,114 @@
+2025-08-21 14:16:14 - Processando livro - Detalhes: Array
+(
+    [id] => JYSO0AEACAAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => JYSO0AEACAAJ
+            [etag] => Fh9mxYVQYTA
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/JYSO0AEACAAJ
+            [volumeInfo] => Array
+                (
+                    [title] => One Piece, Vol. 107
+                    [authors] => Array
+                        (
+                            [0] => Eiichiro Oda
+                        )
+
+                    [publisher] => VIZ Media LLC
+                    [publishedDate] => 2024-11-12
+                    [description] => <b>Join Monkey D. Luffy and his swashbuckling crew in their search for the ultimate treasure, One Piece!</b><br><br>As a child, Monkey D. Luffy dreamed of becoming King of the Pirates. But his life changed when he accidentally gained the power to stretch like rubber...at the cost of never being able to swim again! Years later, Luffy sets off in search of the One Piece, said to be the greatest treasure in the world...<br><br>Having learned too much of the world’s history, Dr. Vegapunk is now the target of the CP0 assassins. Vegapunk’s only hope may be to ask for help from Luffy and the Straw Hat crew, but where are they? Chaos erupts on Egghead Island as the world government sends some powerful reinforcements.
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 1974749797
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9781974749799
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 
+                            [image] => 
+                        )
+
+                    [pageCount] => 224
+                    [printedPageCount] => 224
+                    [dimensions] => Array
+                        (
+                            [height] => 19.10 cm
+                            [width] => 12.70 cm
+                            [thickness] => 1.80 cm
+                        )
+
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Comics & Graphic Novels / Manga / General
+                            [1] => Comics & Graphic Novels / Fantasy
+                            [2] => Comics & Graphic Novels / Media Tie-In
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 
+                    [contentVersion] => preview-1.0.0
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [comicsContent] => 1
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/content?id=JYSO0AEACAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE71kOLLcsKrsZ3Ca_lhmtmy8tUruUZr7udo_q0ZfepkrH6HerscYn4D3Ls7fHWCHoDYaV69Tk5Cg-2oq1UTafU1KMB7xZdUWrLIC5HnqJGZpvWeluQ63-eIqT0rDS8mr9T1uY_ie&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/content?id=JYSO0AEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71PJTsA1XZ1OrqOl4N7NRrUULz8JpmejXgyrTXc20RwLKsC1dFvHeTC9hAtlBoMw4-6IKvaVxyjkbomPXkPMpcA88dxPYINWf7RupeOA0614kQw4Uayr7tW83nz2CHFQWBRg9-x&source=gbs_api
+                        )
+
+                    [language] => en
+                    [previewLink] => http://books.google.com.br/books?id=JYSO0AEACAAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=JYSO0AEACAAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=JYSO0AEACAAJ
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => NOT_FOR_SALE
+                    [isEbook] => 
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => NO_PAGES
+                    [embeddable] => 
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=JYSO0AEACAAJ&hl=&source=gbs_api
+                    [accessViewStatus] => NONE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+

@@ -1,7 +1,7 @@
 <?php
 session_start();
 $professor_id = $_SESSION['professor_id'] ?? null;
-var_dump($_POST);
+// var_dump($_POST);
 
 
 if (!isset($_SESSION['professor_id'])) {
@@ -67,8 +67,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validação dos dados de entrada
     $aluno_id = filter_input(INPUT_POST, 'aluno_id', FILTER_VALIDATE_INT);
     $livro_id = filter_input(INPUT_POST, 'livro_id', FILTER_VALIDATE_INT);
-    $data_emprestimo = filter_input(INPUT_POST, 'data_emprestimo', FILTER_SANITIZE_STRING);
-    $data_devolucao = filter_input(INPUT_POST, 'data_devolucao', FILTER_SANITIZE_STRING);
+    $data_emprestimo = filter_input(INPUT_POST, 'data_emprestimo');
+    $data_devolucao = filter_input(INPUT_POST, 'data_devolucao');
 
     if (!$aluno_id || !$livro_id || !$data_emprestimo || !$data_devolucao) {
         $error_message = "Dados inválidos fornecidos!";
@@ -85,21 +85,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($quantidade > 0) {
             // Inicia transação para garantir consistência
             $conn->begin_transaction();
-            
+
             try {
                 // Registra o empréstimo
-                $sql = "INSERT INTO emprestimos (aluno_id, livro_id, data_emprestimo, data_devolucao, devolvido, professor_id) 
+                $sql = "INSERT INTO emprestimos (aluno_id, livro_id, data_emprestimo, data_devolucao, devolvido, professor_id)
                         VALUES (?, ?, ?, ?, 0, ?)";
                 $stmt_emprestimo = $conn->prepare($sql);
                 $stmt_emprestimo->bind_param("iissi", $aluno_id, $livro_id, $data_emprestimo, $data_devolucao, $professor_id);
-                
+
                 if ($stmt_emprestimo->execute()) {
                     // Atualiza o estoque do livro
                     $sql_update = "UPDATE livros SET quantidade = quantidade - 1 WHERE id = ?";
                     $stmt_update = $conn->prepare($sql_update);
                     $stmt_update->bind_param("i", $livro_id);
                     $stmt_update->execute();
-                    
+
                     $conn->commit();
                     $success_message = "Empréstimo registrado com sucesso!";
                 } else {
@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $conn->rollback();
                 $error_message = $e->getMessage();
             }
-            
+
             if (isset($stmt_emprestimo)) $stmt_emprestimo->close();
             if (isset($stmt_update)) $stmt_update->close();
         } else {

@@ -1,30 +1,51 @@
-<footer class="biblioteca-footer">
-    <div class="footer-container container">
-        <div class="footer-section">
-            <h3 style="color: var(--primary-color); font-weight: 600;">Sistema de Biblioteca</h3>
-            <p style="color: var(--text-color);">Gestão de acervo e empréstimos</p>
-            <p style="color: var(--text-color);">Versão 1.0</p>
-        </div>
-        
-        <div class="footer-section">
-            <h3 style="color: var(--primary-color); font-weight: 600;">Contato</h3>
-            <p style="color: var(--text-color);"><i class="fas fa-envelope"></i> biblioteca@example.com</p>
-            <p style="color: var(--text-color);"><i class="fas fa-phone"></i> (XX) XXXX-XXXX</p>
-            <p style="color: var(--text-color);"><i class="fas fa-map-marker-alt"></i> Endereço da Biblioteca</p>
-        </div>
-        
-        <div class="footer-section">
-            <h3 style="color: var(--primary-color); font-weight: 600;">Links Úteis</h3>
-            <ul style="list-style: none; padding-left: 0;">
-                <li><a href="../frontend/dashboard.php" style="color: var(--primary-color); text-decoration: none;">Dashboard</a></li>
-                <li><a href="../frontend/relatorios.php" style="color: var(--primary-color); text-decoration: none;">Relatórios</a></li>
-                <li><a href="../frontend/lista_alunos.php" style="color: var(--primary-color); text-decoration: none;">Lista de Alunos</a></li>
-                <li><a href="../frontend/visualizar_livros.php" style="color: var(--primary-color); text-decoration: none;">Catálogo de Livros</a></li>
-            </ul>
+<footer class="biblioteca-footer" style="width: 100%; background: var(--secondary-color); border-top: 1px solid #e0e0e0;">
+    <div class="footer-container container py-4">
+        <div class="row">
+            <!-- Sistema de Biblioteca -->
+            <div class="col-md-4 col-12 mb-4 mb-md-0 footer-section">
+                <h3 style="color: var(--primary-color); font-weight: 600;">Sistema de Biblioteca</h3>
+                <p style="color: var(--text-color);">Gestão de acervo e empréstimos</p>
+                <p style="color: var(--text-color);">Versão 1.0</p>
+            </div>
+            <!-- Contato -->
+            <div class="col-md-4 col-12 mb-4 mb-md-0 footer-section">
+                <h3 style="color: var(--primary-color); font-weight: 600;">Contato</h3>
+                <p style="color: var(--text-color);"><i class="fas fa-envelope"></i> biblioteca@example.com</p>
+                <p style="color: var(--text-color);"><i class="fas fa-phone"></i> (XX) XXXX-XXXX</p>
+                <p style="color: var(--text-color);"><i class="fas fa-map-marker-alt"></i> Endereço da Biblioteca</p>
+            </div>
+            <!-- Links Úteis -->
+            <div class="col-md-4 col-12 footer-section">
+                <h3 style="color: var(--primary-color); font-weight: 600;">Links Úteis</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li><a href="../frontend/dashboard.php" style="color: var(--primary-color); text-decoration: none;">Dashboard</a></li>
+                    <li><a href="../frontend/relatorios.php" style="color: var(--primary-color); text-decoration: none;">Relatórios</a></li>
+                    <li><a href="../frontend/lista_alunos.php" style="color: var(--primary-color); text-decoration: none;">Lista de Alunos</a></li>
+                    <li><a href="../frontend/visualizar_livros.php" style="color: var(--primary-color); text-decoration: none;">Catálogo de Livros</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    
     <div class="footer-bottom" style="background-color: var(--primary-color); padding: 15px 0; text-align: center; color: white; font-weight: 600;">
-        <p>&copy; 2025 MVC Biblioteca. Todos os direitos reservados.</p>
+        <p class="mb-0">&copy; 2025 MVC Biblioteca. Todos os direitos reservados.</p>
     </div>
 </footer>
+<style>
+    .biblioteca-footer .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .biblioteca-footer .footer-section p,
+    .biblioteca-footer .footer-section ul li {
+        font-size: 1rem;
+    }
+    @media (max-width: 767px) {
+        .biblioteca-footer .footer-container .row {
+            flex-direction: column;
+        }
+        .biblioteca-footer .footer-section {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+</style>
