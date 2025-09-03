@@ -481,3 +481,162 @@
 
 )
 
+2025-09-03 14:20:13 - Processando livro - Detalhes: Array
+(
+    [id] => FggVEAAAQBAJ
+    [dados] => Array
+        (
+            [kind] => books#volume
+            [id] => FggVEAAAQBAJ
+            [etag] => 76PBzj1dIUE
+            [selfLink] => https://www.googleapis.com/books/v1/volumes/FggVEAAAQBAJ
+            [volumeInfo] => Array
+                (
+                    [title] => Orgulho e Preconceito
+                    [authors] => Array
+                        (
+                            [0] => Jane Austen
+                        )
+
+                    [publisher] => Book One Editora Ltda
+                    [publishedDate] => 2021-01-07
+                    [description] => <p>Jane Austen explorou como poucos a expressão de nossos vícios e virtudes no ambiente doméstico, expondo em cada gesto, olhar e palavra a alma de seus personagens. Seu olhar aguçado sobre a índole humana aliado a uma percepção crua e irônica dos costumes de sua época atinge o auge em Orgulho e Preconceito, uma história de amor repleta de desencontros e desentendimentos como só as histórias humanas são capazes. Por meio de Elizabeth Bennet e Fitzwilliam Darcy – incontestavelmente, o casal mais afiado da história da literatura - somos conduzidos à sociedade inglesa da virada do século XIX, cujos orgulhos e preconceitos das mais diversas naturezas ecoam ainda em nosso presente.</p><p><br></p><p>Sobre a autora:</p><p>JANE AUSTEN (1775-1817) foi uma escritora inglesa consagrada pelos romances marcadamente irônicos e incisivos sobre a cidade rural da Inglaterra entre o final do século XVIII e início do século XIX. Além do clássico Orgulho e Preconceito, sua obra ainda inclui títulos de renome mundial como Razão e Sensibilidade, Emma e Persuasão.</p><p><br></p>
+                    [industryIdentifiers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => ISBN_10
+                                    [identifier] => 6587435025
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => ISBN_13
+                                    [identifier] => 9786587435022
+                                )
+
+                        )
+
+                    [readingModes] => Array
+                        (
+                            [text] => 1
+                            [image] => 1
+                        )
+
+                    [pageCount] => 336
+                    [printedPageCount] => 452
+                    [printType] => BOOK
+                    [categories] => Array
+                        (
+                            [0] => Fiction / Romance / Historical / General
+                        )
+
+                    [maturityRating] => NOT_MATURE
+                    [allowAnonLogging] => 1
+                    [contentVersion] => 1.2.2.0.preview.3
+                    [panelizationSummary] => Array
+                        (
+                            [containsEpubBubbles] => 
+                            [containsImageBubbles] => 
+                        )
+
+                    [imageLinks] => Array
+                        (
+                            [smallThumbnail] => http://books.google.com/books/publisher/content?id=FggVEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71r32zcSLg1Ub9dJpLokoHO9CwuBE37dmeFa_za0H7asWkE6s65IpvMmsbDcQXdlzUE8fZCIDwEifSmgNatISChrBbk1vFviIH5F5cA4rjtIcz6hPlBMXsNPQ72d_mDw9JlvFel&source=gbs_api
+                            [thumbnail] => http://books.google.com/books/publisher/content?id=FggVEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73rFIgwbiEFmN6Eur7hFCdKPMWtsk4xch74IP-EMZQ59_fyYB0cRIPk0M99EW7vQPJHuSYDgZIqyfSp3CocSVImexIEFS3ghWqGAWuf6-N_RJp8WgelU4zTzHn0rD7dmme8Un5u&source=gbs_api
+                            [small] => http://books.google.com/books/publisher/content?id=FggVEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71oaInbUcLnybh6GHAl1UV6IJpmt2_yz1LpXifN6O5evf3DBX2PjLkTHPgsosPJxaeGheeRynfRg6W8h4apswHFi9l3DMKeVwyYNH0gSRrlcQAhaGD27ig0N90WKuNl93H9JK2H&source=gbs_api
+                            [medium] => http://books.google.com/books/publisher/content?id=FggVEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72g-Od5omhXNf215wEzyn7sa5mVmVDkzsEJfZSNsu3rMF1qlw9kTd7NR2BQv7DBrLZF0eMtIjzuODtDsxYP-fMQiB58Nf_NLIoo0cN4aqfb9r0-RAYqy2dvE9cACrvgvrJwbKvF&source=gbs_api
+                            [large] => http://books.google.com/books/publisher/content?id=FggVEAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE73rJqfY1yMpm_qQneyVBQlER40SOBnu5CQKf-NGlvBeFHeOBehreRNMuFJX3GnnLF9aFNCM6jqdn-Z3_l_dahV1qqF_Tt0mwKGjJD6_wEn2vrior4OQiUW70Oawrt_oBUL0rBQf&source=gbs_api
+                            [extraLarge] => http://books.google.com/books/publisher/content?id=FggVEAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE72HSZp8TMgq8C71dFInUrYNqYY4acIo_RTWUcnfsBqq0tu6EkZgw5RWZ6Ygg-NDVirdoU573hud_Hc04WhXqUqTcOLOcrm3dWkZtvayplMm7QhRaoLLLrM7MOAga9EEMjC0vPqa&source=gbs_api
+                        )
+
+                    [language] => pt-BR
+                    [previewLink] => http://books.google.com.br/books?id=FggVEAAAQBAJ&hl=&source=gbs_api
+                    [infoLink] => https://play.google.com/store/books/details?id=FggVEAAAQBAJ&source=gbs_api
+                    [canonicalVolumeLink] => https://play.google.com/store/books/details?id=FggVEAAAQBAJ
+                )
+
+            [layerInfo] => Array
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layerId] => geo
+                                    [volumeAnnotationsVersion] => 3
+                                )
+
+                        )
+
+                )
+
+            [saleInfo] => Array
+                (
+                    [country] => BR
+                    [saleability] => FOR_SALE
+                    [isEbook] => 1
+                    [listPrice] => Array
+                        (
+                            [amount] => 14.9
+                            [currencyCode] => BRL
+                        )
+
+                    [retailPrice] => Array
+                        (
+                            [amount] => 14.9
+                            [currencyCode] => BRL
+                        )
+
+                    [buyLink] => https://play.google.com/store/books/details?id=FggVEAAAQBAJ&rdid=book-FggVEAAAQBAJ&rdot=1&source=gbs_api
+                    [offers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [finskyOfferType] => 1
+                                    [listPrice] => Array
+                                        (
+                                            [amountInMicros] => 14900000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [retailPrice] => Array
+                                        (
+                                            [amountInMicros] => 14900000
+                                            [currencyCode] => BRL
+                                        )
+
+                                    [giftable] => 1
+                                )
+
+                        )
+
+                )
+
+            [accessInfo] => Array
+                (
+                    [country] => BR
+                    [viewability] => PARTIAL
+                    [embeddable] => 1
+                    [publicDomain] => 
+                    [textToSpeechPermission] => ALLOWED
+                    [epub] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Orgulho_e_Preconceito-sample-epub.acsm?id=FggVEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [pdf] => Array
+                        (
+                            [isAvailable] => 1
+                            [acsTokenLink] => http://books.google.com.br/books/download/Orgulho_e_Preconceito-sample-pdf.acsm?id=FggVEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api
+                        )
+
+                    [webReaderLink] => http://play.google.com/books/reader?id=FggVEAAAQBAJ&hl=&source=gbs_api
+                    [accessViewStatus] => SAMPLE
+                    [quoteSharingAllowed] => 
+                )
+
+        )
+
+)
+

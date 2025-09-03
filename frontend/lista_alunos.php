@@ -13,6 +13,7 @@ include('../backend/lista_alunos.php')
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/lista_alunos.css">
+    <link rel="stylesheet" href="./assets/css/botao-voltar.css">
 </head>
 <body>
     <div class="container mt-5">
@@ -69,7 +70,7 @@ include('../backend/lista_alunos.php')
             </div>
         </div>
         <br>
-                <a href="dashboard.php" class="btn btn-primary w-100" id="voltaDashboardId">Voltar para o Painel</a>
+                <a href="dashboard.php" class="btn btn-primary w-100 botao-voltar" id="voltaDashboardId">Voltar para o Painel</a>
                 <br>
     </div>
 

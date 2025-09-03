@@ -1,0 +1,17 @@
+a.botao-voltar {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+a.botao-voltar:hover {
+  background: linear-gradient(to right, #feb47b, #ff7e5f);
+}
+
