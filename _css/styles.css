@@ -8,14 +8,6 @@
     --transition: all 0.4s ease;
 }
 
-body {
-    background: var(--bg-gradient);
-    font-family: 'Arial', sans-serif;
-    color: #212121;
-    min-height: 100vh;
-    padding-bottom: 2rem;
-}
-
 .container {
     margin-top: 50px;
 }
