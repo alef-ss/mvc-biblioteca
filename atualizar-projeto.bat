@@ -1,64 +1,56 @@
 @echo off
-title Atualizar Projeto
+title Atualizacao Automatica do Projeto
 color 0a
 
-echo =====================================
-echo   Sistema de Atualizacao do Projeto
-echo =====================================
+echo ============================================
+echo      Sistema de Atualizacao - Clique e Atualize
+echo ============================================
 echo.
-echo Script iniciado
 
+:: Caminho do projeto local
+set "PROJECT_PATH=C:\Users\AlefDeSouzaSobrinho\Desktop\coisas\xampp\htdocs\mvc-biblioteca"
 
-REM Caminho do projeto - ajuste conforme necessario
-set PROJECT_PATH=C:\Users\AlefDeSouzaSobrinho\Desktop\coisas\xampp\htdocs\mvc-biblioteca
-echo Variavel PROJECT_PATH definida
+:: URL do repositório ZIP no GitHub
+set "REPO_ZIP_URL=https://github.com/alef-ss/mvc-biblioteca/archive/refs/heads/main.zip"
 
+:: Caminhos temporários
+set "TEMP_ZIP=%temp%\projeto.zip"
+set "TEMP_EXTRACT=%temp%\projeto_temp"
 
-REM Verifica se o Git está instalado
-where git >nul 2>&1
-echo Teste do comando WHERE GIT feito, errolevel=%errorlevel%
-
-
-if %errorlevel% neq 0 (
-    echo Git nao encontrado. Baixando e instalando...
-
-    set "GIT_URL=https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/Git-2.47.1-64-bit.exe"
-    echo Variavel GIT_URL definida
-
-
-    set "GIT_INSTALLER=%temp%\git-installer.exe"
-    echo Variavel GIT_INSTALLER definida
-
-
-    powershell -Command "Invoke-WebRequest -Uri %GIT_URL% -OutFile %GIT_INSTALLER%"
-    echo Download do instalador concluido
-
+echo Baixando atualizacao do GitHub...
+powershell -Command "Invoke-WebRequest -Uri '%REPO_ZIP_URL%' -OutFile '%TEMP_ZIP%'" 
+if %ERRORLEVEL% neq 0 (
+    echo Erro ao baixar o arquivo. Verifique a conexao com a internet.
+    pause
+    exit /b
 )
-REM Vai até a pasta do projeto
-cd /d "%PROJECT_PATH%"
-echo Entrou na pasta do projeto
 
-
-echo Verificando atualizacoes no GitHub...
-git pull
-echo Git pull executado, errolevel=%errorlevel%
-
-
-IF %ERRORLEVEL% EQU 0 (
-    echo.
-    echo Projeto atualizado com sucesso!
-    echo.
-    echo Arquivos alterados recentemente:
-    git log -1 --name-only --pretty=format:""
-    echo Git log executado
-
-) ELSE (
-    echo.
-    echo Ocorreu um erro ao atualizar o projeto.
-    echo Verifique sua conexao com a internet.
-    echo.
-    echo Falha no git pull
+echo Extraindo arquivos...
+powershell -Command "Expand-Archive -Path '%TEMP_ZIP%' -DestinationPath '%TEMP_EXTRACT%' -Force"
+if %ERRORLEVEL% neq 0 (
+    echo Erro ao extrair o arquivo.
+    pause
+    exit /b
 )
+
+echo Sincronizando arquivos com o projeto...
+
+:: Captura automaticamente o nome da pasta extraída dentro de TEMP_EXTRACT
+for /d %%i in ("%TEMP_EXTRACT%\*") do set "EXTRACT_FOLDER=%%i"
+
+:: Executa a sincronização com robocopy
+robocopy "%EXTRACT_FOLDER%" "%PROJECT_PATH%" /MIR /XD .git /NFL /NDL /NP /NJH /NJS /nc /ns
+:: /MIR = espelha pasta (substitui arquivos modificados, adiciona novos e remove os deletados)
+:: /XD .git = ignora a pasta .git
+:: outros parâmetros = suprimem logs excessivos, deixando o output mais limpo
 
 echo ---------------------------
+echo Atualizacao concluida com sucesso!
+echo Todos os arquivos do projeto estao sincronizados.
+echo ---------------------------
+
+echo Limpando arquivos temporarios...
+rmdir /S /Q "%TEMP_EXTRACT%"
+del /Q "%TEMP_ZIP%"
+
 pause
