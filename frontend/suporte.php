@@ -57,6 +57,7 @@
                             <i class="fas fa-comment"></i> Mensagem
                         </label>
                         <textarea class="form-control" id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                        <input type="hidden" name="_next" value="http://localhost:8081/mvc-biblioteca/includes/agradecimentos.html">
                     </div>
                     <button type="submit" class="btn btn-primary w-100">
                         <i class="fas fa-paper-plane"></i> Enviar
