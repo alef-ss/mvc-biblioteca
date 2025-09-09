@@ -8,7 +8,7 @@ echo ============================================
 echo.
 
 :: Caminho do projeto local
-set "PROJECT_PATH=C:\Users\AlefDeSouzaSobrinho\Desktop\coisas\xampp\htdocs\mvc-biblioteca"
+set "PROJECT_PATH=C:\xampp\htdocs\mvc-biblioteca"
 
 :: URL do repositório ZIP no GitHub
 set "REPO_ZIP_URL=https://github.com/alef-ss/mvc-biblioteca/archive/refs/heads/main.zip"
@@ -18,7 +18,7 @@ set "TEMP_ZIP=%temp%\projeto.zip"
 set "TEMP_EXTRACT=%temp%\projeto_temp"
 
 echo Baixando atualizacao do GitHub...
-powershell -Command "Invoke-WebRequest -Uri '%REPO_ZIP_URL%' -OutFile '%TEMP_ZIP%'" 
+powershell -Command "Invoke-WebRequest -Uri '%REPO_ZIP_URL%' -OutFile '%TEMP_ZIP%'"
 if %ERRORLEVEL% neq 0 (
     echo Erro ao baixar o arquivo. Verifique a conexao com a internet.
     pause
