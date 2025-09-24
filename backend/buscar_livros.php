@@ -9,30 +9,30 @@ if (!isset($_SESSION['professor_id'])) {
 
 require '../includes/conn.php';
 
-// Configuração de logs
-$log_dir = __DIR__ . '/../logs/';
-if (!file_exists($log_dir)) {
-    mkdir($log_dir, 0755, true);
-}
-$log_file = $log_dir . 'livros_log_' . date('Y-m-d') . '.txt';
+// Esse bloco que salva os logs dos livros mas não vou usar então vai ficar comentado até servir pra alguma coisa
+// $log_dir = __DIR__ . '/../logs/';
+// if (!file_exists($log_dir)) {
+//     mkdir($log_dir, 0755, true);
+// }
+// $log_file = $log_dir . 'livros_log_' . date('Y-m-d') . '.txt';
 
-function registrar_log($mensagem, $detalhes = null)
-{
-    global $log_file;
-    $mensagem_completa = date('Y-m-d H:i:s') . " - " . $mensagem;
+// function registrar_log($mensagem, $detalhes = null)
+// {
+//     global $log_file;
+//     $mensagem_completa = date('Y-m-d H:i:s') . " - " . $mensagem;
 
-    if ($detalhes) {
-        $mensagem_completa .= " - Detalhes: " . print_r($detalhes, true);
-    }
+//     if ($detalhes) {
+//         $mensagem_completa .= " - Detalhes: " . print_r($detalhes, true);
+//     }
 
-    $mensagem_completa .= PHP_EOL;
+//     $mensagem_completa .= PHP_EOL;
 
-    try {
-        file_put_contents($log_file, $mensagem_completa, FILE_APPEND | LOCK_EX);
-    } catch (Exception $e) {
-        error_log("Falha ao escrever no log: " . $e->getMessage());
-    }
-}
+//     try {
+//         file_put_contents($log_file, $mensagem_completa, FILE_APPEND | LOCK_EX);
+//     } catch (Exception $e) {
+//         error_log("Falha ao escrever no log: " . $e->getMessage());
+//     }
+// }
 
 function buscarLivroGoogle($termo)
 {
@@ -50,8 +50,7 @@ function buscarLivroGoogle($termo)
         return json_decode($response, true);
 
     } catch (Exception $e) {
-        // Apenas retorna um array vazio em caso de erro
-        // Você pode trocar por echo se quiser exibir o erro
+        // isso só retorna um array se der erro, se quiser exibir é só descomentar a linha de baixo
         // echo "Erro ao buscar livros: " . $e->getMessage();
         return [];
     }
@@ -77,7 +76,7 @@ function formatarErroBanco($erro)
     if (strpos($erro, "Data too long") !== false) {
         return "Dados muito longos para algum campo. Verifique especialmente a URL da capa.";
     }
-    return "Erro no banco de dados: " . $erro;
+    return "Deu erro mn, xinga o desenvolvedor que ele resolve 👍";
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -90,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         foreach ($livros_selecionados as $id_livro) {
             try {
                 $livro = buscarDetalhesLivroGoogle($id_livro);
-                registrar_log("Processando livro", ['id' => $id_livro, 'dados' => $livro]);
+                // registrar_log("Processando livro", ['id' => $id_livro, 'dados' => $livro]);
 
                 $titulo = $livro['volumeInfo']['title'] ?? 'Título Desconhecido';
                 $autor = isset($livro['volumeInfo']['authors']) ? implode(', ', $livro['volumeInfo']['authors']) : 'Autor Desconhecido';
@@ -103,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $genero = $livro['volumeInfo']['categories'][0] ?? NULL;
                 $quantidade = 1;
 
-                // Validação básica dos dados
+                // verificação básica
                 if (empty($isbn)) {
                     throw new Exception("ISBN não encontrado para o livro '$titulo'");
                 }
@@ -138,6 +137,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
 
+        // mensagens na tela
         if (empty($erros)) {
             $_SESSION['toast'] = [
                 'type' => 'success',
@@ -166,6 +166,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+// verifica se o formulário da busca foi enviado pela url e se foi enviado certo
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['termo_busca'])) {
     $termo_busca = $_GET['termo_busca'];
     $livros = buscarLivroGoogle($termo_busca);

@@ -6,15 +6,17 @@ if (!isset($_SESSION['professor_id'])) {
     header("Location: login.php");
     exit();
 }
+// var_dump($_SESSION['professor_id']);
 
 require '../includes/conn.php'; // Arquivo de conexão com o banco
 
-// Cadastro de aluno
+// Verifica se o formulário foi enviado por pacotes (post)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recebe os dados do formulário
     $nome = $_POST['nome'];
     $serie = $_POST['serie'];
     $email = $_POST['email'];
+    $id_do_professor = $_SESSION['professor_id'];
 
     // Valida o formato do e-mail
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -46,9 +48,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         // Insere o aluno no banco de dados
-        $sql = "INSERT INTO alunos (nome, serie, email) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO alunos (nome, serie, email, professor_id) VALUES (?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("sss", $nome, $serie, $email);
+        $stmt->bind_param("sssi", $nome, $serie, $email, $id_do_professor);
 
         if ($stmt->execute()) {
             // Mensagem de sucesso e redireciona

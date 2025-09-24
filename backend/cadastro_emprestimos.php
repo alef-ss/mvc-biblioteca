@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
             } catch (Exception $e) {
                 $conn->rollback();
-                $error_message = $e->getMessage();
+                $error_message = "deu erro.";
             }
 
             if (isset($stmt_emprestimo)) $stmt_emprestimo->close();
